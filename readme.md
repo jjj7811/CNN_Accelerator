@@ -83,7 +83,7 @@ typedef ap_fixed<16, 6, AP_RND, AP_SAT> data_t;
 
 ***卷积计算过程***
 
-![image-20240410152033050](CNN_Acceleator.assets\image-20240410152033050.png)
+![image-20240410152033050](./CNN_Acceleator.assets/image-20240410152033050.png)
 
 ### 2.1 卷积拆分
 
@@ -126,13 +126,13 @@ memcpy(line_buf3, &feature_in3[F_In_Off3], In_Tc * 2);
 memcpy(line_buf4, &feature_in4[F_In_Off4], In_Tc * 2);
 ```
 
-![image-20240408202108426](.\CNN_Acceleator.assets\image-20240408202108426.png)
+![image-20240408202108426](./CNN_Acceleator.assets/image-20240408202108426.png)
 
 #### 2.2.3 双缓冲设计
 
 针对Input Buf进行了双Buf设计，当Buf0正在读取的时候，Buf1用于卷积模块计算，因此可互相Cover数据读取时间，从而增大吞吐量。
 
-![image-20240516213937444](.\CNN_Acceleator.assets\image-20240516213937444.png)
+![image-20240516213937444](./CNN_Acceleator.assets/image-20240516213937444.png)
 
 ### 2.3 权重读取模块
 
