@@ -1,0 +1,188 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 33328
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Dec 11 21:09:16 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	E:/Learning_Software/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	E:/Learning_Software/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Learning_Software/Xilinx/Vivado
+HDI_APPROOT: E:/Learning_Software/Xilinx/Vivado/2022.1
+RDI_DATADIR: E:/Learning_Software/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: E:/Learning_Software/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	E:/Learning_Software/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/vivado.log
+Vivado journal file: 	D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/vivado.jou
+Engine tmp dir: 	D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/.Xil/Vivado-33328-WIN-05S5ST9THAA
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Learning_Software/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: E:/Learning_Software/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: E:/Learning_Software/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: E:/Learning_Software/Xilinx/Vivado/2022.1
+XILINX_SDK: E:/Learning_Software/Xilinx/Vitis/2022.1
+XILINX_VITIS: E:/Learning_Software/Xilinx/Vitis/2022.1
+XILINX_VIVADO: E:/Learning_Software/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: E:/Learning_Software/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,252 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 90 MB (+91946kb) [00:00:12]
+// [Engine Memory]: 1,252 MB (+1161193kb) [00:00:12]
+// Opening Vivado Project: D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,252 MB. GUI used memory: 60 MB. Current time: 12/11/24, 9:09:17 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 58 MB. Current time: 12/11/24, 9:09:37 PM CST
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,330 MB. GUI used memory: 58 MB. Current time: 12/11/24, 9:09:43 PM CST
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,410 MB. GUI used memory: 58 MB. Current time: 12/11/24, 9:10:07 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/impl'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/impl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/resize_ip_test2/resize2/solution1/impl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/int2fp/int2fp/solution1/impl/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,464 MB (+157154kb) [00:01:09]
+// [GUI Memory]: 142 MB (+49911kb) [00:01:11]
+// [Engine Memory]: 1,567 MB (+30432kb) [00:01:11]
+// [GUI Memory]: 157 MB (+8364kb) [00:01:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  4359 ms.
+// [GUI Memory]: 168 MB (+2458kb) [00:01:13]
+// [GUI Memory]: 176 MB (+46kb) [00:01:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  1549 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 1710.012 ; gain = 473.590 
+// [Engine Memory]: 1,657 MB (+12947kb) [00:01:16]
+// Project name: lenet2; location: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3; part: xck26-sfvc784-2LV-c
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 191 MB (+6792kb) [00:01:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,679 MB. GUI used memory: 146 MB. Current time: 12/11/24, 9:10:22 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1162 ms.
+// [GUI Memory]: 207 MB (+6240kb) [00:01:24]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Reading block design file <D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0 Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_1 Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// [Engine Memory]: 1,782 MB (+43855kb) [00:01:33]
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,909 MB (+39979kb) [00:01:41]
+// WARNING: HEventQueue.dispatchEvent() is taking  4620 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 157 MB. Current time: 12/11/24, 9:10:46 PM CST
+// Elapsed time: 21 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1966.441 ; gain = 218.625 
+// 'ca' command handler elapsed time: 21 seconds
+// JavaFX intialization before: 1733922648043
+dismissDialog("Open Block Design"); // bA
+// JavaFX initialization after: 1733922649742

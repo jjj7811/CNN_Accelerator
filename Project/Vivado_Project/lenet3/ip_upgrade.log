@@ -1,0 +1,3313 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu May  9 17:44:52 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.119 (Rev. 2113549389) to xilinx.com:hls:My_Conv:10.120 (Rev. 2113550374)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu May  9 01:10:39 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.118 (Rev. 2113502991) to xilinx.com:hls:My_Conv:10.119 (Rev. 2113549389)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Apr 20 12:12:36 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.34 (Rev. 2113521915) to xilinx.com:hls:Dense:1.35 (Rev. 2113522691)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Apr 20 01:34:25 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_int8_fp16_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_int8_fp16_0_0 from xilinx.com:hls:int8_fp16:1.1 (Rev. 2113521867) to xilinx.com:hls:int8_fp16:1.2 (Rev. 2113522053)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Apr 19 23:16:24 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.33 (Rev. 2113521873) to xilinx.com:hls:Dense:1.34 (Rev. 2113521915)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Apr 19 22:34:40 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.32 (Rev. 2113502997) to xilinx.com:hls:Dense:1.33 (Rev. 2113521873)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Apr  6 19:57:47 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.117 (Rev. 2113502862) to xilinx.com:hls:My_Conv:10.118 (Rev. 2113502991)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Apr  6 19:57:47 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.31 (Rev. 2113502844) to xilinx.com:hls:Dense:1.32 (Rev. 2113502997)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Apr  6 17:46:16 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.116 (Rev. 2113502612) to xilinx.com:hls:My_Conv:10.117 (Rev. 2113502862)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Apr  6 17:46:16 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.30 (Rev. 2113501680) to xilinx.com:hls:Dense:1.31 (Rev. 2113502844)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Apr  6 13:33:22 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.115 (Rev. 2113500005) to xilinx.com:hls:My_Conv:10.116 (Rev. 2113502612)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Apr  5 22:01:56 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.29 (Rev. 2113501543) to xilinx.com:hls:Dense:1.30 (Rev. 2113501680)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Apr  5 19:46:40 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.28 (Rev. 2113501417) to xilinx.com:hls:Dense:1.29 (Rev. 2113501543)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Apr  5 17:40:23 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.27 (Rev. 2113501229) to xilinx.com:hls:Dense:1.28 (Rev. 2113501417)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Apr  5 14:31:00 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.26 (Rev. 2113500428) to xilinx.com:hls:Dense:1.27 (Rev. 2113501229)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Apr  5 01:10:08 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Dense_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Dense_0_0 from xilinx.com:hls:Dense:1.25 (Rev. 2113497550) to xilinx.com:hls:Dense:1.26 (Rev. 2113500428)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Apr  4 18:06:31 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.114 (Rev. 2113499796) to xilinx.com:hls:My_Conv:10.115 (Rev. 2113500005)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Apr  4 14:37:18 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 (xilinx.com:hls:My_Conv:10.114) from (Rev. 2113499775) to (Rev. 2113499796)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Apr  4 14:17:23 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.113 (Rev. 2113498979) to xilinx.com:hls:My_Conv:10.114 (Rev. 2113499775)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Apr  4 01:00:40 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.112 (Rev. 2113498849) to xilinx.com:hls:My_Conv:10.113 (Rev. 2113498979)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Apr  3 22:50:32 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.111 (Rev. 2113498599) to xilinx.com:hls:My_Conv:10.112 (Rev. 2113498849)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Apr  3 18:42:40 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.109 (Rev. 2113490181) to xilinx.com:hls:My_Conv:10.111 (Rev. 2113498599)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 28 22:22:12 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.108 (Rev. 2113490018) to xilinx.com:hls:My_Conv:10.109 (Rev. 2113490181)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 28 19:38:56 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.107 (Rev. 2113489878) to xilinx.com:hls:My_Conv:10.108 (Rev. 2113490018)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 28 17:19:45 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.106 (Rev. 2113488806) to xilinx.com:hls:My_Conv:10.107 (Rev. 2113489878)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 27 23:28:33 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.105 (Rev. 2113488748) to xilinx.com:hls:My_Conv:10.106 (Rev. 2113488806)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 27 22:29:18 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.104 (Rev. 2113488651) to xilinx.com:hls:My_Conv:10.105 (Rev. 2113488748)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 27 20:52:38 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.103 (Rev. 2113488593) to xilinx.com:hls:My_Conv:10.104 (Rev. 2113488651)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 27 19:54:11 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.102 (Rev. 2113488495) to xilinx.com:hls:My_Conv:10.103 (Rev. 2113488593)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 27 18:17:24 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.101 (Rev. 2113488300) to xilinx.com:hls:My_Conv:10.102 (Rev. 2113488495)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 27 15:01:07 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.100 (Rev. 2113488130) to xilinx.com:hls:My_Conv:10.101 (Rev. 2113488300)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 27 12:12:07 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.99 (Rev. 2113487393) to xilinx.com:hls:My_Conv:10.100 (Rev. 2113488130)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 26 23:55:04 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.98 (Rev. 2113487087) to xilinx.com:hls:My_Conv:10.99 (Rev. 2113487393)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 26 18:54:14 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.97 (Rev. 2113486866) to xilinx.com:hls:My_Conv:10.98 (Rev. 2113487087)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 26 15:08:00 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.96 (Rev. 2113486750) to xilinx.com:hls:My_Conv:10.97 (Rev. 2113486866)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 26 13:11:10 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.95 (Rev. 2113486684) to xilinx.com:hls:My_Conv:10.96 (Rev. 2113486750)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 26 12:05:34 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.94 (Rev. 2113486023) to xilinx.com:hls:My_Conv:10.95 (Rev. 2113486684)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 26 01:03:50 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.93 (Rev. 2113485959) to xilinx.com:hls:My_Conv:10.94 (Rev. 2113486023)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 26 00:00:53 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.92 (Rev. 2113485741) to xilinx.com:hls:My_Conv:10.93 (Rev. 2113485959)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 25 20:21:45 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.91 (Rev. 2113485699) to xilinx.com:hls:My_Conv:10.92 (Rev. 2113485741)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_My_Conv_0_1'.
+
+
+-Upgrade has removed interface 's_axi_CTRL_BUS'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 9 differs from original width 8
+
+-Upgraded port 's_axi_control_AWADDR' width 9 differs from original width 8
+
+-Upgrade has removed port 's_axi_CTRL_BUS_ARADDR'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_ARREADY'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_ARVALID'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_AWADDR'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_AWREADY'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_AWVALID'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_BREADY'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_BRESP'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_BVALID'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_RDATA'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_RREADY'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_RRESP'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_RVALID'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_WDATA'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_WREADY'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_WSTRB'
+
+-Upgrade has removed port 's_axi_CTRL_BUS_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_CTRL_BUS/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 25 19:40:37 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.90 (Rev. 2113485661) to xilinx.com:hls:My_Conv:10.91 (Rev. 2113485699)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 25 19:03:34 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.89 (Rev. 2113485615) to xilinx.com:hls:My_Conv:10.90 (Rev. 2113485661)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 25 18:15:52 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.88 (Rev. 2113485554) to xilinx.com:hls:My_Conv:10.89 (Rev. 2113485615)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_My_Conv_0_1'.
+
+
+-Upgrade has added interface 's_axi_CTRL_BUS' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 8 differs from original width 9
+
+-Upgraded port 's_axi_control_AWADDR' width 8 differs from original width 9
+
+-Upgrade has added port 's_axi_CTRL_BUS_ARADDR'
+
+-Upgrade has added port 's_axi_CTRL_BUS_ARREADY'
+
+-Upgrade has added port 's_axi_CTRL_BUS_ARVALID'
+
+-Upgrade has added port 's_axi_CTRL_BUS_AWADDR'
+
+-Upgrade has added port 's_axi_CTRL_BUS_AWREADY'
+
+-Upgrade has added port 's_axi_CTRL_BUS_AWVALID'
+
+-Upgrade has added port 's_axi_CTRL_BUS_BREADY'
+
+-Upgrade has added port 's_axi_CTRL_BUS_BRESP'
+
+-Upgrade has added port 's_axi_CTRL_BUS_BVALID'
+
+-Upgrade has added port 's_axi_CTRL_BUS_RDATA'
+
+-Upgrade has added port 's_axi_CTRL_BUS_RREADY'
+
+-Upgrade has added port 's_axi_CTRL_BUS_RRESP'
+
+-Upgrade has added port 's_axi_CTRL_BUS_RVALID'
+
+-Upgrade has added port 's_axi_CTRL_BUS_WDATA'
+
+-Upgrade has added port 's_axi_CTRL_BUS_WREADY'
+
+-Upgrade has added port 's_axi_CTRL_BUS_WSTRB'
+
+-Upgrade has added port 's_axi_CTRL_BUS_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has added address block 's_axi_CTRL_BUS/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 25 17:16:53 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.87 (Rev. 2113485505) to xilinx.com:hls:My_Conv:10.88 (Rev. 2113485554)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 25 16:26:08 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.86 (Rev. 2113485338) to xilinx.com:hls:My_Conv:10.87 (Rev. 2113485505)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 25 13:40:27 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.85 (Rev. 2113484561) to xilinx.com:hls:My_Conv:10.86 (Rev. 2113485338)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar 25 00:44:37 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.84 (Rev. 2113484392) to xilinx.com:hls:My_Conv:10.85 (Rev. 2113484561)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Mar 24 21:56:24 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.83 (Rev. 2113484313) to xilinx.com:hls:My_Conv:10.84 (Rev. 2113484392)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Mar 24 20:34:44 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.82 (Rev. 2113484185) to xilinx.com:hls:My_Conv:10.83 (Rev. 2113484313)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Mar 24 18:27:59 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.81 (Rev. 2113482907) to xilinx.com:hls:My_Conv:10.82 (Rev. 2113484185)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 21:08:38 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.80 (Rev. 2113482794) to xilinx.com:hls:My_Conv:10.81 (Rev. 2113482907)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 19:16:33 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.78 (Rev. 2113482773) to xilinx.com:hls:My_Conv:10.80 (Rev. 2113482794)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 18:55:04 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.77 (Rev. 2113482646) to xilinx.com:hls:My_Conv:10.78 (Rev. 2113482773)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 16:47:36 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.76 (Rev. 2113482599) to xilinx.com:hls:My_Conv:10.77 (Rev. 2113482646)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 16:00:08 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.75 (Rev. 2113482509) to xilinx.com:hls:My_Conv:10.76 (Rev. 2113482599)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 14:30:29 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.74 (Rev. 2113482473) to xilinx.com:hls:My_Conv:10.75 (Rev. 2113482509)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 13:54:02 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.73 (Rev. 2113482459) to xilinx.com:hls:My_Conv:10.74 (Rev. 2113482473)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 13:40:08 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.72 (Rev. 2113482362) to xilinx.com:hls:My_Conv:10.73 (Rev. 2113482459)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 12:05:53 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.71 (Rev. 2113481647) to xilinx.com:hls:My_Conv:10.72 (Rev. 2113482362)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 23 00:09:23 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.70 (Rev. 2113480200) to xilinx.com:hls:My_Conv:10.71 (Rev. 2113481647)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Mar 22 00:01:32 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.69 (Rev. 2113480118) to xilinx.com:hls:My_Conv:10.70 (Rev. 2113480200)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 21 22:41:49 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.68 (Rev. 2113479696) to xilinx.com:hls:My_Conv:10.69 (Rev. 2113480118)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 21 15:40:02 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.67 (Rev. 2113478651) to xilinx.com:hls:My_Conv:10.68 (Rev. 2113479696)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 20 22:12:29 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.66 (Rev. 2113478582) to xilinx.com:hls:My_Conv:10.67 (Rev. 2113478651)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 20 21:04:57 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.65 (Rev. 2113478300) to xilinx.com:hls:My_Conv:10.66 (Rev. 2113478582)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar 20 16:21:58 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.64 (Rev. 2113477117) to xilinx.com:hls:My_Conv:10.65 (Rev. 2113478300)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 19 20:39:51 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.63 (Rev. 2113476617) to xilinx.com:hls:My_Conv:10.64 (Rev. 2113477117)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar 19 12:26:39 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.62 (Rev. 2113471575) to xilinx.com:hls:My_Conv:10.63 (Rev. 2113476617)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 16 00:18:58 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.61 (Rev. 2113469314) to xilinx.com:hls:My_Conv:10.62 (Rev. 2113471575)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 14 10:35:00 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.60 (Rev. 2113469184) to xilinx.com:hls:My_Conv:10.61 (Rev. 2113469314)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 14 08:25:33 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.59 (Rev. 2113469092) to xilinx.com:hls:My_Conv:10.60 (Rev. 2113469184)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Mar 14 07:02:45 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.58 (Rev. 2113461338) to xilinx.com:hls:My_Conv:10.59 (Rev. 2113469092)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Mar  8 21:40:30 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.57 (Rev. 2113461135) to xilinx.com:hls:My_Conv:10.58 (Rev. 2113461338)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Mar  8 18:25:01 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.56 (Rev. 2113458492) to xilinx.com:hls:My_Conv:10.57 (Rev. 2113461135)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 9 differs from original width 8
+
+-Upgraded port 's_axi_control_AWADDR' width 9 differs from original width 8
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar  6 22:13:39 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.55 (Rev. 2113458386) to xilinx.com:hls:My_Conv:10.56 (Rev. 2113458492)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 8 differs from original width 9
+
+-Upgraded port 's_axi_control_AWADDR' width 8 differs from original width 9
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar  6 20:28:10 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.54 (Rev. 2113458208) to xilinx.com:hls:My_Conv:10.55 (Rev. 2113458386)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar  6 17:30:02 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.53 (Rev. 2113458115) to xilinx.com:hls:My_Conv:10.54 (Rev. 2113458208)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar  6 16:04:33 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.51 (Rev. 2113457387) to xilinx.com:hls:My_Conv:10.53 (Rev. 2113458115)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar  6 03:48:29 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 (xilinx.com:hls:My_Conv:10.51) from (Rev. 2113457319) to (Rev. 2113457387)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar  6 02:41:49 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 (xilinx.com:hls:My_Conv:10.51) from (Rev. 2113457308) to (Rev. 2113457319)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_My_Conv_0_1'.
+
+
+-Upgrade has removed interface 'layer'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 9 differs from original width 8
+
+-Upgraded port 's_axi_control_AWADDR' width 9 differs from original width 8
+
+-Upgrade has removed port 'layer'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Mar  6 02:30:16 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.50 (Rev. 2113455795) to xilinx.com:hls:My_Conv:10.51 (Rev. 2113457308)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_My_Conv_0_1'.
+
+
+-Upgrade has added interface 'layer' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'layer'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Mar  5 01:19:48 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.49 (Rev. 2113454281) to xilinx.com:hls:My_Conv:10.50 (Rev. 2113455795)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Mar  4 00:03:04 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.48 (Rev. 2113454161) to xilinx.com:hls:My_Conv:10.49 (Rev. 2113454281)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Mar  3 22:02:31 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.47 (Rev. 2113383242) to xilinx.com:hls:My_Conv:10.48 (Rev. 2113454161)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jan 14 16:07:43 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.46 (Rev. 2113379679) to xilinx.com:hls:My_Conv:10.47 (Rev. 2113383242)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jan 12 04:40:53 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.41 (Rev. 2113379142) to xilinx.com:hls:My_Conv:10.46 (Rev. 2113379679)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jan 11 19:43:14 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.40 (Rev. 2113379104) to xilinx.com:hls:My_Conv:10.41 (Rev. 2113379142)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jan 11 19:26:17 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.36 (Rev. 2113378079) to xilinx.com:hls:My_Conv:10.40 (Rev. 2113379104)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jan 11 02:00:05 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.34 (Rev. 2113377999) to xilinx.com:hls:My_Conv:10.36 (Rev. 2113378079)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jan 11 00:43:17 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.32 (Rev. 2113377920) to xilinx.com:hls:My_Conv:10.34 (Rev. 2113377999)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jan 10 23:22:34 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.31 (Rev. 2113377667) to xilinx.com:hls:My_Conv:10.32 (Rev. 2113377920)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jan 10 19:11:09 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.18 (Rev. 2113370484) to xilinx.com:hls:My_Conv:10.31 (Rev. 2113377667)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_My_Conv_0_1'.
+
+
+-Upgrade has added interface 'm_axi_OUT3' (xilinx.com:interface:aximm:1.0)
+
+-Upgrade has added interface 'm_axi_OUT4' (xilinx.com:interface:aximm:1.0)
+
+-Upgrade has added interface 'm_axi_W3' (xilinx.com:interface:aximm:1.0)
+
+-Upgrade has added interface 'm_axi_W4' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'm_axi_OUT3_ARADDR'
+
+-Upgrade has added port 'm_axi_OUT3_ARBURST'
+
+-Upgrade has added port 'm_axi_OUT3_ARCACHE'
+
+-Upgrade has added port 'm_axi_OUT3_ARLEN'
+
+-Upgrade has added port 'm_axi_OUT3_ARLOCK'
+
+-Upgrade has added port 'm_axi_OUT3_ARPROT'
+
+-Upgrade has added port 'm_axi_OUT3_ARQOS'
+
+-Upgrade has added port 'm_axi_OUT3_ARREADY'
+
+-Upgrade has added port 'm_axi_OUT3_ARREGION'
+
+-Upgrade has added port 'm_axi_OUT3_ARSIZE'
+
+-Upgrade has added port 'm_axi_OUT3_ARVALID'
+
+-Upgrade has added port 'm_axi_OUT3_AWADDR'
+
+-Upgrade has added port 'm_axi_OUT3_AWBURST'
+
+-Upgrade has added port 'm_axi_OUT3_AWCACHE'
+
+-Upgrade has added port 'm_axi_OUT3_AWLEN'
+
+-Upgrade has added port 'm_axi_OUT3_AWLOCK'
+
+-Upgrade has added port 'm_axi_OUT3_AWPROT'
+
+-Upgrade has added port 'm_axi_OUT3_AWQOS'
+
+-Upgrade has added port 'm_axi_OUT3_AWREADY'
+
+-Upgrade has added port 'm_axi_OUT3_AWREGION'
+
+-Upgrade has added port 'm_axi_OUT3_AWSIZE'
+
+-Upgrade has added port 'm_axi_OUT3_AWVALID'
+
+-Upgrade has added port 'm_axi_OUT3_BREADY'
+
+-Upgrade has added port 'm_axi_OUT3_BRESP'
+
+-Upgrade has added port 'm_axi_OUT3_BVALID'
+
+-Upgrade has added port 'm_axi_OUT3_RDATA'
+
+-Upgrade has added port 'm_axi_OUT3_RLAST'
+
+-Upgrade has added port 'm_axi_OUT3_RREADY'
+
+-Upgrade has added port 'm_axi_OUT3_RRESP'
+
+-Upgrade has added port 'm_axi_OUT3_RVALID'
+
+-Upgrade has added port 'm_axi_OUT3_WDATA'
+
+-Upgrade has added port 'm_axi_OUT3_WLAST'
+
+-Upgrade has added port 'm_axi_OUT3_WREADY'
+
+-Upgrade has added port 'm_axi_OUT3_WSTRB'
+
+-Upgrade has added port 'm_axi_OUT3_WVALID'
+
+-Upgrade has added port 'm_axi_OUT4_ARADDR'
+
+-Upgrade has added port 'm_axi_OUT4_ARBURST'
+
+-Upgrade has added port 'm_axi_OUT4_ARCACHE'
+
+-Upgrade has added port 'm_axi_OUT4_ARLEN'
+
+-Upgrade has added port 'm_axi_OUT4_ARLOCK'
+
+-Upgrade has added port 'm_axi_OUT4_ARPROT'
+
+-Upgrade has added port 'm_axi_OUT4_ARQOS'
+
+-Upgrade has added port 'm_axi_OUT4_ARREADY'
+
+-Upgrade has added port 'm_axi_OUT4_ARREGION'
+
+-Upgrade has added port 'm_axi_OUT4_ARSIZE'
+
+-Upgrade has added port 'm_axi_OUT4_ARVALID'
+
+-Upgrade has added port 'm_axi_OUT4_AWADDR'
+
+-Upgrade has added port 'm_axi_OUT4_AWBURST'
+
+-Upgrade has added port 'm_axi_OUT4_AWCACHE'
+
+-Upgrade has added port 'm_axi_OUT4_AWLEN'
+
+-Upgrade has added port 'm_axi_OUT4_AWLOCK'
+
+-Upgrade has added port 'm_axi_OUT4_AWPROT'
+
+-Upgrade has added port 'm_axi_OUT4_AWQOS'
+
+-Upgrade has added port 'm_axi_OUT4_AWREADY'
+
+-Upgrade has added port 'm_axi_OUT4_AWREGION'
+
+-Upgrade has added port 'm_axi_OUT4_AWSIZE'
+
+-Upgrade has added port 'm_axi_OUT4_AWVALID'
+
+-Upgrade has added port 'm_axi_OUT4_BREADY'
+
+-Upgrade has added port 'm_axi_OUT4_BRESP'
+
+-Upgrade has added port 'm_axi_OUT4_BVALID'
+
+-Upgrade has added port 'm_axi_OUT4_RDATA'
+
+-Upgrade has added port 'm_axi_OUT4_RLAST'
+
+-Upgrade has added port 'm_axi_OUT4_RREADY'
+
+-Upgrade has added port 'm_axi_OUT4_RRESP'
+
+-Upgrade has added port 'm_axi_OUT4_RVALID'
+
+-Upgrade has added port 'm_axi_OUT4_WDATA'
+
+-Upgrade has added port 'm_axi_OUT4_WLAST'
+
+-Upgrade has added port 'm_axi_OUT4_WREADY'
+
+-Upgrade has added port 'm_axi_OUT4_WSTRB'
+
+-Upgrade has added port 'm_axi_OUT4_WVALID'
+
+-Upgrade has added port 'm_axi_W3_ARADDR'
+
+-Upgrade has added port 'm_axi_W3_ARBURST'
+
+-Upgrade has added port 'm_axi_W3_ARCACHE'
+
+-Upgrade has added port 'm_axi_W3_ARLEN'
+
+-Upgrade has added port 'm_axi_W3_ARLOCK'
+
+-Upgrade has added port 'm_axi_W3_ARPROT'
+
+-Upgrade has added port 'm_axi_W3_ARQOS'
+
+-Upgrade has added port 'm_axi_W3_ARREADY'
+
+-Upgrade has added port 'm_axi_W3_ARREGION'
+
+-Upgrade has added port 'm_axi_W3_ARSIZE'
+
+-Upgrade has added port 'm_axi_W3_ARVALID'
+
+-Upgrade has added port 'm_axi_W3_AWADDR'
+
+-Upgrade has added port 'm_axi_W3_AWBURST'
+
+-Upgrade has added port 'm_axi_W3_AWCACHE'
+
+-Upgrade has added port 'm_axi_W3_AWLEN'
+
+-Upgrade has added port 'm_axi_W3_AWLOCK'
+
+-Upgrade has added port 'm_axi_W3_AWPROT'
+
+-Upgrade has added port 'm_axi_W3_AWQOS'
+
+-Upgrade has added port 'm_axi_W3_AWREADY'
+
+-Upgrade has added port 'm_axi_W3_AWREGION'
+
+-Upgrade has added port 'm_axi_W3_AWSIZE'
+
+-Upgrade has added port 'm_axi_W3_AWVALID'
+
+-Upgrade has added port 'm_axi_W3_BREADY'
+
+-Upgrade has added port 'm_axi_W3_BRESP'
+
+-Upgrade has added port 'm_axi_W3_BVALID'
+
+-Upgrade has added port 'm_axi_W3_RDATA'
+
+-Upgrade has added port 'm_axi_W3_RLAST'
+
+-Upgrade has added port 'm_axi_W3_RREADY'
+
+-Upgrade has added port 'm_axi_W3_RRESP'
+
+-Upgrade has added port 'm_axi_W3_RVALID'
+
+-Upgrade has added port 'm_axi_W3_WDATA'
+
+-Upgrade has added port 'm_axi_W3_WLAST'
+
+-Upgrade has added port 'm_axi_W3_WREADY'
+
+-Upgrade has added port 'm_axi_W3_WSTRB'
+
+-Upgrade has added port 'm_axi_W3_WVALID'
+
+-Upgrade has added port 'm_axi_W4_ARADDR'
+
+-Upgrade has added port 'm_axi_W4_ARBURST'
+
+-Upgrade has added port 'm_axi_W4_ARCACHE'
+
+-Upgrade has added port 'm_axi_W4_ARLEN'
+
+-Upgrade has added port 'm_axi_W4_ARLOCK'
+
+-Upgrade has added port 'm_axi_W4_ARPROT'
+
+-Upgrade has added port 'm_axi_W4_ARQOS'
+
+-Upgrade has added port 'm_axi_W4_ARREADY'
+
+-Upgrade has added port 'm_axi_W4_ARREGION'
+
+-Upgrade has added port 'm_axi_W4_ARSIZE'
+
+-Upgrade has added port 'm_axi_W4_ARVALID'
+
+-Upgrade has added port 'm_axi_W4_AWADDR'
+
+-Upgrade has added port 'm_axi_W4_AWBURST'
+
+-Upgrade has added port 'm_axi_W4_AWCACHE'
+
+-Upgrade has added port 'm_axi_W4_AWLEN'
+
+-Upgrade has added port 'm_axi_W4_AWLOCK'
+
+-Upgrade has added port 'm_axi_W4_AWPROT'
+
+-Upgrade has added port 'm_axi_W4_AWQOS'
+
+-Upgrade has added port 'm_axi_W4_AWREADY'
+
+-Upgrade has added port 'm_axi_W4_AWREGION'
+
+-Upgrade has added port 'm_axi_W4_AWSIZE'
+
+-Upgrade has added port 'm_axi_W4_AWVALID'
+
+-Upgrade has added port 'm_axi_W4_BREADY'
+
+-Upgrade has added port 'm_axi_W4_BRESP'
+
+-Upgrade has added port 'm_axi_W4_BVALID'
+
+-Upgrade has added port 'm_axi_W4_RDATA'
+
+-Upgrade has added port 'm_axi_W4_RLAST'
+
+-Upgrade has added port 'm_axi_W4_RREADY'
+
+-Upgrade has added port 'm_axi_W4_RRESP'
+
+-Upgrade has added port 'm_axi_W4_RVALID'
+
+-Upgrade has added port 'm_axi_W4_WDATA'
+
+-Upgrade has added port 'm_axi_W4_WLAST'
+
+-Upgrade has added port 'm_axi_W4_WREADY'
+
+-Upgrade has added port 'm_axi_W4_WSTRB'
+
+-Upgrade has added port 'm_axi_W4_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has added address space 'Data_m_axi_OUT3'
+
+-Upgrade has added address space 'Data_m_axi_OUT4'
+
+-Upgrade has added address space 'Data_m_axi_W3'
+
+-Upgrade has added address space 'Data_m_axi_W4'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jan  5 19:26:17 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.17 (Rev. 2113370381) to xilinx.com:hls:My_Conv:10.18 (Rev. 2113370484)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jan  5 17:43:25 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.16 (Rev. 2113369108) to xilinx.com:hls:My_Conv:10.17 (Rev. 2113370381)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jan  4 20:29:59 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 (xilinx.com:hls:My_Conv:10.16) from (Rev. 2113369092) to (Rev. 2113369108)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_My_Conv_0_1'.
+
+
+-Upgrade has removed interface 'feature_out1'
+
+-Upgrade has added interface 'm_axi_OUT1' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'feature_out1'
+
+-Upgrade has removed port 'feature_out1_ap_vld'
+
+-Upgrade has added port 'm_axi_OUT1_ARADDR'
+
+-Upgrade has added port 'm_axi_OUT1_ARBURST'
+
+-Upgrade has added port 'm_axi_OUT1_ARCACHE'
+
+-Upgrade has added port 'm_axi_OUT1_ARLEN'
+
+-Upgrade has added port 'm_axi_OUT1_ARLOCK'
+
+-Upgrade has added port 'm_axi_OUT1_ARPROT'
+
+-Upgrade has added port 'm_axi_OUT1_ARQOS'
+
+-Upgrade has added port 'm_axi_OUT1_ARREADY'
+
+-Upgrade has added port 'm_axi_OUT1_ARREGION'
+
+-Upgrade has added port 'm_axi_OUT1_ARSIZE'
+
+-Upgrade has added port 'm_axi_OUT1_ARVALID'
+
+-Upgrade has added port 'm_axi_OUT1_AWADDR'
+
+-Upgrade has added port 'm_axi_OUT1_AWBURST'
+
+-Upgrade has added port 'm_axi_OUT1_AWCACHE'
+
+-Upgrade has added port 'm_axi_OUT1_AWLEN'
+
+-Upgrade has added port 'm_axi_OUT1_AWLOCK'
+
+-Upgrade has added port 'm_axi_OUT1_AWPROT'
+
+-Upgrade has added port 'm_axi_OUT1_AWQOS'
+
+-Upgrade has added port 'm_axi_OUT1_AWREADY'
+
+-Upgrade has added port 'm_axi_OUT1_AWREGION'
+
+-Upgrade has added port 'm_axi_OUT1_AWSIZE'
+
+-Upgrade has added port 'm_axi_OUT1_AWVALID'
+
+-Upgrade has added port 'm_axi_OUT1_BREADY'
+
+-Upgrade has added port 'm_axi_OUT1_BRESP'
+
+-Upgrade has added port 'm_axi_OUT1_BVALID'
+
+-Upgrade has added port 'm_axi_OUT1_RDATA'
+
+-Upgrade has added port 'm_axi_OUT1_RLAST'
+
+-Upgrade has added port 'm_axi_OUT1_RREADY'
+
+-Upgrade has added port 'm_axi_OUT1_RRESP'
+
+-Upgrade has added port 'm_axi_OUT1_RVALID'
+
+-Upgrade has added port 'm_axi_OUT1_WDATA'
+
+-Upgrade has added port 'm_axi_OUT1_WLAST'
+
+-Upgrade has added port 'm_axi_OUT1_WREADY'
+
+-Upgrade has added port 'm_axi_OUT1_WSTRB'
+
+-Upgrade has added port 'm_axi_OUT1_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has added address space 'Data_m_axi_OUT1'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jan  4 20:13:39 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Conv_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Conv_0_1 from xilinx.com:hls:My_Conv:10.15 (Rev. 2113368820) to xilinx.com:hls:My_Conv:10.16 (Rev. 2113369092)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_My_Conv_0_1'.
+
+
+-Upgrade has removed interface 'm_axi_OUT1'
+
+-Upgrade has removed interface 'm_axi_W3'
+
+-Upgrade has added interface 'feature_out1' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'm_axi_OUT2' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_OUT1_ARADDR'
+
+-Upgrade has removed port 'm_axi_OUT1_ARBURST'
+
+-Upgrade has removed port 'm_axi_OUT1_ARCACHE'
+
+-Upgrade has removed port 'm_axi_OUT1_ARLEN'
+
+-Upgrade has removed port 'm_axi_OUT1_ARLOCK'
+
+-Upgrade has removed port 'm_axi_OUT1_ARPROT'
+
+-Upgrade has removed port 'm_axi_OUT1_ARQOS'
+
+-Upgrade has removed port 'm_axi_OUT1_ARREADY'
+
+-Upgrade has removed port 'm_axi_OUT1_ARREGION'
+
+-Upgrade has removed port 'm_axi_OUT1_ARSIZE'
+
+-Upgrade has removed port 'm_axi_OUT1_ARVALID'
+
+-Upgrade has removed port 'm_axi_OUT1_AWADDR'
+
+-Upgrade has removed port 'm_axi_OUT1_AWBURST'
+
+-Upgrade has removed port 'm_axi_OUT1_AWCACHE'
+
+-Upgrade has removed port 'm_axi_OUT1_AWLEN'
+
+-Upgrade has removed port 'm_axi_OUT1_AWLOCK'
+
+-Upgrade has removed port 'm_axi_OUT1_AWPROT'
+
+-Upgrade has removed port 'm_axi_OUT1_AWQOS'
+
+-Upgrade has removed port 'm_axi_OUT1_AWREADY'
+
+-Upgrade has removed port 'm_axi_OUT1_AWREGION'
+
+-Upgrade has removed port 'm_axi_OUT1_AWSIZE'
+
+-Upgrade has removed port 'm_axi_OUT1_AWVALID'
+
+-Upgrade has removed port 'm_axi_OUT1_BREADY'
+
+-Upgrade has removed port 'm_axi_OUT1_BRESP'
+
+-Upgrade has removed port 'm_axi_OUT1_BVALID'
+
+-Upgrade has removed port 'm_axi_OUT1_RDATA'
+
+-Upgrade has removed port 'm_axi_OUT1_RLAST'
+
+-Upgrade has removed port 'm_axi_OUT1_RREADY'
+
+-Upgrade has removed port 'm_axi_OUT1_RRESP'
+
+-Upgrade has removed port 'm_axi_OUT1_RVALID'
+
+-Upgrade has removed port 'm_axi_OUT1_WDATA'
+
+-Upgrade has removed port 'm_axi_OUT1_WLAST'
+
+-Upgrade has removed port 'm_axi_OUT1_WREADY'
+
+-Upgrade has removed port 'm_axi_OUT1_WSTRB'
+
+-Upgrade has removed port 'm_axi_OUT1_WVALID'
+
+-Upgrade has removed port 'm_axi_W3_ARADDR'
+
+-Upgrade has removed port 'm_axi_W3_ARBURST'
+
+-Upgrade has removed port 'm_axi_W3_ARCACHE'
+
+-Upgrade has removed port 'm_axi_W3_ARLEN'
+
+-Upgrade has removed port 'm_axi_W3_ARLOCK'
+
+-Upgrade has removed port 'm_axi_W3_ARPROT'
+
+-Upgrade has removed port 'm_axi_W3_ARQOS'
+
+-Upgrade has removed port 'm_axi_W3_ARREADY'
+
+-Upgrade has removed port 'm_axi_W3_ARREGION'
+
+-Upgrade has removed port 'm_axi_W3_ARSIZE'
+
+-Upgrade has removed port 'm_axi_W3_ARVALID'
+
+-Upgrade has removed port 'm_axi_W3_AWADDR'
+
+-Upgrade has removed port 'm_axi_W3_AWBURST'
+
+-Upgrade has removed port 'm_axi_W3_AWCACHE'
+
+-Upgrade has removed port 'm_axi_W3_AWLEN'
+
+-Upgrade has removed port 'm_axi_W3_AWLOCK'
+
+-Upgrade has removed port 'm_axi_W3_AWPROT'
+
+-Upgrade has removed port 'm_axi_W3_AWQOS'
+
+-Upgrade has removed port 'm_axi_W3_AWREADY'
+
+-Upgrade has removed port 'm_axi_W3_AWREGION'
+
+-Upgrade has removed port 'm_axi_W3_AWSIZE'
+
+-Upgrade has removed port 'm_axi_W3_AWVALID'
+
+-Upgrade has removed port 'm_axi_W3_BREADY'
+
+-Upgrade has removed port 'm_axi_W3_BRESP'
+
+-Upgrade has removed port 'm_axi_W3_BVALID'
+
+-Upgrade has removed port 'm_axi_W3_RDATA'
+
+-Upgrade has removed port 'm_axi_W3_RLAST'
+
+-Upgrade has removed port 'm_axi_W3_RREADY'
+
+-Upgrade has removed port 'm_axi_W3_RRESP'
+
+-Upgrade has removed port 'm_axi_W3_RVALID'
+
+-Upgrade has removed port 'm_axi_W3_WDATA'
+
+-Upgrade has removed port 'm_axi_W3_WLAST'
+
+-Upgrade has removed port 'm_axi_W3_WREADY'
+
+-Upgrade has removed port 'm_axi_W3_WSTRB'
+
+-Upgrade has removed port 'm_axi_W3_WVALID'
+
+-Upgrade has added port 'feature_out1'
+
+-Upgrade has added port 'feature_out1_ap_vld'
+
+-Upgrade has added port 'm_axi_OUT2_ARADDR'
+
+-Upgrade has added port 'm_axi_OUT2_ARBURST'
+
+-Upgrade has added port 'm_axi_OUT2_ARCACHE'
+
+-Upgrade has added port 'm_axi_OUT2_ARLEN'
+
+-Upgrade has added port 'm_axi_OUT2_ARLOCK'
+
+-Upgrade has added port 'm_axi_OUT2_ARPROT'
+
+-Upgrade has added port 'm_axi_OUT2_ARQOS'
+
+-Upgrade has added port 'm_axi_OUT2_ARREADY'
+
+-Upgrade has added port 'm_axi_OUT2_ARREGION'
+
+-Upgrade has added port 'm_axi_OUT2_ARSIZE'
+
+-Upgrade has added port 'm_axi_OUT2_ARVALID'
+
+-Upgrade has added port 'm_axi_OUT2_AWADDR'
+
+-Upgrade has added port 'm_axi_OUT2_AWBURST'
+
+-Upgrade has added port 'm_axi_OUT2_AWCACHE'
+
+-Upgrade has added port 'm_axi_OUT2_AWLEN'
+
+-Upgrade has added port 'm_axi_OUT2_AWLOCK'
+
+-Upgrade has added port 'm_axi_OUT2_AWPROT'
+
+-Upgrade has added port 'm_axi_OUT2_AWQOS'
+
+-Upgrade has added port 'm_axi_OUT2_AWREADY'
+
+-Upgrade has added port 'm_axi_OUT2_AWREGION'
+
+-Upgrade has added port 'm_axi_OUT2_AWSIZE'
+
+-Upgrade has added port 'm_axi_OUT2_AWVALID'
+
+-Upgrade has added port 'm_axi_OUT2_BREADY'
+
+-Upgrade has added port 'm_axi_OUT2_BRESP'
+
+-Upgrade has added port 'm_axi_OUT2_BVALID'
+
+-Upgrade has added port 'm_axi_OUT2_RDATA'
+
+-Upgrade has added port 'm_axi_OUT2_RLAST'
+
+-Upgrade has added port 'm_axi_OUT2_RREADY'
+
+-Upgrade has added port 'm_axi_OUT2_RRESP'
+
+-Upgrade has added port 'm_axi_OUT2_RVALID'
+
+-Upgrade has added port 'm_axi_OUT2_WDATA'
+
+-Upgrade has added port 'm_axi_OUT2_WLAST'
+
+-Upgrade has added port 'm_axi_OUT2_WREADY'
+
+-Upgrade has added port 'm_axi_OUT2_WSTRB'
+
+-Upgrade has added port 'm_axi_OUT2_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_My_Conv_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_OUT1'
+
+-Upgrade has removed address space 'Data_m_axi_W3'
+
+-Upgrade has added address space 'Data_m_axi_OUT2'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_W3_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_W3_ID_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_W3_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '32'
+
+Parameter 'C_M_AXI_W3_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_W3_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_W3_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_W3_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_W3_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_W3_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_W3_USER_VALUE' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_W3_PROT_VALUE' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_W3_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '"0011"'
+
+Parameter 'C_M_AXI_OUT1_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_OUT1_ID_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_OUT1_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '32'
+
+Parameter 'C_M_AXI_OUT1_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_OUT1_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_OUT1_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_OUT1_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_OUT1_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_OUT1_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_OUT1_USER_VALUE' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_OUT1_PROT_VALUE' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_OUT1_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_My_Conv_0_1', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:My_Conv:10.16 -user_name design_1_My_Conv_0_1
+set_property -dict "\
+  CONFIG.C_M_AXI_B1_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_B1_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_B1_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_B1_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_B1_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_B1_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_B1_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_B1_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_B1_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_B1_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_B1_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_B1_WUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN1_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN1_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN1_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN1_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_IN1_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_IN1_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_IN1_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_IN1_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_IN1_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_IN1_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN1_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_IN1_WUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN2_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN2_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN2_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN2_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_IN2_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_IN2_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_IN2_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_IN2_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_IN2_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_IN2_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN2_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_IN2_WUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN3_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN3_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN3_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN3_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_IN3_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_IN3_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_IN3_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_IN3_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_IN3_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_IN3_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN3_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_IN3_WUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN4_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN4_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN4_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN4_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_IN4_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_IN4_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_IN4_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_IN4_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_IN4_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_IN4_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_IN4_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_IN4_WUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W1_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W1_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W1_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W1_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_W1_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_W1_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_W1_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_W1_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_W1_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_W1_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W1_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_W1_WUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W2_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W2_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W2_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W2_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_W2_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_W2_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_W2_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_W2_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_W2_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_W2_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_W2_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_W2_WUSER_WIDTH {1} \
+  CONFIG.Component_Name {design_1_My_Conv_0_1} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_IN1:m_axi_IN2:m_axi_IN3:m_axi_IN4:m_axi_W1:m_axi_W2:m_axi_W3:m_axi_B1:m_axi_OUT1} \
+  CONFIG.ap_clk.ASSOCIATED_PORT {} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.ap_clk.FREQ_HZ {124999101} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.0} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {8} \
+  CONFIG.combinational {0} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {undef} \
+  CONFIG.m_axi_B1.ADDR_WIDTH {64} \
+  CONFIG.m_axi_B1.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_B1.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_B1.BUSER_WIDTH {0} \
+  CONFIG.m_axi_B1.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.m_axi_B1.DATA_WIDTH {32} \
+  CONFIG.m_axi_B1.FREQ_HZ {124999101} \
+  CONFIG.m_axi_B1.HAS_BRESP {1} \
+  CONFIG.m_axi_B1.HAS_BURST {0} \
+  CONFIG.m_axi_B1.HAS_CACHE {1} \
+  CONFIG.m_axi_B1.HAS_LOCK {1} \
+  CONFIG.m_axi_B1.HAS_PROT {1} \
+  CONFIG.m_axi_B1.HAS_QOS {1} \
+  CONFIG.m_axi_B1.HAS_REGION {1} \
+  CONFIG.m_axi_B1.HAS_RRESP {1} \
+  CONFIG.m_axi_B1.HAS_WSTRB {1} \
+  CONFIG.m_axi_B1.ID_WIDTH {0} \
+  CONFIG.m_axi_B1.INSERT_VIP {0} \
+  CONFIG.m_axi_B1.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_B1.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_B1.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_B1.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_B1.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_B1.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_B1.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_B1.PHASE {0.0} \
+  CONFIG.m_axi_B1.PROTOCOL {AXI4} \
+  CONFIG.m_axi_B1.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_axi_B1.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_B1.RUSER_WIDTH {0} \
+  CONFIG.m_axi_B1.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_B1.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_B1.WUSER_WIDTH {0} \
+  CONFIG.m_axi_IN1.ADDR_WIDTH {64} \
+  CONFIG.m_axi_IN1.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_IN1.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_IN1.BUSER_WIDTH {0} \
+  CONFIG.m_axi_IN1.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.m_axi_IN1.DATA_WIDTH {32} \
+  CONFIG.m_axi_IN1.FREQ_HZ {124999101} \
+  CONFIG.m_axi_IN1.HAS_BRESP {1} \
+  CONFIG.m_axi_IN1.HAS_BURST {0} \
+  CONFIG.m_axi_IN1.HAS_CACHE {1} \
+  CONFIG.m_axi_IN1.HAS_LOCK {1} \
+  CONFIG.m_axi_IN1.HAS_PROT {1} \
+  CONFIG.m_axi_IN1.HAS_QOS {1} \
+  CONFIG.m_axi_IN1.HAS_REGION {1} \
+  CONFIG.m_axi_IN1.HAS_RRESP {1} \
+  CONFIG.m_axi_IN1.HAS_WSTRB {1} \
+  CONFIG.m_axi_IN1.ID_WIDTH {0} \
+  CONFIG.m_axi_IN1.INSERT_VIP {0} \
+  CONFIG.m_axi_IN1.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_IN1.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_IN1.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_IN1.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_IN1.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_IN1.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_IN1.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_IN1.PHASE {0.0} \
+  CONFIG.m_axi_IN1.PROTOCOL {AXI4} \
+  CONFIG.m_axi_IN1.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_axi_IN1.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_IN1.RUSER_WIDTH {0} \
+  CONFIG.m_axi_IN1.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_IN1.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_IN1.WUSER_WIDTH {0} \
+  CONFIG.m_axi_IN2.ADDR_WIDTH {64} \
+  CONFIG.m_axi_IN2.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_IN2.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_IN2.BUSER_WIDTH {0} \
+  CONFIG.m_axi_IN2.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.m_axi_IN2.DATA_WIDTH {32} \
+  CONFIG.m_axi_IN2.FREQ_HZ {124999101} \
+  CONFIG.m_axi_IN2.HAS_BRESP {1} \
+  CONFIG.m_axi_IN2.HAS_BURST {0} \
+  CONFIG.m_axi_IN2.HAS_CACHE {1} \
+  CONFIG.m_axi_IN2.HAS_LOCK {1} \
+  CONFIG.m_axi_IN2.HAS_PROT {1} \
+  CONFIG.m_axi_IN2.HAS_QOS {1} \
+  CONFIG.m_axi_IN2.HAS_REGION {1} \
+  CONFIG.m_axi_IN2.HAS_RRESP {1} \
+  CONFIG.m_axi_IN2.HAS_WSTRB {1} \
+  CONFIG.m_axi_IN2.ID_WIDTH {0} \
+  CONFIG.m_axi_IN2.INSERT_VIP {0} \
+  CONFIG.m_axi_IN2.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_IN2.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_IN2.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_IN2.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_IN2.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_IN2.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_IN2.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_IN2.PHASE {0.0} \
+  CONFIG.m_axi_IN2.PROTOCOL {AXI4} \
+  CONFIG.m_axi_IN2.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_axi_IN2.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_IN2.RUSER_WIDTH {0} \
+  CONFIG.m_axi_IN2.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_IN2.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_IN2.WUSER_WIDTH {0} \
+  CONFIG.m_axi_IN3.ADDR_WIDTH {64} \
+  CONFIG.m_axi_IN3.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_IN3.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_IN3.BUSER_WIDTH {0} \
+  CONFIG.m_axi_IN3.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.m_axi_IN3.DATA_WIDTH {32} \
+  CONFIG.m_axi_IN3.FREQ_HZ {124999101} \
+  CONFIG.m_axi_IN3.HAS_BRESP {1} \
+  CONFIG.m_axi_IN3.HAS_BURST {0} \
+  CONFIG.m_axi_IN3.HAS_CACHE {1} \
+  CONFIG.m_axi_IN3.HAS_LOCK {1} \
+  CONFIG.m_axi_IN3.HAS_PROT {1} \
+  CONFIG.m_axi_IN3.HAS_QOS {1} \
+  CONFIG.m_axi_IN3.HAS_REGION {1} \
+  CONFIG.m_axi_IN3.HAS_RRESP {1} \
+  CONFIG.m_axi_IN3.HAS_WSTRB {1} \
+  CONFIG.m_axi_IN3.ID_WIDTH {0} \
+  CONFIG.m_axi_IN3.INSERT_VIP {0} \
+  CONFIG.m_axi_IN3.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_IN3.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_IN3.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_IN3.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_IN3.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_IN3.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_IN3.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_IN3.PHASE {0.0} \
+  CONFIG.m_axi_IN3.PROTOCOL {AXI4} \
+  CONFIG.m_axi_IN3.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_axi_IN3.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_IN3.RUSER_WIDTH {0} \
+  CONFIG.m_axi_IN3.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_IN3.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_IN3.WUSER_WIDTH {0} \
+  CONFIG.m_axi_IN4.ADDR_WIDTH {64} \
+  CONFIG.m_axi_IN4.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_IN4.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_IN4.BUSER_WIDTH {0} \
+  CONFIG.m_axi_IN4.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.m_axi_IN4.DATA_WIDTH {32} \
+  CONFIG.m_axi_IN4.FREQ_HZ {124999101} \
+  CONFIG.m_axi_IN4.HAS_BRESP {1} \
+  CONFIG.m_axi_IN4.HAS_BURST {0} \
+  CONFIG.m_axi_IN4.HAS_CACHE {1} \
+  CONFIG.m_axi_IN4.HAS_LOCK {1} \
+  CONFIG.m_axi_IN4.HAS_PROT {1} \
+  CONFIG.m_axi_IN4.HAS_QOS {1} \
+  CONFIG.m_axi_IN4.HAS_REGION {1} \
+  CONFIG.m_axi_IN4.HAS_RRESP {1} \
+  CONFIG.m_axi_IN4.HAS_WSTRB {1} \
+  CONFIG.m_axi_IN4.ID_WIDTH {0} \
+  CONFIG.m_axi_IN4.INSERT_VIP {0} \
+  CONFIG.m_axi_IN4.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_IN4.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_IN4.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_IN4.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_IN4.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_IN4.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_IN4.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_IN4.PHASE {0.0} \
+  CONFIG.m_axi_IN4.PROTOCOL {AXI4} \
+  CONFIG.m_axi_IN4.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_axi_IN4.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_IN4.RUSER_WIDTH {0} \
+  CONFIG.m_axi_IN4.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_IN4.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_IN4.WUSER_WIDTH {0} \
+  CONFIG.m_axi_W1.ADDR_WIDTH {64} \
+  CONFIG.m_axi_W1.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_W1.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_W1.BUSER_WIDTH {0} \
+  CONFIG.m_axi_W1.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.m_axi_W1.DATA_WIDTH {32} \
+  CONFIG.m_axi_W1.FREQ_HZ {124999101} \
+  CONFIG.m_axi_W1.HAS_BRESP {1} \
+  CONFIG.m_axi_W1.HAS_BURST {0} \
+  CONFIG.m_axi_W1.HAS_CACHE {1} \
+  CONFIG.m_axi_W1.HAS_LOCK {1} \
+  CONFIG.m_axi_W1.HAS_PROT {1} \
+  CONFIG.m_axi_W1.HAS_QOS {1} \
+  CONFIG.m_axi_W1.HAS_REGION {1} \
+  CONFIG.m_axi_W1.HAS_RRESP {1} \
+  CONFIG.m_axi_W1.HAS_WSTRB {1} \
+  CONFIG.m_axi_W1.ID_WIDTH {0} \
+  CONFIG.m_axi_W1.INSERT_VIP {0} \
+  CONFIG.m_axi_W1.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_W1.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_W1.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_W1.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_W1.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_W1.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_W1.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_W1.PHASE {0.0} \
+  CONFIG.m_axi_W1.PROTOCOL {AXI4} \
+  CONFIG.m_axi_W1.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_axi_W1.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_W1.RUSER_WIDTH {0} \
+  CONFIG.m_axi_W1.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_W1.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_W1.WUSER_WIDTH {0} \
+  CONFIG.m_axi_W2.ADDR_WIDTH {64} \
+  CONFIG.m_axi_W2.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_W2.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_W2.BUSER_WIDTH {0} \
+  CONFIG.m_axi_W2.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.m_axi_W2.DATA_WIDTH {32} \
+  CONFIG.m_axi_W2.FREQ_HZ {124999101} \
+  CONFIG.m_axi_W2.HAS_BRESP {1} \
+  CONFIG.m_axi_W2.HAS_BURST {0} \
+  CONFIG.m_axi_W2.HAS_CACHE {1} \
+  CONFIG.m_axi_W2.HAS_LOCK {1} \
+  CONFIG.m_axi_W2.HAS_PROT {1} \
+  CONFIG.m_axi_W2.HAS_QOS {1} \
+  CONFIG.m_axi_W2.HAS_REGION {1} \
+  CONFIG.m_axi_W2.HAS_RRESP {1} \
+  CONFIG.m_axi_W2.HAS_WSTRB {1} \
+  CONFIG.m_axi_W2.ID_WIDTH {0} \
+  CONFIG.m_axi_W2.INSERT_VIP {0} \
+  CONFIG.m_axi_W2.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_W2.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_W2.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_W2.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_W2.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_W2.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_W2.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_W2.PHASE {0.0} \
+  CONFIG.m_axi_W2.PROTOCOL {AXI4} \
+  CONFIG.m_axi_W2.READ_WRITE_MODE {READ_ONLY} \
+  CONFIG.m_axi_W2.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_W2.RUSER_WIDTH {0} \
+  CONFIG.m_axi_W2.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_W2.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_W2.WUSER_WIDTH {0} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {8} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {124999101} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.0} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} " [get_ips design_1_My_Conv_0_1]
+
+

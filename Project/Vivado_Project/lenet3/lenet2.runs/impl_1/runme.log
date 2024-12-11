@@ -1,0 +1,614 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/impl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'.
+add_files: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1621.945 ; gain = 0.000
+Command: link_design -top design_1_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_Dense_0_0/design_1_Dense_0_0.dcp' for cell 'design_1_i/Dense_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_My_Conv_0_1/design_1_My_Conv_0_1.dcp' for cell 'design_1_i/My_Conv_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.dcp' for cell 'design_1_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1.dcp' for cell 'design_1_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/design_1_smartconnect_0_2.dcp' for cell 'design_1_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_5/design_1_smartconnect_0_5.dcp' for cell 'design_1_i/smartconnect_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/design_1_smartconnect_0_3.dcp' for cell 'design_1_i/smartconnect_2'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_4/design_1_smartconnect_0_4.dcp' for cell 'design_1_i/smartconnect_3'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_3_0/design_1_smartconnect_3_0.dcp' for cell 'design_1_i/smartconnect_4'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_0/design_1_smartconnect_4_0.dcp' for cell 'design_1_i/smartconnect_5'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_2/design_1_smartconnect_4_2.dcp' for cell 'design_1_i/smartconnect_7'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_1_0/design_1_zynq_ultra_ps_e_1_0.dcp' for cell 'design_1_i/zynq_ultra_ps_e_1'
+Netlist sorting complete. Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2442.785 ; gain = 22.238
+INFO: [Netlist 29-17] Analyzing 7620 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 10 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 4390.609 ; gain = 806.238
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_1_0/design_1_zynq_ultra_ps_e_1_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_1/inst'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_1_0/design_1_zynq_ultra_ps_e_1_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_1/inst'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/ip/ip_1/bd_892d_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/ip/ip_1/bd_892d_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/ip/ip_1/bd_892d_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/ip/ip_1/bd_892d_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/ip/ip_1/bd_49ec_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_2/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/ip/ip_1/bd_49ec_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_2/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/ip/ip_1/bd_49ec_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_2/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/ip/ip_1/bd_49ec_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_2/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_4/bd_0/ip/ip_1/bd_8bad_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_3/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_4/bd_0/ip/ip_1/bd_8bad_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_3/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_4/bd_0/ip/ip_1/bd_8bad_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_3/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_4/bd_0/ip/ip_1/bd_8bad_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_3/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_5/bd_0/ip/ip_1/bd_4b6c_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_5/bd_0/ip/ip_1/bd_4b6c_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_5/bd_0/ip/ip_1/bd_4b6c_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_5/bd_0/ip/ip_1/bd_4b6c_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_3_0/bd_0/ip/ip_1/bd_485c_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_4/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_3_0/bd_0/ip/ip_1/bd_485c_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_4/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_3_0/bd_0/ip/ip_1/bd_485c_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_4/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_3_0/bd_0/ip/ip_1/bd_485c_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_4/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_0/bd_0/ip/ip_1/bd_89ed_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_5/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_0/bd_0/ip/ip_1/bd_89ed_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_5/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_0/bd_0/ip/ip_1/bd_89ed_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_5/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_0/bd_0/ip/ip_1/bd_89ed_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_5/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1_board.xdc] for cell 'design_1_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1_board.xdc] for cell 'design_1_i/proc_sys_reset_1/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1.xdc] for cell 'design_1_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1.xdc] for cell 'design_1_i/proc_sys_reset_1/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_2/bd_0/ip/ip_1/bd_486c_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_7/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_2/bd_0/ip/ip_1/bd_486c_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_7/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_2/bd_0/ip/ip_1/bd_486c_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_7/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_2/bd_0/ip/ip_1/bd_486c_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_7/inst/clk_map/psr_aclk/U0'
+INFO: [Project 1-1714] 333 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 4396.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1873 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 12 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 372 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 5 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 17 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 886 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 581 instances
+
+27 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:02:46 ; elapsed = 00:02:31 . Memory (MB): peak = 4396.703 ; gain = 2774.758
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 4396.703 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: e753949d
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:26 . Memory (MB): peak = 4420.887 ; gain = 24.184
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/B1_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__5 into driver instance design_1_i/Dense_0/inst/B1_m_axi_U/bus_read/fifo_rctl/state[1]_i_3__3, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/B1_m_axi_U/load_unit/buff_rdata/raddr[8]_i_1__4 into driver instance design_1_i/Dense_0/inst/B1_m_axi_U/load_unit/buff_rdata/U_fifo_mem/raddr_reg[8]_i_2__3, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/IN1_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__4 into driver instance design_1_i/Dense_0/inst/IN1_m_axi_U/bus_read/fifo_rctl/state[1]_i_3__2, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/IN1_m_axi_U/load_unit/buff_rdata/raddr[8]_i_1__3 into driver instance design_1_i/Dense_0/inst/IN1_m_axi_U/load_unit/buff_rdata/U_fifo_mem/raddr_reg[8]_i_2__2, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/OUT1_m_axi_U/bus_write/wreq_throttle/req_fifo/sect_len_buf[9]_i_1__3 into driver instance design_1_i/Dense_0/inst/OUT1_m_axi_U/bus_write/wreq_throttle/req_fifo/state[1]_i_2__5, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/OUT1_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_2 into driver instance design_1_i/Dense_0/inst/OUT1_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_4, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/W1_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__0 into driver instance design_1_i/Dense_0/inst/W1_m_axi_U/bus_read/fifo_rctl/state[1]_i_3__0, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/W1_m_axi_U/load_unit/buff_rdata/raddr[8]_i_1__0 into driver instance design_1_i/Dense_0/inst/W1_m_axi_U/load_unit/buff_rdata/U_fifo_mem/raddr_reg[8]_i_2__0, which resulted in an inversion of 22 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/W2_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__1 into driver instance design_1_i/Dense_0/inst/W2_m_axi_U/bus_read/fifo_rctl/state[1]_i_3__1, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/W2_m_axi_U/load_unit/buff_rdata/raddr[8]_i_1__1 into driver instance design_1_i/Dense_0/inst/W2_m_axi_U/load_unit/buff_rdata/U_fifo_mem/raddr_reg[8]_i_2__1, which resulted in an inversion of 22 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/W3_m_axi_U/bus_read/fifo_rctl/last_sect_buf_i_1 into driver instance design_1_i/Dense_0/inst/W3_m_axi_U/bus_read/fifo_rctl/last_sect_buf_i_2, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/W4_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1 into driver instance design_1_i/Dense_0/inst/W4_m_axi_U/bus_read/fifo_rctl/state[1]_i_3, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/Dense_0/inst/W4_m_axi_U/load_unit/buff_rdata/raddr[8]_i_1 into driver instance design_1_i/Dense_0/inst/W4_m_axi_U/load_unit/buff_rdata/U_fifo_mem/raddr_reg[8]_i_2, which resulted in an inversion of 22 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/IN1_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__11 into driver instance design_1_i/My_Conv_0/inst/IN1_m_axi_U/bus_read/fifo_rctl/state[1]_i_2__7, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/IN2_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__0 into driver instance design_1_i/My_Conv_0/inst/IN2_m_axi_U/bus_read/fifo_rctl/state[1]_i_2__0, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/IN3_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__7 into driver instance design_1_i/My_Conv_0/inst/IN3_m_axi_U/bus_read/fifo_rctl/state[1]_i_2__3, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/IN4_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__8 into driver instance design_1_i/My_Conv_0/inst/IN4_m_axi_U/bus_read/fifo_rctl/state[1]_i_2__4, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/OUT4_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_2__2 into driver instance design_1_i/My_Conv_0/inst/OUT4_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_4__2, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/W1_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1 into driver instance design_1_i/My_Conv_0/inst/W1_m_axi_U/bus_read/fifo_rctl/state[1]_i_2, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/W2_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__9 into driver instance design_1_i/My_Conv_0/inst/W2_m_axi_U/bus_read/fifo_rctl/state[1]_i_2__5, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/W3_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__1 into driver instance design_1_i/My_Conv_0/inst/W3_m_axi_U/bus_read/fifo_rctl/state[1]_i_2__1, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/W4_m_axi_U/bus_read/fifo_rctl/sect_len_buf[9]_i_1__10 into driver instance design_1_i/My_Conv_0/inst/W4_m_axi_U/bus_read/fifo_rctl/state[1]_i_2__6, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/cmp112_reg_6152[0]_i_27 into driver instance design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/grp_Load_Input_F_Pool_fu_2086/dout__0_carry_i_8, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/cmp112_reg_6152[0]_i_28 into driver instance design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/grp_Load_Input_F_Pool_fu_2086/dout__0_carry_i_7__0, which resulted in an inversion of 7 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/cmp112_reg_6152[0]_i_29 into driver instance design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/grp_Load_Input_F_Pool_fu_2086/dout__0_carry_i_10, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/grp_Compute3_fu_1610/ii_reg_78264[1]_i_1 into driver instance design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/grp_Compute3_fu_1610/ii_reg_78264[1]_i_2, which resulted in an inversion of 25 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/grp_Compute3_fu_1610/jj_reg_78269[1]_i_1 into driver instance design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/grp_Compute3_fu_1610/add_ln213_reg_78947[3]_i_2, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/mem_reg[3][65]_srl4_i_1__1 into driver instance design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/mem_reg[3][65]_srl4_i_2, which resulted in an inversion of 96 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/My_Conv_0/inst/grp_p_hls_fptosi_float_i32_fu_1319/Wout_1_reg_1236[13]_i_1 into driver instance design_1_i/My_Conv_0/inst/grp_p_hls_fptosi_float_i32_fu_1319/C_Loops_1_reg_1178[31]_i_3, which resulted in an inversion of 67 pins
+INFO: [Opt 31-138] Pushed 371 inverter(s) to 18298 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1876a7506
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 4748.723 ; gain = 0.609
+INFO: [Opt 31-389] Phase Retarget created 490 cells and removed 1248 cells
+INFO: [Opt 31-1021] In phase Retarget, 240 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 11 load pin(s).
+Phase 2 Constant propagation | Checksum: 188557085
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 4748.723 ; gain = 0.609
+INFO: [Opt 31-389] Phase Constant propagation created 452 cells and removed 4129 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 320 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 18f04189e
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:37 . Memory (MB): peak = 4748.723 ; gain = 0.609
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1524 cells
+INFO: [Opt 31-1021] In phase Sweep, 401 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 18f04189e
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:42 . Memory (MB): peak = 4748.723 ; gain = 0.609
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 18f04189e
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 4748.723 ; gain = 0.609
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 18f04189e
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:44 . Memory (MB): peak = 4748.723 ; gain = 0.609
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 240 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             490  |            1248  |                                            240  |
+|  Constant propagation         |             452  |            4129  |                                            320  |
+|  Sweep                        |               0  |            1524  |                                            401  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            240  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.427 . Memory (MB): peak = 4748.723 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1797d31eb
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:53 . Memory (MB): peak = 4748.723 ; gain = 0.609
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 138 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 42 WE to EN ports
+Number of BRAM Ports augmented: 9 newly gated: 48 Total Ports: 276
+Ending PowerOpt Patch Enables Task | Checksum: 148a374e1
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 5930.523 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 148a374e1
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:00:59 . Memory (MB): peak = 5930.523 ; gain = 1181.801
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: a2e37910
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:41 . Memory (MB): peak = 5930.523 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: a2e37910
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:46 . Memory (MB): peak = 5930.523 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 5930.523 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: a2e37910
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 5930.523 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+84 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:05:10 ; elapsed = 00:03:13 . Memory (MB): peak = 5930.523 ; gain = 1533.820
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:30 ; elapsed = 00:00:56 . Memory (MB): peak = 5930.523 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:30 ; elapsed = 00:01:02 . Memory (MB): peak = 5930.523 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/impl_1/design_1_wrapper_routed.dcp
+INFO: [Vivado 12-9151] Incremental flow is being run with directive 'RuntimeOptimized'. This will override place_design, post-place phys_opt_design and route_design directives being called in high reuse mode.
+
+Starting Incremental read checkpoint Task
+
+Phase 1 Process Reference Checkpoint Netlist
+INFO: [Netlist 29-17] Analyzing 8688 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 10 CPU seconds
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 6316.012 ; gain = 385.488
+
+Phase 2 Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 6325.434 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 6325.434 ; gain = 0.000
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:21 . Memory (MB): peak = 6325.434 ; gain = 394.910
+
+Phase 3 Replay Physical Synthesis Transforms
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+WARNING: [Vivado_Tcl 4-418] Can not find target net design_1_i/int8_fp16_0/inst/grp_int8_fp16_Pipeline_VITIS_LOOP_15_1_fu_108/ap_CS_fsm_reg_n_2_[0]
+WARNING: [Vivado_Tcl 4-418] Can not find target net design_1_i/resize_accel_0/inst/xfMat2Array_128_16_224_224_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/grp_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol_fu_79/filled_V_load_1_reg_487[5]
+WARNING: [Vivado_Tcl 4-418] Can not find target net design_1_i/resize_accel_0/inst/xfMat2Array_128_16_224_224_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/grp_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol_fu_79/filled_V_load_1_reg_487[6]
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/My_Conv_0/inst/OUT1_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg_bram_0_ENARDEN_cooolgate_en_gate_9/I0
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/My_Conv_0/inst/OUT2_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg_bram_0_ENARDEN_cooolgate_en_gate_11/I0
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/My_Conv_0/inst/OUT3_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg_bram_0_ENARDEN_cooolgate_en_gate_13/I0
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/My_Conv_0/inst/OUT4_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg_bram_0_ENARDEN_cooolgate_en_gate_15/I0
+INFO: [Physopt 32-81] Processed net design_1_i/proc_sys_reset_0/U0/peripheral_aresetn[0]. Replicated 71 times.
+INFO: [Physopt 32-81] Processed net design_1_i/My_Conv_0/inst/grp_Write_Output_F_fu_2151/ap_CS_fsm_state20. Replicated 11 times.
+INFO: [Physopt 32-81] Processed net design_1_i/My_Conv_0/inst/grp_Load_And_Compute_fu_1406/grp_Compute3_fu_1610/grp_fu_74936_ce. Replicated 10 times.
+INFO: [Physopt 32-665] Processed cell design_1_i/My_Conv_0/inst/grp_Write_Output_F_fu_2151/bound4_reg_4756_reg__0. 47 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/My_Conv_0/inst/grp_Write_Output_F_fu_2151/mul_63s_14s_63_3_1_U982/buff0_reg. 12 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/My_Conv_0/inst/grp_Write_Output_F_fu_2151/mul_ln278_reg_4675_reg__0. 46 registers were pushed out.
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/ap_CS_fsm_reg[1]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/ap_CS_fsm_reg[2]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/ap_CS_fsm_reg[3]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/grp_int8_fp16_Pipeline_VITIS_LOOP_15_1_fu_108_ap_start_reg_reg/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/ap_CS_fsm_reg[0]/S
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/beat_len_reg[8]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.ARVALID_Dummy_reg/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[10]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[11]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[12]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[13]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[14]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[15]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[16]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[17]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[18]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[19]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[20]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[21]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[22]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[23]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[24]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[25]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[26]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[27]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[28]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[29]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[2]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[30]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[31]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[32]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[33]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[34]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[35]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[36]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[37]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[38]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[39]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[3]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[40]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[41]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[42]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[43]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[44]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[45]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[46]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[47]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[48]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[49]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[4]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[50]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[51]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[52]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[53]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[54]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[55]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[56]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[57]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[58]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[59]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[5]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[60]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[61]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[62]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[63]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[6]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[7]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[8]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[9]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.arlen_buf_reg[0]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.arlen_buf_reg[1]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.arlen_buf_reg[2]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.arlen_buf_reg[3]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/could_multi_bursts.sect_handling_reg/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[10]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[11]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[12]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[13]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[14]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[15]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[16]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[17]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[18]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[19]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[20]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[21]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[22]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[23]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[24]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[25]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[26]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[27]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[28]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[29]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[2]/R
+WARNING: [Vivado_Tcl 4-417] Can not find load pin design_1_i/int8_fp16_0/inst/IN1_m_axi_U/bus_read/end_addr_reg[30]/R
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-417' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Vivado_Tcl 4-418] Can not find target net design_1_i/int8_fp16_0/inst/grp_int8_fp16_Pipeline_VITIS_LOOP_15_1_fu_108/dadd_64ns_64ns_64_8_full_dsp_1_U3/aclken
+INFO: [Vivado_Tcl 4-521] iPhys_opt_design summary: tried 41 changes and 37 changes are successfully applied
+iphys_opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 6338.879 ; gain = 13.445
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:41 . Memory (MB): peak = 6338.879 ; gain = 408.355
+
+Phase 4 Build Reuse DB
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6367.867 ; gain = 0.000
+Reading placer database...
+Read XDEF Files: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 6810.652 ; gain = 408.914
+Finished XDEF File Restore: Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 6906.250 ; gain = 504.512
+INFO: [Designutils 20-2297] Reference Design: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/impl_1/design_1_wrapper_routed.dcp, Summary | WNS = 0.017 | WHS = 0.009 | State = POST_ROUTE_PHYSOPT |
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:05:26 . Memory (MB): peak = 7345.695 ; gain = 1415.172
+
+Phase 5 Checking legality
+Phase 5 Checking legality | Checksum: 14254900a
+
+Time (s): cpu = 00:07:27 ; elapsed = 00:06:30 . Memory (MB): peak = 7747.414 ; gain = 1816.891
+
+Phase 6 Reporting
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Dec 11 21:47:04 2024
+| Host         : WIN-05S5ST9THAA running 64-bit major release  (build 9200)
+| Design       : design_1_wrapper
+| Device       : xck26
+| Design State : Optimized
+------------------------------------------------------------------------------------
+
+Incremental Implementation Information
+
+Table of Contents
+-----------------
+1. Incremental Flow Summary
+2. Reuse Summary
+3. Reference Checkpoint Information
+4. Comparison with Reference Run
+5. Optimization Comparison With Reference Run
+5.1 iphys_opt_replay Optimizations
+5.2 QoR Suggestion Optimizations
+6. Command Comparison with Reference Run
+6.1 Reference:
+6.2 Incremental:
+7. Non Reuse Information
+
+1. Incremental Flow Summary
+---------------------------
+
++-----------------------+------------------+
+|    Flow Information   |       Value      |
++-----------------------+------------------+
+| Synthesis Flow        |          Default |
+| Auto Incremental      |              Yes |
+| Incremental Directive | RuntimeOptimized |
+| Reuse mode            |             High |
+| Target WNS            |              0.0 |
+| QoR Suggestions       |                0 |
++-----------------------+------------------+
+
+
+2. Reuse Summary
+----------------
+
++-------+----------------------+----------------------------+--------------------+--------+
+|  Type | Matched % (of Total) | Current Reuse % (of Total) | Fixed % (of Total) |  Total |
++-------+----------------------+----------------------------+--------------------+--------+
+| Cells |                99.82 |                      99.82 |               0.00 | 200370 |
+| Nets  |                99.93 |                      99.47 |               0.00 | 145963 |
+| Pins  |                    - |                      99.54 |                  - | 863284 |
+| Ports |                 0.00 |                       0.00 |               0.00 |      0 |
++-------+----------------------+----------------------------+--------------------+--------+
+
+
+3. Reference Checkpoint Information
+-----------------------------------
+
++----------------+------------------------------------------------------------------------------------------+
+| DCP Location:  | D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/impl_1/design_1_wrapper_routed.dcp |
++----------------+------------------------------------------------------------------------------------------+
+
+
++--------------------------------+----------------------------+
+|         DCP Information        |            Value           |
++--------------------------------+----------------------------+
+| Vivado Version                 |                     2022.1 |
+| DCP State                      |                 POST_ROUTE |
+| Recorded WNS                   |                      0.017 |
+| Recorded WHS                   |                      0.009 |
+| Reference Speed File Version   | PRODUCTION 1.29 08-03-2020 |
+| Incremental Speed File Version | PRODUCTION 1.29 08-03-2020 |
++--------------------------------+----------------------------+
+* Recorded WNS/WHS timing numbers are estimated timing numbers. They may vary slightly from sign-off timing numbers.
+
+
+4. Comparison with Reference Run
+--------------------------------
+
++-----------------+---------------------------+---------------------------+---------------------------+
+|                 |          WNS(ns)          |  Runtime(elapsed)(hh:mm)  |    Runtime(cpu)(hh:mm)    |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|      Stage      |  Reference  | Incremental |  Reference  | Incremental |  Reference  | Incremental |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+| synth_design    |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| opt_design      |             |             |       00:03 |       00:03 |       00:05 |       00:05 |
+| read_checkpoint |             |             |             |             |             |             |
+| place_design    |      -0.018 |             |       00:16 |             |       00:23 |             |
+| phys_opt_design |       0.045 |             |     < 1 min |             |       00:01 |             |
+| route_design    |       0.017 |             |       00:35 |             |       00:51 |             |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+5. Optimization Comparison With Reference Run
+---------------------------------------------
+
+5.1 iphys_opt_replay Optimizations
+----------------------------------
+
++-------------------------+--------+------------+
+| iphys_opt_design replay | Reused | Not Reused |
++-------------------------+--------+------------+
+| dsp_register_opt        |      3 |          0 |
+| create_bufg             |      3 |          1 |
+| fanout_opt              |      3 |          0 |
+| equ_drivers_opt         |     28 |          3 |
++-------------------------+--------+------------+
+
+
+5.2 QoR Suggestion Optimizations
+--------------------------------
+
++-------------------------------------+-------+
+|           QoR Suggestions           | Value |
++-------------------------------------+-------+
+| QoR Suggestions (Recommended)       |     0 |
+|   Suggestions Included In Reference |     0 |
+|     Yet to apply                    |     0 |
+|     Applied                         |     0 |
+|     Failed to apply                 |     0 |
+|   New Suggestions (INCR_FRIENDLY=1) |     0 |
+|     Yet to apply                    |     0 |
+|     Applied                         |     0 |
+|     Failed to apply                 |     0 |
+| QoR Suggestions (Not Recommended)   |     0 |
+|   New Suggestions (INCR_FRIENDLY=0) |     0 |
+|     Yet to apply                    |     0 |
+|     Applied                         |     0 |
+|     Failed to apply                 |     0 |
+| Disabled New Suggestions            |     0 |
++-------------------------------------+-------+
+
+
+6. Command Comparison with Reference Run
+----------------------------------------
+
+6.1 Reference:
+--------------
+synth_design-verilog_define default::[not_specified] -top  design_1_wrapper -part  xck26-sfvc784-2LV-c 
+opt_design
+read_checkpoint -incremental -auto_incremental D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/impl_1/design_1_wrapper_routed.dcp
+place_design
+phys_opt_design
+route_design
+
+6.2 Incremental:
+----------------
+synth_design-verilog_define default::[not_specified] -top  design_1_wrapper -part  xck26-sfvc784-2LV-c 
+opt_design
+read_checkpoint -directive RuntimeOptimized  -incremental -auto_incremental D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/impl_1/design_1_wrapper_routed.dcp
+
+7. Non Reuse Information
+------------------------
+
++------------------------------------------------------+------+
+|                         Type                         |   %  |
++------------------------------------------------------+------+
+| Non-Reused Cells                                     | 0.17 |
+|   New                                                | 0.16 |
+|   Discarded illegal placement due to netlist changes | 0.01 |
+| Partially reused nets                                | 0.05 |
+| Non-Reused nets                                      | 0.46 |
++------------------------------------------------------+------+
+
+
+
+Time (s): cpu = 00:07:34 ; elapsed = 00:06:37 . Memory (MB): peak = 7747.414 ; gain = 1816.891
+
+Time (s): cpu = 00:07:39 ; elapsed = 00:06:42 . Memory (MB): peak = 7762.137 ; gain = 1831.613
+read_checkpoint: Time (s): cpu = 00:07:39 ; elapsed = 00:06:42 . Memory (MB): peak = 7762.137 ; gain = 1831.613
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Incremental Placer Task
+INFO: [Vivado_Tcl 4-24] Running Incremental Placer flow for unplaced cells using reference design-checkpoint 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/impl_1/design_1_wrapper_routed.dcp'.
+INFO: [Place 46-42] Incremental Compile is being run in High Reuse Mode.
+INFO: [Place 46-44] place_design is using directive Default with target WNS of 0 ns.
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 7762.137 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14254900a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7762.137 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 14254900a
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 7787.695 ; gain = 25.559
+
+Phase 1.3 Build Placer Netlist Model

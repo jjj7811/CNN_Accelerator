@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Dec 31 14:36:44 2023
+# Process ID: 95980
+# Current directory: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent150512 D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.xpr
+# Log file: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/vivado.log
+# Journal file: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3\vivado.jou
+# Running On: WIN-05S5ST9THAA, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 25632 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution4_canshu/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Pool_1216/Poll_t1/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_My_Conv_0_0
+
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:01:09 . Memory (MB): peak = 1866.652 ; gain = 203.242
+update_compile_order -fileset sources_1
+open_bd_design {D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_2
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_3
+Adding component instance block -- xilinx.com:hls:My_Pool:1.1 - My_Pool_0
+Adding component instance block -- xilinx.com:hls:My_Conv:10.9 - My_Conv_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP5/HP3_LPS_OCM from address space /My_Pool_0/Data_m_axi_gmem.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS1.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS2.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS3.
+Successfully read diagram <design_1> from block design file <D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2067.793 ; gain = 150.004

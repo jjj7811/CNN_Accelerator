@@ -1,0 +1,406 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec 11 21:20:04 2024
+# Process ID: 6192
+# Current directory: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29720 D:\Learning\CNN_Accelerator\Project\Vivado_Project\lenet3\lenet2.xpr
+# Log file: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/vivado.log
+# Journal file: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3\vivado.jou
+# Running On: WIN-05S5ST9THAA, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 33685 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3' since last save.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'D:/Learning/CNN_Accelerator/hls_t1/Conv_short/Conv_Tile129/solution9/impl'; using path 'D:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/impl' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'D:/Learning/CNN_Accelerator/hls_t1/dense/dense/solution1/impl/ip'; using path 'D:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/impl/ip' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'D:/Learning/CNN_Accelerator/resize_ip_test2/resize2/solution1/impl/ip'; using path 'D:/Vivado_program/pynq_lenet5/resize_ip_test2/resize2/solution1/impl/ip' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'D:/Learning/CNN_Accelerator/hls_t1/int2fp/int2fp/solution1/impl/ip'; using path 'D:/Vivado_program/pynq_lenet5/hls_t1/int2fp/int2fp/solution1/impl/ip' instead.
+WARNING: [Project 1-312] File not found as 'D:/Learning/CNN_Accelerator/Project/lenet2/lenet2/lenet2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp'; using path 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet2/lenet2/lenet2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/impl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/resize_ip_test2/resize2/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/int2fp/int2fp/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:50 ; elapsed = 00:00:35 . Memory (MB): peak = 1700.305 ; gain = 477.461
+update_compile_order -fileset sources_1
+open_bd_design {D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_2
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_3
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_4
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_5
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_6
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_7
+Adding component instance block -- xilinx.com:hls:resize_accel:3.0 - resize_accel_0
+Adding component instance block -- xilinx.com:hls:int8_fp16:1.2 - int8_fp16_0
+Adding component instance block -- xilinx.com:hls:Dense:1.35 - Dense_0
+Adding component instance block -- xilinx.com:hls:My_Conv:10.120 - My_Conv_0
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP1/HPC1_LPS_OCM from address space /resize_accel_0/Data_m_axi_gmem1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP1/HPC1_LPS_OCM from address space /resize_accel_0/Data_m_axi_gmem2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP1/HPC1_LPS_OCM from address space /int8_fp16_0/Data_m_axi_IN1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP1/HPC1_LPS_OCM from address space /int8_fp16_0/Data_m_axi_OUT1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_IN1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_B1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_OUT1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_W1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_W2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_W3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_W4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_B1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT4.
+Successfully read diagram <design_1> from block design file <D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1966.680 ; gain = 214.551
+delete_bd_objs [get_bd_intf_nets resize_accel_0_m_axi_gmem1] [get_bd_intf_nets smartconnect_7_M01_AXI] [get_bd_intf_nets resize_accel_0_m_axi_gmem2] [get_bd_cells resize_accel_0]
+delete_bd_objs [get_bd_intf_nets smartconnect_7_M02_AXI] [get_bd_intf_nets int8_fp16_0_m_axi_IN1] [get_bd_intf_nets int8_fp16_0_m_axi_OUT1] [get_bd_cells int8_fp16_0]
+delete_bd_objs [get_bd_intf_nets smartconnect_6_M00_AXI] [get_bd_cells smartconnect_6]
+set_property location {1 -978 -854} [get_bd_cells smartconnect_5]
+set_property location {1 -980 -610} [get_bd_cells smartconnect_7]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells smartconnect_7]
+endgroup
+set_property location {3 -10 -535} [get_bd_cells smartconnect_3]
+set_property location {3 -7 -561} [get_bd_cells smartconnect_3]
+set_property location {1 -945 -611} [get_bd_cells smartconnect_7]
+set_property location {2 -517 -663} [get_bd_cells smartconnect_4]
+validate_bd_design
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_W1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_W2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_B1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_W4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_W3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_B1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_IN1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_OUT1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W4.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_3_0: SmartConnect design_1_smartconnect_3_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_3_0: IP design_1_smartconnect_3_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_3_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /design_1_smartconnect_3_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_4_2: SmartConnect design_1_smartconnect_4_2 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_4_2: IP design_1_smartconnect_4_2 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_4_2: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /design_1_smartconnect_4_2]
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_4_0: SmartConnect design_1_smartconnect_4_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_2: SmartConnect design_1_smartconnect_0_2 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_5: SmartConnect design_1_smartconnect_0_5 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_3: SmartConnect design_1_smartconnect_0_3 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_4: SmartConnect design_1_smartconnect_0_4 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP0_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP0_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP3_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP3_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP2_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP2_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP1_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP1_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HPC0_FPD(1) and /smartconnect_5/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HPC0_FPD(1) and /smartconnect_5/M00_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /Dense_0/ap_clk have been updated from connected ip, but BD cell '/Dense_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 154998885 
+Please resolve any mismatches by directly setting properties on BD cell </Dense_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /My_Conv_0/ap_clk have been updated from connected ip, but BD cell '/My_Conv_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 199998562 
+Please resolve any mismatches by directly setting properties on BD cell </My_Conv_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2482.527 ; gain = 253.855
+delete_bd_objs [get_bd_addr_segs] [get_bd_addr_segs -excluded]
+assign_bd_address
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/Dense_0/Data_m_axi_B1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/Dense_0/Data_m_axi_IN1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/Dense_0/Data_m_axi_OUT1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/Dense_0/Data_m_axi_W1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/Dense_0/Data_m_axi_W2' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/Dense_0/Data_m_axi_W3' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/Dense_0/Data_m_axi_W4' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_B1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_IN1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_IN2' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_IN3' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_IN4' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_OUT1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_OUT2' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_OUT3' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_OUT4' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_W1' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_W2' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_W3' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/My_Conv_0/Data_m_axi_W4' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/Dense_0/Data_m_axi_B1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/Dense_0/Data_m_axi_B1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_B1.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/Dense_0/Data_m_axi_IN1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/Dense_0/Data_m_axi_IN1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_IN1.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/Dense_0/Data_m_axi_OUT1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/Dense_0/Data_m_axi_OUT1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_OUT1.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/Dense_0/Data_m_axi_W1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/Dense_0/Data_m_axi_W1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W1.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/Dense_0/Data_m_axi_W2' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/Dense_0/Data_m_axi_W2' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W2.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/Dense_0/Data_m_axi_W3' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/Dense_0/Data_m_axi_W3' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W3.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/Dense_0/Data_m_axi_W4' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/Dense_0/Data_m_axi_W4' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W4.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_B1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_B1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_B1.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_IN1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_IN1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN1.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_IN2' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_IN2' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN2.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_IN3' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_IN3' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN3.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_IN4' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_IN4' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN4.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_OUT1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_OUT1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT1.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_OUT2' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_OUT2' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT2.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_OUT3' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_OUT3' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT3.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_OUT4' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_OUT4' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT4.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_W1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_W1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_W1.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_W2' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_W2' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_W2.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_W3' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_W3' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_W3.
+Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_W4' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_W4' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_W4.
+Slave segment '/Dense_0/s_axi_control/Reg' is being assigned into address space '/zynq_ultra_ps_e_1/Data' at <0xB000_0000 [ 64K ]>.
+Slave segment '/My_Conv_0/s_axi_control/Reg' is being assigned into address space '/zynq_ultra_ps_e_1/Data' at <0xA000_0000 [ 64K ]>.
+validate_bd_design
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_W1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_W2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_B1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_W4.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_IN3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_OUT3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP5/HP3_LPS_OCM from address space /My_Conv_0/Data_m_axi_W3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_B1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_IN1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_OUT1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W1.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W2.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W3.
+Excluding slave segment /zynq_ultra_ps_e_1/SAXIGP0/HPC0_LPS_OCM from address space /Dense_0/Data_m_axi_W4.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_3_0: SmartConnect design_1_smartconnect_3_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_3_0: IP design_1_smartconnect_3_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_3_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /design_1_smartconnect_3_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_4_2: SmartConnect design_1_smartconnect_4_2 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_4_2: IP design_1_smartconnect_4_2 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_4_2: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /design_1_smartconnect_4_2]
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_4_0: SmartConnect design_1_smartconnect_4_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_2: SmartConnect design_1_smartconnect_0_2 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_5: SmartConnect design_1_smartconnect_0_5 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_3: SmartConnect design_1_smartconnect_0_3 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_4: SmartConnect design_1_smartconnect_0_4 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP0_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP0_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP3_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP3_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP2_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP2_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP1_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HP1_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HPC0_FPD(1) and /smartconnect_5/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_1/S_AXI_HPC0_FPD(1) and /smartconnect_5/M00_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /Dense_0/ap_clk have been updated from connected ip, but BD cell '/Dense_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 154998885 
+Please resolve any mismatches by directly setting properties on BD cell </Dense_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /My_Conv_0/ap_clk have been updated from connected ip, but BD cell '/My_Conv_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 199998562 
+Please resolve any mismatches by directly setting properties on BD cell </My_Conv_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2636.840 ; gain = 125.855
+set_property  ip_repo_paths  {d:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/impl d:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/impl/ip d:/Vivado_program/pynq_lenet5/hls_t1/int2fp/int2fp/solution1/impl/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/impl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/int2fp/int2fp/solution1/impl/ip'.
+set_property  ip_repo_paths  {d:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/impl d:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/impl/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/impl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/impl/ip'.
+save_bd_design
+Wrote  : <D:\Learning\CNN_Accelerator\Project\Vivado_Project\lenet3\lenet2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+save_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2747.172 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns and whs are greater than threshold, current reference dcp will be replaced
+INFO: [Project 1-1160] Copying file D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/impl_1/design_1_wrapper_routed.dcp to D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/impl_1 and adding it to utils fileset
+INFO: [Project 1-1160] Copying file D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/synth_1/design_1_wrapper.dcp to D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/synth_1 and adding it to utils fileset
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S05_AXI_arlock'(1) to pin: '/Dense_0/m_axi_B1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S00_AXI_arlock'(1) to pin: '/Dense_0/m_axi_IN1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S06_AXI_awlock'(1) to pin: '/Dense_0/m_axi_OUT1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S01_AXI_arlock'(1) to pin: '/Dense_0/m_axi_W1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S02_AXI_arlock'(1) to pin: '/Dense_0/m_axi_W2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S03_AXI_arlock'(1) to pin: '/Dense_0/m_axi_W3_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S04_AXI_arlock'(1) to pin: '/Dense_0/m_axi_W4_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S03_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_B1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_IN1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_IN2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_IN3_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_IN4_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S02_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_OUT1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S02_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_OUT2_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S02_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_OUT3_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S02_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_OUT4_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_W1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S01_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_W2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S01_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_W3_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S01_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_W4_ARLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S05_AXI_arlock'(1) to pin: '/Dense_0/m_axi_B1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S00_AXI_arlock'(1) to pin: '/Dense_0/m_axi_IN1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S06_AXI_awlock'(1) to pin: '/Dense_0/m_axi_OUT1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S01_AXI_arlock'(1) to pin: '/Dense_0/m_axi_W1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S02_AXI_arlock'(1) to pin: '/Dense_0/m_axi_W2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S03_AXI_arlock'(1) to pin: '/Dense_0/m_axi_W3_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_5/S04_AXI_arlock'(1) to pin: '/Dense_0/m_axi_W4_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S03_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_B1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_IN1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_IN2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_IN3_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_IN4_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S02_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_OUT1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S02_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_OUT2_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S02_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_OUT3_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S02_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_OUT4_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_W1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S01_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_W2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S01_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_W3_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S01_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_W4_ARLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM1_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HPC0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HPC1_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP3_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_1 .
+Exporting to file d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/hw_handoff/design_1_smartconnect_0_2.hwh
+Generated Hardware Definition File d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/synth/design_1_smartconnect_0_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/hw_handoff/design_1_smartconnect_0_3.hwh
+Generated Hardware Definition File d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/synth/design_1_smartconnect_0_3.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_2 .
+Exporting to file d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_4/bd_0/hw_handoff/design_1_smartconnect_0_4.hwh
+Generated Hardware Definition File d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_4/bd_0/synth/design_1_smartconnect_0_4.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_3 .
+Exporting to file d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_5/bd_0/hw_handoff/design_1_smartconnect_0_5.hwh
+Generated Hardware Definition File d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_5/bd_0/synth/design_1_smartconnect_0_5.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_1 .
+Exporting to file d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_3_0/bd_0/hw_handoff/design_1_smartconnect_3_0.hwh
+Generated Hardware Definition File d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_3_0/bd_0/synth/design_1_smartconnect_3_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_4 .
+Exporting to file d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_0/bd_0/hw_handoff/design_1_smartconnect_4_0.hwh
+Generated Hardware Definition File d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_0/bd_0/synth/design_1_smartconnect_4_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_5 .
+Exporting to file d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_2/bd_0/hw_handoff/design_1_smartconnect_4_2.hwh
+Generated Hardware Definition File d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_4_2/bd_0/synth/design_1_smartconnect_4_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_7 .
+Exporting to file d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File d:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_2, cache-ID = 981e508234d30daf; cache size = 13518.267 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_3, cache-ID = 5d3ebc4ca95dde58; cache size = 13518.267 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_4, cache-ID = 92e531897ce720bb; cache size = 13518.267 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_5, cache-ID = 6054e4f746f4d11a; cache size = 13518.267 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_3_0, cache-ID = 69847f9aab9b51dd; cache size = 13518.267 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_4_0, cache-ID = 1f5cb6700fa966e6; cache size = 13518.267 MB.
+config_ip_cache: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 3060.426 ; gain = 35.727
+[Wed Dec 11 21:27:47 2024] Launched design_1_smartconnect_4_2_synth_1...
+Run output will be captured here: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/design_1_smartconnect_4_2_synth_1/runme.log
+[Wed Dec 11 21:27:47 2024] Launched synth_1...
+Run output will be captured here: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:01:40 ; elapsed = 00:02:00 . Memory (MB): peak = 3060.426 ; gain = 313.254
+launch_runs impl_1 -jobs 12
+[Wed Dec 11 21:32:01 2024] Launched impl_1...
+Run output will be captured here: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 21:48:23 2024...

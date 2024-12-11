@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec 11 21:29:58 2024
+# Process ID: 29984
+# Current directory: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/synth_1/design_1_wrapper.vds
+# Journal file: D:/Learning/CNN_Accelerator/Project/Vivado_Project/lenet3/lenet2.runs/synth_1\vivado.jou
+# Running On: WIN-05S5ST9THAA, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 33685 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

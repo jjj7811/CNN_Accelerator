@@ -1,0 +1,432 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Dec 28 18:14:47 2023
+# Process ID: 36944
+# Current directory: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39612 D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.xpr
+# Log file: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/vivado.log
+# Journal file: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3\vivado.jou
+# Running On: WIN-05S5ST9THAA, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 25632 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Learning_Software/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet2/lenet2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution3_pp/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution4_canshu/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Pool_1216/Poll_t1/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1865.777 ; gain = 320.469
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {d:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution4_canshu/impl/ip d:/Vivado_program/pynq_lenet5/hls_t1/Pool_1216/Poll_t1/solution1/impl/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution4_canshu/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Pool_1216/Poll_t1/solution1/impl/ip'.
+open_bd_design {D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_2
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_3
+Adding component instance block -- xilinx.com:hls:My_Pool:1.1 - My_Pool_0
+Adding component instance block -- xilinx.com:hls:My_Conv:9.3 - My_Conv_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP5/HP3_LPS_OCM from address space /My_Pool_0/Data_m_axi_gmem.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS1.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS2.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS3.
+Successfully read diagram <design_1> from block design file <D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2055.336 ; gain = 103.121
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:My_Conv:9.4 [get_ips  design_1_My_Conv_0_0] -log ip_upgrade.log
+Upgrading 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_My_Conv_0_0 from My_conv 9.3 to My_conv 9.4
+Wrote  : <D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_My_Conv_0_0] -no_script -sync -force -quiet
+assign_bd_address
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS1.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS2' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS2' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS2.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS3' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS3' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS3.
+validate_bd_design
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP5/HP3_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS1.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS2.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS3.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP5/HP3_LPS_OCM from address space /My_Pool_0/Data_m_axi_gmem.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_3: SmartConnect design_1_smartconnect_0_3 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_1: SmartConnect design_1_smartconnect_0_1 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_2: SmartConnect design_1_smartconnect_0_2 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP1_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP1_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP3_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP3_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /My_Pool_0/ap_clk have been updated from connected ip, but BD cell '/My_Pool_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 124999101 
+Please resolve any mismatches by directly setting properties on BD cell </My_Pool_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /My_Conv_0/ap_clk have been updated from connected ip, but BD cell '/My_Conv_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 124999101 
+Please resolve any mismatches by directly setting properties on BD cell </My_Conv_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.898 ; gain = 89.211
+get_param general.MaxThreads
+2
+set_param general.MaxThreads 32
+32
+get_param general.MaxThreads
+32
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\sources_1\bd\design_1\design_1.bd> 
+reset_run synth_1
+INFO: [Project 1-1160] Copying file D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/synth_1/design_1_wrapper.dcp to D:/Vivado_program/pynq_lenet5/vivado_t1/lenet2/lenet2/lenet2.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS3_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/My_Pool_0/m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/My_Pool_0/m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS3_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/My_Pool_0/m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/My_Pool_0/m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/hw_handoff/design_1_smartconnect_0_1.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/synth/design_1_smartconnect_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_1 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/hw_handoff/design_1_smartconnect_0_2.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/synth/design_1_smartconnect_0_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_2 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/hw_handoff/design_1_smartconnect_0_3.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/synth/design_1_smartconnect_0_3.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block My_Conv_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = 7535b0d61620f087; cache size = 740.888 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 2d9713b7062c7cf7; cache size = 740.888 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = 490716c50b9b54b6; cache size = 740.888 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_1, cache-ID = ebddc8b9d2c9e4a1; cache size = 740.888 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_2, cache-ID = ffcc18ad71f1f8de; cache size = 740.888 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_3, cache-ID = 57680ee2d8ad85d7; cache size = 740.888 MB.
+config_ip_cache: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2588.168 ; gain = 8.121
+[Thu Dec 28 18:19:09 2023] Launched design_1_My_Conv_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_My_Conv_0_0_synth_1: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/design_1_My_Conv_0_0_synth_1/runme.log
+synth_1: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/synth_1/runme.log
+[Thu Dec 28 18:19:09 2023] Launched impl_1...
+Run output will be captured here: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2598.898 ; gain = 268.156
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: d:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution3_pp/impl/ip/component.xml. It will be created.
+file copy -force D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/impl_1/design_1_wrapper.bit D:/Vivado_program/pynq_lenet5/vivado_t1/hls_program/new_com4_withoutcom.bit
+get_param general.MaxThreads
+32
+set_property incremental_checkpoint {D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\utils_1\imports\synth_1\design_1_wrapper.dcp} [get_runs impl_1]
+set_property strategy Area_ExploreSequential [get_runs impl_1]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution4_canshu/impl/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Pool_1216/Poll_t1/solution1/impl/ip'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution4_canshu/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Pool_1216/Poll_t1/solution1/impl/ip'.
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution4_canshu/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Pool_1216/Poll_t1/solution1/impl/ip'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:My_Conv:9.6 [get_ips  design_1_My_Conv_0_0] -log ip_upgrade.log
+Upgrading 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_My_Conv_0_0 from My_conv 9.4 to My_conv 9.6
+Wrote  : <D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_My_Conv_0_0] -no_script -sync -force -quiet
+assign_bd_address
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS1.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS2' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS2' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS2.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS3' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS3' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS3.
+validate_bd_design
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP5/HP3_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS1.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS2.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS3.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP5/HP3_LPS_OCM from address space /My_Pool_0/Data_m_axi_gmem.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_3: SmartConnect design_1_smartconnect_0_3 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_1: SmartConnect design_1_smartconnect_0_1 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_2: SmartConnect design_1_smartconnect_0_2 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP1_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP1_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP3_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP3_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /My_Pool_0/ap_clk have been updated from connected ip, but BD cell '/My_Pool_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 124999101 
+Please resolve any mismatches by directly setting properties on BD cell </My_Pool_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /My_Conv_0/ap_clk have been updated from connected ip, but BD cell '/My_Conv_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 124999101 
+Please resolve any mismatches by directly setting properties on BD cell </My_Conv_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2666.156 ; gain = 5.449
+save_bd_design
+Wrote  : <D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\sources_1\bd\design_1\design_1.bd> 
+report_ip_status -name ip_status 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/Vivado_program/pynq_lenet5/vivado_t1/lenet2/lenet2/lenet2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS3_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/My_Pool_0/m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/My_Pool_0/m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS3_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/My_Pool_0/m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/My_Pool_0/m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/hw_handoff/design_1_smartconnect_0_1.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/synth/design_1_smartconnect_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_1 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/hw_handoff/design_1_smartconnect_0_2.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/synth/design_1_smartconnect_0_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_2 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/hw_handoff/design_1_smartconnect_0_3.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/synth/design_1_smartconnect_0_3.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block My_Conv_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = 490716c50b9b54b6; cache size = 812.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = 7535b0d61620f087; cache size = 812.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 2d9713b7062c7cf7; cache size = 812.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_1, cache-ID = ebddc8b9d2c9e4a1; cache size = 812.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_2, cache-ID = ffcc18ad71f1f8de; cache size = 812.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_3, cache-ID = 57680ee2d8ad85d7; cache size = 812.006 MB.
+config_ip_cache: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2689.230 ; gain = 0.000
+[Thu Dec 28 19:38:39 2023] Launched design_1_My_Conv_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_My_Conv_0_0_synth_1: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/design_1_My_Conv_0_0_synth_1/runme.log
+synth_1: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/synth_1/runme.log
+[Thu Dec 28 19:38:39 2023] Launched impl_1...
+Run output will be captured here: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2704.883 ; gain = 38.727
+set_property incremental_checkpoint {D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\utils_1\imports\synth_1\design_1_wrapper.dcp} [get_runs impl_1]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/Vivado_program/pynq_lenet5/vivado_t1/lenet2/lenet2/lenet2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Dec 28 19:57:36 2023] Launched synth_1...
+Run output will be captured here: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/synth_1/runme.log
+[Thu Dec 28 19:57:36 2023] Launched impl_1...
+Run output will be captured here: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3881.512 ; gain = 11.152
+INFO: [Netlist 29-17] Analyzing 7560 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 8 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:00:53 . Memory (MB): peak = 4098.781 ; gain = 1383.926
+INFO: [Common 17-344] 'open_run' was cancelled
+file copy -force D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/impl_1/design_1_wrapper.bit D:/Vivado_program/pynq_lenet5/vivado_t1/hls_program/TN16TM32.bit
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Conv_Tile129/Conv_Tile129/solution4_canshu/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_program/pynq_lenet5/hls_t1/Pool_1216/Poll_t1/solution1/impl/ip'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:My_Conv:9.7 [get_ips  design_1_My_Conv_0_0] -log ip_upgrade.log
+Upgrading 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_My_Conv_0_0 from My_conv 9.6 to My_conv 9.7
+Wrote  : <D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_My_Conv_0_0] -no_script -sync -force -quiet
+assign_bd_address
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS1' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS1' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS1.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS2' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS2' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS2.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM' is being assigned into address space '/My_Conv_0/Data_m_axi_DATA_BUS3' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM' with 'register' usage does not match address space '/My_Conv_0/Data_m_axi_DATA_BUS3' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS3.
+validate_bd_design
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP5/HP3_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS1.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS2.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /My_Conv_0/Data_m_axi_DATA_BUS3.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP5/HP3_LPS_OCM from address space /My_Pool_0/Data_m_axi_gmem.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_3: SmartConnect design_1_smartconnect_0_3 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_1: SmartConnect design_1_smartconnect_0_1 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_2: SmartConnect design_1_smartconnect_0_2 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP1_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP1_FPD(1) and /smartconnect_0/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smartconnect_1/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /smartconnect_2/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP3_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP3_FPD(1) and /smartconnect_3/M00_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /My_Pool_0/ap_clk have been updated from connected ip, but BD cell '/My_Pool_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 124999101 
+Please resolve any mismatches by directly setting properties on BD cell </My_Pool_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /My_Conv_0/ap_clk have been updated from connected ip, but BD cell '/My_Conv_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 124999101 
+Please resolve any mismatches by directly setting properties on BD cell </My_Conv_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 4098.781 ; gain = 0.000
+save_bd_design
+Wrote  : <D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\sources_1\bd\design_1\design_1.bd> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/Vivado_program/pynq_lenet5/vivado_t1/lenet2/lenet2/lenet2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS3_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/My_Pool_0/m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/My_Pool_0/m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/My_Conv_0/m_axi_DATA_BUS3_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/My_Pool_0/m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/My_Pool_0/m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/hw_handoff/design_1_smartconnect_0_1.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/synth/design_1_smartconnect_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_1 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/hw_handoff/design_1_smartconnect_0_2.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_2/bd_0/synth/design_1_smartconnect_0_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_2 .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/hw_handoff/design_1_smartconnect_0_3.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_3/bd_0/synth/design_1_smartconnect_0_3.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block My_Conv_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File d:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = 7535b0d61620f087; cache size = 1003.394 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 2d9713b7062c7cf7; cache size = 1003.394 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = 490716c50b9b54b6; cache size = 1003.394 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_1, cache-ID = ebddc8b9d2c9e4a1; cache size = 1003.394 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_2, cache-ID = ffcc18ad71f1f8de; cache size = 1003.394 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_3, cache-ID = 57680ee2d8ad85d7; cache size = 1003.394 MB.
+config_ip_cache: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 4098.781 ; gain = 0.000
+[Thu Dec 28 22:30:11 2023] Launched design_1_My_Conv_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_My_Conv_0_0_synth_1: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/design_1_My_Conv_0_0_synth_1/runme.log
+synth_1: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/synth_1/runme.log
+[Thu Dec 28 22:30:11 2023] Launched impl_1...
+Run output will be captured here: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 4098.781 ; gain = 0.000
+report_ip_status -name ip_status 
+set_property incremental_checkpoint {D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\utils_1\imports\synth_1\design_1_wrapper.dcp} [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -jobs 12
+[Thu Dec 28 23:27:22 2023] Launched impl_1...
+Run output will be captured here: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.runs/impl_1/runme.log
+set_param general.MaxThreads 16
+16
+set_property incremental_checkpoint {D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\utils_1\imports\synth_1\design_1_wrapper.dcp} [get_runs impl_1]
+reset_run impl_1 -prev_step 
+set_property incremental_checkpoint {D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\utils_1\imports\synth_1\design_1_wrapper.dcp} [get_runs impl_1]
+set_property incremental_checkpoint {D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\utils_1\imports\synth_1\design_1_wrapper.dcp} [get_runs impl_1]
+set_property incremental_checkpoint {D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.srcs\utils_1\imports\synth_1\design_1_wrapper.dcp} [get_runs impl_1]
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 28 23:38:31 2023...

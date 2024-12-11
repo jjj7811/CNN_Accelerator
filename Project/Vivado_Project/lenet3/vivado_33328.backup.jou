@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec 11 21:08:48 2024
+# Process ID: 33328
+# Current directory: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10836 D:\Vivado_program\pynq_lenet5\vivado_t1\lenet3\lenet3\lenet2.xpr
+# Log file: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/vivado.log
+# Journal file: D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3\vivado.jou
+# Running On: WIN-05S5ST9THAA, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 33685 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Vivado_program/pynq_lenet5/vivado_t1/lenet3/lenet3/lenet2.srcs/sources_1/bd/design_1/design_1.bd}
