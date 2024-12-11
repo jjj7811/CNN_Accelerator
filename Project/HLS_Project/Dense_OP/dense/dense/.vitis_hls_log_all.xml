@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="dense" solutionName="solution1" date="2024-04-20T12:10:38.837+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'Dense' consists of the following:&#x9;'sitofp' operation ('conv1', dense/dense.cpp:230) [141]  (3.24 ns)&#xD;&#xA;&#xA;&#xD;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1016.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:58.050+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (3.239ns) exceeds the target (target clock period: 4ns, clock uncertainty: 1.08ns, effective delay budget: 2.92ns).&#xD;&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-871.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:58.028+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute' (loop 'cpt_i'): Unable to enforce a carried dependence constraint (II = 31, distance = 1, offset = 1) between 'add' operation ('ret.V') and 'add' operation ('ret.V').&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:38.077+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute' (loop 'cpt_i'): Unable to enforce a carried dependence constraint (II = 27, distance = 1, offset = 1) between 'select' operation ('sum.V') and 'add' operation ('ret.V').&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:37.239+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute' (loop 'cpt_i'): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1) between 'select' operation ('sum.V') and 'add' operation ('ret.V').&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:36.923+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute' (loop 'cpt_i'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'select' operation ('sum.V') and 'add' operation ('ret.V').&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:36.274+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute' (loop 'cpt_i'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'select' operation ('sum.V') and 'add' operation ('ret.V').&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:35.063+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute' (loop 'cpt_i'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'select' operation ('sum.V') and 'add' operation ('ret.V').&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:34.116+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute' (loop 'cpt_i'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'select' operation ('sum.V') and 'add' operation ('ret.V').&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:33.134+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-957] Unable to rewind loop 'cpt_o' (dense/dense.cpp:99) in function 'Compute': loop nest is not flattened.&#xD;&#xA;Resolution: For help on HLS 200-957 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-957.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:22.686+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-954] Cannot Rewind function Load_Input because there are multiple loops inside the region (dense/dense.cpp:20:1)&#xD;&#xA;Resolution: For help on HLS 200-954 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-954.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:21.490+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'cpt_o' (dense/dense.cpp:99:14) in function 'Compute' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-960.html" projectName="dense" solutionName="solution1" date="2024-04-20T12:09:16.847+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] dense/dense.cpp:19: in function 'Load_Input': variable-indexed range selection may cause suboptimal QoR." projectName="dense" solutionName="solution1" date="2024-04-20T12:09:08.754+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'CHout' (dense/dense.cpp:137:85)" projectName="dense" solutionName="solution1" date="2024-04-20T12:08:46.396+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'CHout' (dense/dense.cpp:117:86)" projectName="dense" solutionName="solution1" date="2024-04-20T12:08:46.378+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'relu_en' (dense/dense.cpp:97:44)" projectName="dense" solutionName="solution1" date="2024-04-20T12:08:46.350+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'CHout' (dense/dense.cpp:4:74)" projectName="dense" solutionName="solution1" date="2024-04-20T12:08:46.334+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Dense_sitofp_32ns_32_7_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="dense" solutionName="solution1" date="2024-04-20T12:11:53.445+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Dense_fmul_32ns_32ns_32_6_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="dense" solutionName="solution1" date="2024-04-20T12:11:53.431+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

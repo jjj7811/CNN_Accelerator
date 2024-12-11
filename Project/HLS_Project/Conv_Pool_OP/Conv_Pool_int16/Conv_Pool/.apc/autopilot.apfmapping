@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Pool_core.cpp" path="D:\Learning\CNN_Accelerator\Project\HLS_Project\Conv_OP\Conv_short\Conv_Tile129\Pool_core.cpp"/>
+    <originFiles name="Conv_core.h" path="D:\Learning\CNN_Accelerator\Project\HLS_Project\Conv_OP\Conv_short\Conv_Tile129\Conv_core.h"/>
+    <originFiles name="Conv_core.cpp" path="D:\Learning\CNN_Accelerator\Project\HLS_Project\Conv_OP\Conv_short\Conv_Tile129\Conv_core.cpp"/>
+    <originFiles name="Compute.cpp" path="D:\Learning\CNN_Accelerator\Project\HLS_Project\Conv_OP\Conv_short\Conv_Tile129\Compute.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="D:\Learning\CNN_Accelerator\Project\HLS_Project\Conv_OP\Conv_short\Conv_Tile129\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

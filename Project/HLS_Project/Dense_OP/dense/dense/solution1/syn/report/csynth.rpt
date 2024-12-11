@@ -1,0 +1,558 @@
+
+
+================================================================
+== Synthesis Summary Report of 'Dense'
+================================================================
++ General Information: 
+    * Date:           Sat Apr 20 12:10:49 2024
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        dense
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-------------+-----+
+    |        Modules        |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |         |         |            |             |     |
+    |        & Loops        |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |     LUT     | URAM|
+    +-----------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-------------+-----+
+    |+ Dense                |  Timing|  -0.32|        -|          -|         -|        -|     -|        no|  19 (6%)|  70 (5%)|  13816 (5%)|  35296 (30%)|    -|
+    | + Load_and_Compute    |       -|   0.00|        -|          -|         -|        -|     -|        no|  17 (5%)|  67 (5%)|   6364 (2%)|  19351 (16%)|    -|
+    |  + Load_Input         |       -|   0.00|      521|  2.084e+03|         -|      521|     -|        no|        -|        -|   172 (~0%)|    534 (~0%)|    -|
+    |   o Loop 1            |       -|   2.92|      384|  1.536e+03|         3|        -|   128|        no|        -|        -|           -|            -|    -|
+    |   o input_zero        |       -|   2.92|      127|    508.000|         1|        1|   128|       yes|        -|        -|           -|            -|    -|
+    |  + Load_Weight        |       -|   0.00|     1041|  4.164e+03|         -|     1041|     -|        no|        -|  3 (~0%)|   2541 (1%)|    4496 (3%)|    -|
+    |   o load_weight       |       -|   2.92|     1040|  4.160e+03|       145|      128|     8|       yes|        -|        -|           -|            -|    -|
+    |  + Compute            |       -|   0.14|     2336|  9.344e+03|         -|     2336|     -|        no|        -|  64 (5%)|   3404 (1%)|  13472 (11%)|    -|
+    |   o cpt_o             |       -|   2.92|     2335|  9.340e+03|        73|        -|    32|        no|        -|        -|           -|            -|    -|
+    |    o cpt_i            |      II|   2.92|       68|    272.000|        37|       32|     2|       yes|        -|        -|           -|            -|    -|
+    |  o Loop 1             |       -|   2.92|       96|    384.000|         3|        -|    32|        no|        -|        -|           -|            -|    -|
+    |  o Loop 2             |       -|   2.92|       64|    256.000|         2|        -|    32|        no|        -|        -|           -|            -|    -|
+    |  o input_loop         |       -|   2.92|        -|          -|      2339|        -|     -|        no|        -|        -|           -|            -|    -|
+    | o output_loop         |       -|   2.92|        -|          -|       235|        -|     -|        no|        -|        -|           -|            -|    -|
+    |  + Write_Output       |       -|   0.00|      233|    932.000|         -|      233|     -|        no|        -|        -|   133 (~0%)|    349 (~0%)|    -|
+    |   o VITIS_LOOP_123_1  |       -|   2.92|       96|    384.000|         3|        -|    32|        no|        -|        -|           -|            -|    -|
+    |   o Loop 2            |       -|   2.92|       96|    384.000|         3|        -|    32|        no|        -|        -|           -|            -|    -|
+    |   o zero_o            |       -|   2.92|       32|    128.000|         1|        -|    32|        no|        -|        -|           -|            -|    -|
+    +-----------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_B1   | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 28          | 16          |
+| m_axi_IN1  | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 28          | 16          |
+| m_axi_OUT1 | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 28          | 28          |
+| m_axi_W1   | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 28          | 16          |
+| m_axi_W2   | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 28          | 16          |
+| m_axi_W3   | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 28          | 16          |
+| m_axi_W4   | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 28          | 16          |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 16     | 1        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register      | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL          | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER          | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER        | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR        | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | CHin          | 0x10   | 32    | W      | Data signal of CHin              |                                                                      |
+| s_axi_control | CHout         | 0x18   | 32    | W      | Data signal of CHout             |                                                                      |
+| s_axi_control | relu_en       | 0x20   | 32    | W      | Data signal of relu_en           |                                                                      |
+| s_axi_control | feature_in_1  | 0x28   | 32    | W      | Data signal of feature_in        |                                                                      |
+| s_axi_control | feature_in_2  | 0x2c   | 32    | W      | Data signal of feature_in        |                                                                      |
+| s_axi_control | Weight1_1     | 0x34   | 32    | W      | Data signal of Weight1           |                                                                      |
+| s_axi_control | Weight1_2     | 0x38   | 32    | W      | Data signal of Weight1           |                                                                      |
+| s_axi_control | Weight2_1     | 0x40   | 32    | W      | Data signal of Weight2           |                                                                      |
+| s_axi_control | Weight2_2     | 0x44   | 32    | W      | Data signal of Weight2           |                                                                      |
+| s_axi_control | Weight3_1     | 0x4c   | 32    | W      | Data signal of Weight3           |                                                                      |
+| s_axi_control | Weight3_2     | 0x50   | 32    | W      | Data signal of Weight3           |                                                                      |
+| s_axi_control | Weight4_1     | 0x58   | 32    | W      | Data signal of Weight4           |                                                                      |
+| s_axi_control | Weight4_2     | 0x5c   | 32    | W      | Data signal of Weight4           |                                                                      |
+| s_axi_control | bias_1        | 0x64   | 32    | W      | Data signal of bias              |                                                                      |
+| s_axi_control | bias_2        | 0x68   | 32    | W      | Data signal of bias              |                                                                      |
+| s_axi_control | feature_out_1 | 0x70   | 32    | W      | Data signal of feature_out       |                                                                      |
+| s_axi_control | feature_out_2 | 0x74   | 32    | W      | Data signal of feature_out       |                                                                      |
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+-------------------------------------+
+| Argument    | Direction | Datatype                            |
++-------------+-----------+-------------------------------------+
+| CHin        | in        | int                                 |
+| CHout       | in        | int                                 |
+| relu_en     | in        | int                                 |
+| feature_in  | in        | ap_fixed<16, 6, AP_RND, AP_SAT, 0>* |
+| Weight1     | in        | ap_fixed<16, 6, AP_RND, AP_SAT, 0>* |
+| Weight2     | in        | ap_fixed<16, 6, AP_RND, AP_SAT, 0>* |
+| Weight3     | in        | ap_fixed<16, 6, AP_RND, AP_SAT, 0>* |
+| Weight4     | in        | ap_fixed<16, 6, AP_RND, AP_SAT, 0>* |
+| bias        | in        | ap_fixed<16, 6, AP_RND, AP_SAT, 0>* |
+| feature_out | out       | ap_fixed<16, 6, AP_RND, AP_SAT, 0>* |
++-------------+-----------+-------------------------------------+
+
+* SW-to-HW Mapping
++-------------+---------------+-----------+----------+-----------------------------------------+
+| Argument    | HW Interface  | HW Type   | HW Usage | HW Info                                 |
++-------------+---------------+-----------+----------+-----------------------------------------+
+| CHin        | s_axi_control | register  |          | name=CHin offset=0x10 range=32          |
+| CHout       | s_axi_control | register  |          | name=CHout offset=0x18 range=32         |
+| relu_en     | s_axi_control | register  |          | name=relu_en offset=0x20 range=32       |
+| feature_in  | m_axi_IN1     | interface |          |                                         |
+| feature_in  | s_axi_control | register  | offset   | name=feature_in_1 offset=0x28 range=32  |
+| feature_in  | s_axi_control | register  | offset   | name=feature_in_2 offset=0x2c range=32  |
+| Weight1     | m_axi_W1      | interface |          |                                         |
+| Weight1     | s_axi_control | register  | offset   | name=Weight1_1 offset=0x34 range=32     |
+| Weight1     | s_axi_control | register  | offset   | name=Weight1_2 offset=0x38 range=32     |
+| Weight2     | m_axi_W2      | interface |          |                                         |
+| Weight2     | s_axi_control | register  | offset   | name=Weight2_1 offset=0x40 range=32     |
+| Weight2     | s_axi_control | register  | offset   | name=Weight2_2 offset=0x44 range=32     |
+| Weight3     | m_axi_W3      | interface |          |                                         |
+| Weight3     | s_axi_control | register  | offset   | name=Weight3_1 offset=0x4c range=32     |
+| Weight3     | s_axi_control | register  | offset   | name=Weight3_2 offset=0x50 range=32     |
+| Weight4     | m_axi_W4      | interface |          |                                         |
+| Weight4     | s_axi_control | register  | offset   | name=Weight4_1 offset=0x58 range=32     |
+| Weight4     | s_axi_control | register  | offset   | name=Weight4_2 offset=0x5c range=32     |
+| bias        | m_axi_B1      | interface |          |                                         |
+| bias        | s_axi_control | register  | offset   | name=bias_1 offset=0x64 range=32        |
+| bias        | s_axi_control | register  | offset   | name=bias_2 offset=0x68 range=32        |
+| feature_out | m_axi_OUT1    | interface |          |                                         |
+| feature_out | s_axi_control | register  | offset   | name=feature_out_1 offset=0x70 range=32 |
+| feature_out | s_axi_control | register  | offset   | name=feature_out_2 offset=0x74 range=32 |
++-------------+---------------+-----------+----------+-----------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+-----------+--------+-------+-----------------------+
+| HW Interface | Loop      | Direction | Length | Width | Location              |
++--------------+-----------+-----------+--------+-------+-----------------------+
+| m_axi_IN1    | anonymous | read      | 128    | 16    | dense/dense.cpp:23:5  |
+| m_axi_B1     | anonymous | read      | 32     | 16    | dense/dense.cpp:7:5   |
+| m_axi_OUT1   | anonymous | write     | 32     | 16    | dense/dense.cpp:129:5 |
++--------------+-----------+-----------+--------+-------+-----------------------+
+
+* Inferred Bursts and Widening Missed
++-------------------------------------------+-------------+-------------+-------------------------------------------------------------------------------------------------------+------------+-----------------------+
+| HW Interface                              | Variable    | Loop        | Problem                                                                                               | Resolution | Location              |
++-------------------------------------------+-------------+-------------+-------------------------------------------------------------------------------------------------------+------------+-----------------------+
+| m_axi_W1,W1,W1,W1,W1,W1,W1,W1,W1          | Weight1     | load_weight | Stride is incompatible                                                                                | 214-230    | dense/dense.cpp:61:5  |
+| m_axi_W2,W2,W2,W2,W2,W2,W2,W2,W2          | Weight2     | load_weight | Stride is incompatible                                                                                | 214-230    | dense/dense.cpp:61:5  |
+| m_axi_W3,W3,W3,W3,W3,W3,W3,W3,W3          | Weight3     | load_weight | Stride is incompatible                                                                                | 214-230    | dense/dense.cpp:61:5  |
+| m_axi_W4,W4,W4,W4,W4,W4,W4,W4,W4          | Weight4     | load_weight | Stride is incompatible                                                                                | 214-230    | dense/dense.cpp:61:5  |
+| m_axi_OUT1,OUT1,OUT1,OUT1                 | feature_out | anonymous   | Could not widen since type i16 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | dense/dense.cpp:129:5 |
+| m_axi_B1,B1,B1                            | bias        | anonymous   | Could not widen since type i16 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | dense/dense.cpp:7:5   |
+| m_axi_IN1,IN1,IN1,IN1,IN1,IN1,IN1,IN1,IN1 | feature_in  | anonymous   | Could not widen since type i16 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | dense/dense.cpp:23:5  |
++-------------------------------------------+-------------+-------------+-------------------------------------------------------------------------------------------------------+------------+-----------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------+-----+--------+--------------+------+--------+---------+
+| Name                                 | DSP | Pragma | Variable     | Op   | Impl   | Latency |
++--------------------------------------+-----+--------+--------------+------+--------+---------+
+| + Dense                              | 70  |        |              |      |        |         |
+|   fmul_32ns_32ns_32_6_max_dsp_1_U114 | 3   |        | dc           | fmul | maxdsp | 5       |
+|   data_V_1_fu_704_p2                 | -   |        | data_V_1     | add  | fabric | 0       |
+|   add_ln346_fu_1011_p2               | -   |        | add_ln346    | add  | fabric | 0       |
+|   sub_ln1512_fu_1025_p2              | -   |        | sub_ln1512   | sub  | fabric | 0       |
+|   result_V_2_fu_1105_p2              | -   |        | result_V_2   | sub  | fabric | 0       |
+|   fmul_32ns_32ns_32_6_max_dsp_1_U114 | 3   |        | dc_2         | fmul | maxdsp | 5       |
+|   data_V_4_fu_565_p2                 | -   |        | data_V_4     | add  | fabric | 0       |
+|   add_ln346_1_fu_886_p2              | -   |        | add_ln346_1  | add  | fabric | 0       |
+|   sub_ln1512_1_fu_900_p2             | -   |        | sub_ln1512_1 | sub  | fabric | 0       |
+|   result_V_6_fu_1093_p2              | -   |        | result_V_6   | sub  | fabric | 0       |
+|   sub_fu_1120_p2                     | -   |        | sub          | add  | fabric | 0       |
+|   add_ln241_fu_1126_p2               | -   |        | add_ln241    | add  | fabric | 0       |
+|   Out_LP_now_2_fu_1149_p2            | -   |        | Out_LP_now_2 | add  | fabric | 0       |
+|   add_ln242_fu_1155_p2               | -   |        | add_ln242    | add  | fabric | 0       |
+|  + Load_and_Compute                  | 67  |        |              |      |        |         |
+|    add_ln7_fu_342_p2                 | -   |        | add_ln7      | add  | fabric | 0       |
+|    empty_215_fu_386_p2               | -   |        | empty_215    | add  | fabric | 0       |
+|    empty_217_fu_416_p2               | -   |        | empty_217    | add  | fabric | 0       |
+|    add_ln185_fu_432_p2               | -   |        | add_ln185    | add  | fabric | 0       |
+|    In_LP_now_2_fu_449_p2             | -   |        | In_LP_now_2  | add  | fabric | 0       |
+|    add_ln187_fu_459_p2               | -   |        | add_ln187    | add  | fabric | 0       |
+|   + Load_Input                       | 0   |        |              |      |        |         |
+|     add_ln23_fu_186_p2               | -   |        | add_ln23     | add  | fabric | 0       |
+|     empty_223_fu_233_p2              | -   |        | empty_223    | add  | fabric | 0       |
+|     In_Min_fu_258_p2                 | -   |        | In_Min       | sub  | fabric | 0       |
+|     i_fu_314_p2                      | -   |        | i            | add  | fabric | 0       |
+|   + Load_Weight                      | 3   |        |              |      |        |         |
+|     mul_32s_32s_63_2_1_U6            | 3   |        | mul_ln61     | mul  | auto   | 1       |
+|     add_ln61_fu_1732_p2              | -   |        | add_ln61     | add  | fabric | 0       |
+|     mul_3ns_32s_35_2_1_U7            | -   |        | mul_ln63     | mul  | auto   | 1       |
+|     add_ln61_1_fu_1750_p2            | -   |        | add_ln61_1   | add  | fabric | 0       |
+|     add_ln63_4_fu_1784_p2            | -   |        | add_ln63_4   | add  | fabric | 0       |
+|     add_ln63_1_fu_1808_p2            | -   |        | add_ln63_1   | add  | fabric | 0       |
+|     add_ln63_8_fu_1814_p2            | -   |        | add_ln63_8   | add  | fabric | 0       |
+|     add_ln63_6_fu_1824_p2            | -   |        | add_ln63_6   | add  | fabric | 0       |
+|     add_ln63_3_fu_1868_p2            | -   |        | add_ln63_3   | add  | fabric | 0       |
+|     add_ln63_9_fu_1829_p2            | -   |        | add_ln63_9   | add  | fabric | 0       |
+|     add_ln63_5_fu_1881_p2            | -   |        | add_ln63_5   | add  | fabric | 0       |
+|     add_ln63_10_fu_1835_p2           | -   |        | add_ln63_10  | add  | fabric | 0       |
+|     add_ln63_7_fu_1894_p2            | -   |        | add_ln63_7   | add  | fabric | 0       |
+|     i_fu_2026_p2                     | -   |        | i            | add  | fabric | 0       |
+|   + Compute                          | 64  |        |              |      |        |         |
+|     i_fu_793_p2                      | -   |        | i            | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U22       | 1   | yes    | r_V_130      | mul  | dsp48  | 3       |
+|     tp_V_1_fu_1139_p2                | -   |        | tp_V_1       | add  | fabric | 0       |
+|     ret_V_fu_1586_p2                 | -   |        | ret_V        | add  | fabric | 0       |
+|     sum_V_1_fu_1600_p2               | -   |        | sum_V_1      | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U23       | 1   | yes    | r_V_131      | mul  | dsp48  | 3       |
+|     tp_V_4_fu_1330_p2                | -   |        | tp_V_4       | add  | fabric | 0       |
+|     ret_V_1_fu_1669_p2               | -   |        | ret_V_1      | add  | fabric | 0       |
+|     sum_V_3_fu_1683_p2               | -   |        | sum_V_3      | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U24       | 1   | yes    | r_V          | mul  | dsp48  | 3       |
+|     tp_V_7_fu_1765_p2                | -   |        | tp_V_7       | add  | fabric | 0       |
+|     ret_V_2_fu_2209_p2               | -   |        | ret_V_2      | add  | fabric | 0       |
+|     sum_V_5_fu_2223_p2               | -   |        | sum_V_5      | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U25       | 1   | yes    | r_V_132      | mul  | dsp48  | 3       |
+|     tp_V_10_fu_1956_p2               | -   |        | tp_V_10      | add  | fabric | 0       |
+|     ret_V_3_fu_2291_p2               | -   |        | ret_V_3      | add  | fabric | 0       |
+|     sum_V_7_fu_2305_p2               | -   |        | sum_V_7      | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U26       | 1   | yes    | r_V_133      | mul  | dsp48  | 3       |
+|     tp_V_13_fu_2387_p2               | -   |        | tp_V_13      | add  | fabric | 0       |
+|     ret_V_4_fu_2833_p2               | -   |        | ret_V_4      | add  | fabric | 0       |
+|     sum_V_9_fu_2847_p2               | -   |        | sum_V_9      | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U27       | 1   | yes    | r_V_134      | mul  | dsp48  | 3       |
+|     tp_V_16_fu_2578_p2               | -   |        | tp_V_16      | add  | fabric | 0       |
+|     ret_V_5_fu_2915_p2               | -   |        | ret_V_5      | add  | fabric | 0       |
+|     sum_V_11_fu_2929_p2              | -   |        | sum_V_11     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U28       | 1   | yes    | r_V_135      | mul  | dsp48  | 3       |
+|     tp_V_19_fu_3011_p2               | -   |        | tp_V_19      | add  | fabric | 0       |
+|     ret_V_6_fu_3455_p2               | -   |        | ret_V_6      | add  | fabric | 0       |
+|     sum_V_13_fu_3469_p2              | -   |        | sum_V_13     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U29       | 1   | yes    | r_V_136      | mul  | dsp48  | 3       |
+|     tp_V_22_fu_3202_p2               | -   |        | tp_V_22      | add  | fabric | 0       |
+|     ret_V_7_fu_3537_p2               | -   |        | ret_V_7      | add  | fabric | 0       |
+|     sum_V_15_fu_3551_p2              | -   |        | sum_V_15     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U30       | 1   | yes    | r_V_137      | mul  | dsp48  | 3       |
+|     tp_V_25_fu_3633_p2               | -   |        | tp_V_25      | add  | fabric | 0       |
+|     ret_V_8_fu_4033_p2               | -   |        | ret_V_8      | add  | fabric | 0       |
+|     sum_V_17_fu_4047_p2              | -   |        | sum_V_17     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U31       | 1   | yes    | r_V_138      | mul  | dsp48  | 3       |
+|     tp_V_28_fu_3824_p2               | -   |        | tp_V_28      | add  | fabric | 0       |
+|     ret_V_9_fu_4115_p2               | -   |        | ret_V_9      | add  | fabric | 0       |
+|     sum_V_19_fu_4129_p2              | -   |        | sum_V_19     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U32       | 1   | yes    | r_V_139      | mul  | dsp48  | 3       |
+|     tp_V_31_fu_4211_p2               | -   |        | tp_V_31      | add  | fabric | 0       |
+|     ret_V_10_fu_4591_p2              | -   |        | ret_V_10     | add  | fabric | 0       |
+|     sum_V_21_fu_4605_p2              | -   |        | sum_V_21     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U33       | 1   | yes    | r_V_140      | mul  | dsp48  | 3       |
+|     tp_V_34_fu_4402_p2               | -   |        | tp_V_34      | add  | fabric | 0       |
+|     ret_V_11_fu_4673_p2              | -   |        | ret_V_11     | add  | fabric | 0       |
+|     sum_V_23_fu_4687_p2              | -   |        | sum_V_23     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U34       | 1   | yes    | r_V_141      | mul  | dsp48  | 3       |
+|     tp_V_37_fu_4769_p2               | -   |        | tp_V_37      | add  | fabric | 0       |
+|     ret_V_12_fu_5149_p2              | -   |        | ret_V_12     | add  | fabric | 0       |
+|     sum_V_25_fu_5163_p2              | -   |        | sum_V_25     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U35       | 1   | yes    | r_V_142      | mul  | dsp48  | 3       |
+|     tp_V_40_fu_4960_p2               | -   |        | tp_V_40      | add  | fabric | 0       |
+|     ret_V_13_fu_5231_p2              | -   |        | ret_V_13     | add  | fabric | 0       |
+|     sum_V_27_fu_5245_p2              | -   |        | sum_V_27     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U36       | 1   | yes    | r_V_143      | mul  | dsp48  | 3       |
+|     tp_V_43_fu_5327_p2               | -   |        | tp_V_43      | add  | fabric | 0       |
+|     ret_V_14_fu_5709_p2              | -   |        | ret_V_14     | add  | fabric | 0       |
+|     sum_V_29_fu_5723_p2              | -   |        | sum_V_29     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U37       | 1   | yes    | r_V_144      | mul  | dsp48  | 3       |
+|     tp_V_46_fu_5518_p2               | -   |        | tp_V_46      | add  | fabric | 0       |
+|     ret_V_15_fu_5791_p2              | -   |        | ret_V_15     | add  | fabric | 0       |
+|     sum_V_31_fu_5805_p2              | -   |        | sum_V_31     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U38       | 1   | yes    | r_V_145      | mul  | dsp48  | 3       |
+|     tp_V_49_fu_5887_p2               | -   |        | tp_V_49      | add  | fabric | 0       |
+|     ret_V_16_fu_6267_p2              | -   |        | ret_V_16     | add  | fabric | 0       |
+|     sum_V_33_fu_6281_p2              | -   |        | sum_V_33     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U39       | 1   | yes    | r_V_146      | mul  | dsp48  | 3       |
+|     tp_V_52_fu_6078_p2               | -   |        | tp_V_52      | add  | fabric | 0       |
+|     ret_V_17_fu_6349_p2              | -   |        | ret_V_17     | add  | fabric | 0       |
+|     sum_V_35_fu_6363_p2              | -   |        | sum_V_35     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U40       | 1   | yes    | r_V_147      | mul  | dsp48  | 3       |
+|     tp_V_55_fu_6445_p2               | -   |        | tp_V_55      | add  | fabric | 0       |
+|     ret_V_18_fu_6825_p2              | -   |        | ret_V_18     | add  | fabric | 0       |
+|     sum_V_37_fu_6839_p2              | -   |        | sum_V_37     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U41       | 1   | yes    | r_V_148      | mul  | dsp48  | 3       |
+|     tp_V_58_fu_6636_p2               | -   |        | tp_V_58      | add  | fabric | 0       |
+|     ret_V_19_fu_6907_p2              | -   |        | ret_V_19     | add  | fabric | 0       |
+|     sum_V_39_fu_6921_p2              | -   |        | sum_V_39     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U42       | 1   | yes    | r_V_149      | mul  | dsp48  | 3       |
+|     tp_V_61_fu_7003_p2               | -   |        | tp_V_61      | add  | fabric | 0       |
+|     ret_V_20_fu_7383_p2              | -   |        | ret_V_20     | add  | fabric | 0       |
+|     sum_V_41_fu_7397_p2              | -   |        | sum_V_41     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U43       | 1   | yes    | r_V_150      | mul  | dsp48  | 3       |
+|     tp_V_64_fu_7194_p2               | -   |        | tp_V_64      | add  | fabric | 0       |
+|     ret_V_21_fu_7465_p2              | -   |        | ret_V_21     | add  | fabric | 0       |
+|     sum_V_43_fu_7479_p2              | -   |        | sum_V_43     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U44       | 1   | yes    | r_V_151      | mul  | dsp48  | 3       |
+|     tp_V_67_fu_7561_p2               | -   |        | tp_V_67      | add  | fabric | 0       |
+|     ret_V_22_fu_7941_p2              | -   |        | ret_V_22     | add  | fabric | 0       |
+|     sum_V_45_fu_7955_p2              | -   |        | sum_V_45     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U45       | 1   | yes    | r_V_152      | mul  | dsp48  | 3       |
+|     tp_V_70_fu_7752_p2               | -   |        | tp_V_70      | add  | fabric | 0       |
+|     ret_V_23_fu_8023_p2              | -   |        | ret_V_23     | add  | fabric | 0       |
+|     sum_V_47_fu_8037_p2              | -   |        | sum_V_47     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U46       | 1   | yes    | r_V_153      | mul  | dsp48  | 3       |
+|     tp_V_73_fu_8119_p2               | -   |        | tp_V_73      | add  | fabric | 0       |
+|     ret_V_24_fu_8503_p2              | -   |        | ret_V_24     | add  | fabric | 0       |
+|     sum_V_49_fu_8517_p2              | -   |        | sum_V_49     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U47       | 1   | yes    | r_V_154      | mul  | dsp48  | 3       |
+|     tp_V_76_fu_8310_p2               | -   |        | tp_V_76      | add  | fabric | 0       |
+|     ret_V_25_fu_8585_p2              | -   |        | ret_V_25     | add  | fabric | 0       |
+|     sum_V_51_fu_8599_p2              | -   |        | sum_V_51     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U48       | 1   | yes    | r_V_155      | mul  | dsp48  | 3       |
+|     tp_V_79_fu_8681_p2               | -   |        | tp_V_79      | add  | fabric | 0       |
+|     ret_V_26_fu_9063_p2              | -   |        | ret_V_26     | add  | fabric | 0       |
+|     sum_V_53_fu_9077_p2              | -   |        | sum_V_53     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U49       | 1   | yes    | r_V_156      | mul  | dsp48  | 3       |
+|     tp_V_82_fu_8872_p2               | -   |        | tp_V_82      | add  | fabric | 0       |
+|     ret_V_27_fu_9145_p2              | -   |        | ret_V_27     | add  | fabric | 0       |
+|     sum_V_55_fu_9159_p2              | -   |        | sum_V_55     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U50       | 1   | yes    | r_V_157      | mul  | dsp48  | 3       |
+|     tp_V_85_fu_9241_p2               | -   |        | tp_V_85      | add  | fabric | 0       |
+|     ret_V_28_fu_9621_p2              | -   |        | ret_V_28     | add  | fabric | 0       |
+|     sum_V_57_fu_9635_p2              | -   |        | sum_V_57     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U51       | 1   | yes    | r_V_158      | mul  | dsp48  | 3       |
+|     tp_V_88_fu_9432_p2               | -   |        | tp_V_88      | add  | fabric | 0       |
+|     ret_V_29_fu_9703_p2              | -   |        | ret_V_29     | add  | fabric | 0       |
+|     sum_V_59_fu_9717_p2              | -   |        | sum_V_59     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U52       | 1   | yes    | r_V_159      | mul  | dsp48  | 3       |
+|     tp_V_91_fu_9799_p2               | -   |        | tp_V_91      | add  | fabric | 0       |
+|     ret_V_30_fu_10179_p2             | -   |        | ret_V_30     | add  | fabric | 0       |
+|     sum_V_61_fu_10193_p2             | -   |        | sum_V_61     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U53       | 1   | yes    | r_V_160      | mul  | dsp48  | 3       |
+|     tp_V_94_fu_9990_p2               | -   |        | tp_V_94      | add  | fabric | 0       |
+|     ret_V_31_fu_10261_p2             | -   |        | ret_V_31     | add  | fabric | 0       |
+|     sum_V_63_fu_10275_p2             | -   |        | sum_V_63     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U54       | 1   | yes    | r_V_161      | mul  | dsp48  | 3       |
+|     tp_V_97_fu_10357_p2              | -   |        | tp_V_97      | add  | fabric | 0       |
+|     ret_V_32_fu_10737_p2             | -   |        | ret_V_32     | add  | fabric | 0       |
+|     sum_V_65_fu_10751_p2             | -   |        | sum_V_65     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U55       | 1   | yes    | r_V_162      | mul  | dsp48  | 3       |
+|     tp_V_100_fu_10548_p2             | -   |        | tp_V_100     | add  | fabric | 0       |
+|     ret_V_33_fu_10819_p2             | -   |        | ret_V_33     | add  | fabric | 0       |
+|     sum_V_67_fu_10833_p2             | -   |        | sum_V_67     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U56       | 1   | yes    | r_V_163      | mul  | dsp48  | 3       |
+|     tp_V_103_fu_10915_p2             | -   |        | tp_V_103     | add  | fabric | 0       |
+|     ret_V_34_fu_11295_p2             | -   |        | ret_V_34     | add  | fabric | 0       |
+|     sum_V_69_fu_11309_p2             | -   |        | sum_V_69     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U57       | 1   | yes    | r_V_164      | mul  | dsp48  | 3       |
+|     tp_V_106_fu_11106_p2             | -   |        | tp_V_106     | add  | fabric | 0       |
+|     ret_V_35_fu_11377_p2             | -   |        | ret_V_35     | add  | fabric | 0       |
+|     sum_V_71_fu_11391_p2             | -   |        | sum_V_71     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U58       | 1   | yes    | r_V_165      | mul  | dsp48  | 3       |
+|     tp_V_109_fu_11473_p2             | -   |        | tp_V_109     | add  | fabric | 0       |
+|     ret_V_36_fu_11857_p2             | -   |        | ret_V_36     | add  | fabric | 0       |
+|     sum_V_73_fu_11871_p2             | -   |        | sum_V_73     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U59       | 1   | yes    | r_V_166      | mul  | dsp48  | 3       |
+|     tp_V_112_fu_11664_p2             | -   |        | tp_V_112     | add  | fabric | 0       |
+|     ret_V_37_fu_11939_p2             | -   |        | ret_V_37     | add  | fabric | 0       |
+|     sum_V_75_fu_11953_p2             | -   |        | sum_V_75     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U60       | 1   | yes    | r_V_167      | mul  | dsp48  | 3       |
+|     tp_V_115_fu_12035_p2             | -   |        | tp_V_115     | add  | fabric | 0       |
+|     ret_V_38_fu_12415_p2             | -   |        | ret_V_38     | add  | fabric | 0       |
+|     sum_V_77_fu_12429_p2             | -   |        | sum_V_77     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U61       | 1   | yes    | r_V_168      | mul  | dsp48  | 3       |
+|     tp_V_118_fu_12226_p2             | -   |        | tp_V_118     | add  | fabric | 0       |
+|     ret_V_39_fu_12497_p2             | -   |        | ret_V_39     | add  | fabric | 0       |
+|     sum_V_79_fu_12511_p2             | -   |        | sum_V_79     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U62       | 1   | yes    | r_V_169      | mul  | dsp48  | 3       |
+|     tp_V_121_fu_12593_p2             | -   |        | tp_V_121     | add  | fabric | 0       |
+|     ret_V_40_fu_12973_p2             | -   |        | ret_V_40     | add  | fabric | 0       |
+|     sum_V_81_fu_12987_p2             | -   |        | sum_V_81     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U63       | 1   | yes    | r_V_170      | mul  | dsp48  | 3       |
+|     tp_V_124_fu_12784_p2             | -   |        | tp_V_124     | add  | fabric | 0       |
+|     ret_V_41_fu_13055_p2             | -   |        | ret_V_41     | add  | fabric | 0       |
+|     sum_V_83_fu_13069_p2             | -   |        | sum_V_83     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U64       | 1   | yes    | r_V_171      | mul  | dsp48  | 3       |
+|     tp_V_127_fu_13151_p2             | -   |        | tp_V_127     | add  | fabric | 0       |
+|     ret_V_42_fu_13531_p2             | -   |        | ret_V_42     | add  | fabric | 0       |
+|     sum_V_85_fu_13545_p2             | -   |        | sum_V_85     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U65       | 1   | yes    | r_V_172      | mul  | dsp48  | 3       |
+|     tp_V_130_fu_13342_p2             | -   |        | tp_V_130     | add  | fabric | 0       |
+|     ret_V_43_fu_13613_p2             | -   |        | ret_V_43     | add  | fabric | 0       |
+|     sum_V_87_fu_13627_p2             | -   |        | sum_V_87     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U66       | 1   | yes    | r_V_173      | mul  | dsp48  | 3       |
+|     tp_V_133_fu_13709_p2             | -   |        | tp_V_133     | add  | fabric | 0       |
+|     ret_V_44_fu_14089_p2             | -   |        | ret_V_44     | add  | fabric | 0       |
+|     sum_V_89_fu_14103_p2             | -   |        | sum_V_89     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U67       | 1   | yes    | r_V_174      | mul  | dsp48  | 3       |
+|     tp_V_136_fu_13900_p2             | -   |        | tp_V_136     | add  | fabric | 0       |
+|     ret_V_45_fu_14171_p2             | -   |        | ret_V_45     | add  | fabric | 0       |
+|     sum_V_91_fu_14185_p2             | -   |        | sum_V_91     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U68       | 1   | yes    | r_V_175      | mul  | dsp48  | 3       |
+|     tp_V_139_fu_14267_p2             | -   |        | tp_V_139     | add  | fabric | 0       |
+|     ret_V_46_fu_14649_p2             | -   |        | ret_V_46     | add  | fabric | 0       |
+|     sum_V_93_fu_14663_p2             | -   |        | sum_V_93     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U69       | 1   | yes    | r_V_176      | mul  | dsp48  | 3       |
+|     tp_V_142_fu_14458_p2             | -   |        | tp_V_142     | add  | fabric | 0       |
+|     ret_V_47_fu_14731_p2             | -   |        | ret_V_47     | add  | fabric | 0       |
+|     sum_V_95_fu_14745_p2             | -   |        | sum_V_95     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U70       | 1   | yes    | r_V_177      | mul  | dsp48  | 3       |
+|     tp_V_145_fu_14827_p2             | -   |        | tp_V_145     | add  | fabric | 0       |
+|     ret_V_48_fu_15207_p2             | -   |        | ret_V_48     | add  | fabric | 0       |
+|     sum_V_97_fu_15221_p2             | -   |        | sum_V_97     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U71       | 1   | yes    | r_V_178      | mul  | dsp48  | 3       |
+|     tp_V_148_fu_15018_p2             | -   |        | tp_V_148     | add  | fabric | 0       |
+|     ret_V_49_fu_15289_p2             | -   |        | ret_V_49     | add  | fabric | 0       |
+|     sum_V_99_fu_15303_p2             | -   |        | sum_V_99     | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U72       | 1   | yes    | r_V_179      | mul  | dsp48  | 3       |
+|     tp_V_151_fu_15385_p2             | -   |        | tp_V_151     | add  | fabric | 0       |
+|     ret_V_50_fu_15765_p2             | -   |        | ret_V_50     | add  | fabric | 0       |
+|     sum_V_101_fu_15779_p2            | -   |        | sum_V_101    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U73       | 1   | yes    | r_V_180      | mul  | dsp48  | 3       |
+|     tp_V_154_fu_15576_p2             | -   |        | tp_V_154     | add  | fabric | 0       |
+|     ret_V_51_fu_15847_p2             | -   |        | ret_V_51     | add  | fabric | 0       |
+|     sum_V_103_fu_15861_p2            | -   |        | sum_V_103    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U74       | 1   | yes    | r_V_181      | mul  | dsp48  | 3       |
+|     tp_V_157_fu_15943_p2             | -   |        | tp_V_157     | add  | fabric | 0       |
+|     ret_V_52_fu_16323_p2             | -   |        | ret_V_52     | add  | fabric | 0       |
+|     sum_V_105_fu_16337_p2            | -   |        | sum_V_105    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U75       | 1   | yes    | r_V_182      | mul  | dsp48  | 3       |
+|     tp_V_160_fu_16134_p2             | -   |        | tp_V_160     | add  | fabric | 0       |
+|     ret_V_53_fu_16405_p2             | -   |        | ret_V_53     | add  | fabric | 0       |
+|     sum_V_107_fu_16419_p2            | -   |        | sum_V_107    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U76       | 1   | yes    | r_V_183      | mul  | dsp48  | 3       |
+|     tp_V_163_fu_16501_p2             | -   |        | tp_V_163     | add  | fabric | 0       |
+|     ret_V_54_fu_16881_p2             | -   |        | ret_V_54     | add  | fabric | 0       |
+|     sum_V_109_fu_16895_p2            | -   |        | sum_V_109    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U77       | 1   | yes    | r_V_184      | mul  | dsp48  | 3       |
+|     tp_V_166_fu_16692_p2             | -   |        | tp_V_166     | add  | fabric | 0       |
+|     ret_V_55_fu_16963_p2             | -   |        | ret_V_55     | add  | fabric | 0       |
+|     sum_V_111_fu_16977_p2            | -   |        | sum_V_111    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U78       | 1   | yes    | r_V_185      | mul  | dsp48  | 3       |
+|     tp_V_169_fu_17059_p2             | -   |        | tp_V_169     | add  | fabric | 0       |
+|     ret_V_56_fu_17443_p2             | -   |        | ret_V_56     | add  | fabric | 0       |
+|     sum_V_113_fu_17457_p2            | -   |        | sum_V_113    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U79       | 1   | yes    | r_V_186      | mul  | dsp48  | 3       |
+|     tp_V_172_fu_17250_p2             | -   |        | tp_V_172     | add  | fabric | 0       |
+|     ret_V_57_fu_17525_p2             | -   |        | ret_V_57     | add  | fabric | 0       |
+|     sum_V_115_fu_17539_p2            | -   |        | sum_V_115    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U80       | 1   | yes    | r_V_187      | mul  | dsp48  | 3       |
+|     tp_V_175_fu_17621_p2             | -   |        | tp_V_175     | add  | fabric | 0       |
+|     ret_V_58_fu_17989_p2             | -   |        | ret_V_58     | add  | fabric | 0       |
+|     sum_V_117_fu_18003_p2            | -   |        | sum_V_117    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U81       | 1   | yes    | r_V_188      | mul  | dsp48  | 3       |
+|     tp_V_178_fu_17812_p2             | -   |        | tp_V_178     | add  | fabric | 0       |
+|     ret_V_59_fu_18071_p2             | -   |        | ret_V_59     | add  | fabric | 0       |
+|     sum_V_119_fu_18085_p2            | -   |        | sum_V_119    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U82       | 1   | yes    | r_V_189      | mul  | dsp48  | 3       |
+|     tp_V_181_fu_18167_p2             | -   |        | tp_V_181     | add  | fabric | 0       |
+|     ret_V_60_fu_18535_p2             | -   |        | ret_V_60     | add  | fabric | 0       |
+|     sum_V_121_fu_18549_p2            | -   |        | sum_V_121    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U83       | 1   | yes    | r_V_190      | mul  | dsp48  | 3       |
+|     tp_V_184_fu_18358_p2             | -   |        | tp_V_184     | add  | fabric | 0       |
+|     ret_V_61_fu_18617_p2             | -   |        | ret_V_61     | add  | fabric | 0       |
+|     sum_V_123_fu_18631_p2            | -   |        | sum_V_123    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U84       | 1   | yes    | r_V_191      | mul  | dsp48  | 3       |
+|     tp_V_187_fu_18713_p2             | -   |        | tp_V_187     | add  | fabric | 0       |
+|     ret_V_62_fu_19081_p2             | -   |        | ret_V_62     | add  | fabric | 0       |
+|     sum_V_125_fu_19095_p2            | -   |        | sum_V_125    | add  | fabric | 0       |
+|     mul_mul_16s_16s_32_4_1_U85       | 1   | yes    | r_V_192      | mul  | dsp48  | 3       |
+|     tp_V_190_fu_18904_p2             | -   |        | tp_V_190     | add  | fabric | 0       |
+|     ret_V_63_fu_19163_p2             | -   |        | ret_V_63     | add  | fabric | 0       |
+|     sum_V_127_fu_19177_p2            | -   |        | sum_V_127    | add  | fabric | 0       |
+|     j_fu_855_p2                      | -   |        | j            | add  | fabric | 0       |
+|     ret_V_64_fu_19242_p2             | -   |        | ret_V_64     | add  | fabric | 0       |
+|     p_Val2_334_fu_19256_p2           | -   |        | p_Val2_334   | add  | fabric | 0       |
+|  + Write_Output                      | 0   |        |              |      |        |         |
+|    add_ln123_fu_189_p2               | -   |        | add_ln123    | add  | fabric | 0       |
+|    add_ln129_fu_211_p2               | -   |        | add_ln129    | add  | fabric | 0       |
+|    empty_211_fu_277_p2               | -   |        | empty_211    | add  | fabric | 0       |
+|    add_ln131_fu_307_p2               | -   |        | add_ln131    | add  | fabric | 0       |
++--------------------------------------+-----+--------+--------------+------+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++--------------------------------------------------------------------------------------------------+------+------+--------+---------------------------------------------------------------------------------------------+---------+------+---------+
+| Name                                                                                             | BRAM | URAM | Pragma | Variable                                                                                    | Storage | Impl | Latency |
++--------------------------------------------------------------------------------------------------+------+------+--------+---------------------------------------------------------------------------------------------+---------+------+---------+
+| + Dense                                                                                          | 19   | 0    |        |                                                                                             |         |      |         |
+|   mask_table_U                                                                                   | -    | -    |        | mask_table                                                                                  | rom_1p  | auto | 1       |
+|   output_buffer0_V_U                                                                             | 1    | -    | pragma | output_buffer0_V                                                                            | ram_2p  | bram | 1       |
+|   output_buffer1_V_U                                                                             | 1    | -    | pragma | output_buffer1_V                                                                            | ram_2p  | bram | 1       |
+|  + Load_and_Compute                                                                              | 17   | 0    |        |                                                                                             |         |      |         |
+|    bias_buffer_V_U                                                                               | 1    | -    | pragma | bias_buffer_V                                                                               | ram_2p  | bram | 1       |
+|    Load_and_Compute_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_3_U                 | 4    | -    | pragma | Load_and_Compute_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_3                 | ram_2p  | bram | 1       |
+|    Load_and_Compute_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_1_U                 | 4    | -    | pragma | Load_and_Compute_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_1                 | ram_2p  | bram | 1       |
+|    Load_and_Compute_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_2_U                 | 4    | -    | pragma | Load_and_Compute_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_2                 | ram_2p  | bram | 1       |
+|    Load_mulmulmulmulmulmuland_Compute_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_U | 4    | -    | pragma | Load_mulmulmulmulmulmuland_Compute_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap_fixed_ap | ram_2p  | bram | 1       |
++--------------------------------------------------------------------------------------------------+------+------+--------+---------------------------------------------------------------------------------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++---------------+-------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+
+| Type          | Options                                                                                                           | Location                                                |
++---------------+-------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+
+| pipeline      | rewind                                                                                                            | dense/dense.cpp:30 in load_input                        |
+| pipeline      | rewind II=128                                                                                                     | dense/dense.cpp:62 in load_weight                       |
+| pipeline      | rewind                                                                                                            | dense/dense.cpp:104 in compute                          |
+| unroll        | factor=64                                                                                                         | dense/dense.cpp:105 in compute                          |
+| bind_op       | variable=tp op=mul impl=dsp                                                                                       | dense/dense.cpp:109 in compute, tp                      |
+| bind_storage  | variable=input_buffer0 type=ram_2p impl=bram                                                                      | dense/dense.cpp:159 in load_and_compute, input_buffer0  |
+| bind_storage  | variable=input_buffer1 type=ram_2p impl=bram                                                                      | dense/dense.cpp:160 in load_and_compute, input_buffer1  |
+| bind_storage  | variable=bias_buffer type=ram_2p impl=bram                                                                        | dense/dense.cpp:161 in load_and_compute, bias_buffer    |
+| bind_storage  | variable=weight_buffer0 type=ram_2p impl=bram                                                                     | dense/dense.cpp:162 in load_and_compute, weight_buffer0 |
+| bind_storage  | variable=weight_buffer1 type=ram_2p impl=bram                                                                     | dense/dense.cpp:163 in load_and_compute, weight_buffer1 |
+| array_reshape | dim=1 factor=4 type=cyclic variable=input_buffer0                                                                 | dense/dense.cpp:165 in load_and_compute, input_buffer0  |
+| array_reshape | dim=1 factor=4 type=cyclic variable=input_buffer1                                                                 | dense/dense.cpp:166 in load_and_compute, input_buffer1  |
+| array_reshape | dim=2 factor=4 type=cyclic variable=weight_buffer0                                                                | dense/dense.cpp:168 in load_and_compute, weight_buffer0 |
+| array_reshape | dim=2 factor=4 type=cyclic variable=weight_buffer1                                                                | dense/dense.cpp:169 in load_and_compute, weight_buffer1 |
+| pipeline      | off                                                                                                               | dense/dense.cpp:186 in load_and_compute                 |
+| interface     | mode=m_axi bundle=OUT1 depth=51200 num_read_outstanding=28 num_write_outstanding=28 port=feature_out offset=slave | dense/dense.cpp:209 in dense, feature_out               |
+| interface     | mode=m_axi bundle=B1 depth=51200 num_read_outstanding=28 port=bias offset=slave                                   | dense/dense.cpp:210 in dense, bias                      |
+| interface     | mode=m_axi bundle=W1 depth=51200 num_read_outstanding=28 port=Weight1 offset=slave                                | dense/dense.cpp:211 in dense, Weight1                   |
+| interface     | mode=m_axi bundle=W2 depth=51200 num_read_outstanding=28 port=Weight2 offset=slave                                | dense/dense.cpp:212 in dense, Weight2                   |
+| interface     | mode=m_axi bundle=W3 depth=51200 num_read_outstanding=28 port=Weight3 offset=slave                                | dense/dense.cpp:213 in dense, Weight3                   |
+| interface     | mode=m_axi bundle=W4 depth=51200 num_read_outstanding=28 port=Weight4 offset=slave                                | dense/dense.cpp:214 in dense, Weight4                   |
+| interface     | mode=m_axi bundle=IN1 depth=51200 num_read_outstanding=28 port=feature_in offset=slave                            | dense/dense.cpp:215 in dense, feature_in                |
+| interface     | s_axilite port=relu_en register                                                                                   | dense/dense.cpp:216 in dense, relu_en                   |
+| interface     | s_axilite port=CHout register                                                                                     | dense/dense.cpp:217 in dense, CHout                     |
+| interface     | s_axilite port=CHin register                                                                                      | dense/dense.cpp:218 in dense, CHin                      |
+| interface     | s_axilite port=return register                                                                                    | dense/dense.cpp:219 in dense, return                    |
+| bind_storage  | variable=output_buffer0 type=ram_2p impl=bram                                                                     | dense/dense.cpp:222 in dense, output_buffer0            |
+| bind_storage  | variable=output_buffer1 type=ram_2p impl=bram                                                                     | dense/dense.cpp:226 in dense, output_buffer1            |
+| pipeline      | off                                                                                                               | dense/solution1/directives.tcl:10 in dense              |
++---------------+-------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+
+
+

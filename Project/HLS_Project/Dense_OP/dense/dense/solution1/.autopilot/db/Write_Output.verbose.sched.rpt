@@ -1,0 +1,296 @@
+
+
+================================================================
+== Vitis HLS Report for 'Write_Output'
+================================================================
+* Date:           Sat Apr 20 12:09:57 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        dense
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  2.920 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      137|      233|  0.548 us|  0.932 us|  137|  233|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_123_1  |       96|       96|         3|          -|          -|    32|        no|
+        |- Loop 2            |       96|       96|         3|          -|          -|    32|        no|
+        |- zero_o            |       32|       32|         1|          -|          -|    32|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 5 
+3 --> 4 
+4 --> 2 
+5 --> 6 
+6 --> 7 9 
+7 --> 8 
+8 --> 6 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 14 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.41>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %output_buffer, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 15 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %OUT1, void @empty_59, i32 0, i32 0, void @empty_60, i32 0, i32 51200, void @empty_4, void @empty_62, void @empty_60, i32 28, i32 28, i32 16, i32 16, void @empty_60, void @empty_60, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%relu_en_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %relu_en" [dense/dense.cpp:122]   --->   Operation 17 'read' 'relu_en_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%Out_LP_now_read = read i27 @_ssdm_op_Read.ap_auto.i27, i27 %Out_LP_now" [dense/dense.cpp:122]   --->   Operation 18 'read' 'Out_LP_now_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%feature_out_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %feature_out" [dense/dense.cpp:122]   --->   Operation 19 'read' 'feature_out_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.99ns)   --->   "%icmp_ln122 = icmp_eq  i32 %relu_en_read, i32 0" [dense/dense.cpp:122]   --->   Operation 20 'icmp' 'icmp_ln122' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln122 = br i1 %icmp_ln122, void %for.body.preheader, void %if.end" [dense/dense.cpp:122]   --->   Operation 21 'br' 'br_ln122' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 22 'alloca' 'i' <Predicate = (!icmp_ln122)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.42ns)   --->   "%store_ln123 = store i6 0, i6 %i" [dense/dense.cpp:123]   --->   Operation 23 'store' 'store_ln123' <Predicate = (!icmp_ln122)> <Delay = 0.42>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln123 = br void %for.body" [dense/dense.cpp:123]   --->   Operation 24 'br' 'br_ln123' <Predicate = (!icmp_ln122)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.23>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%i_2 = load i6 %i" [dense/dense.cpp:123]   --->   Operation 25 'load' 'i_2' <Predicate = (!icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln123 = zext i6 %i_2" [dense/dense.cpp:123]   --->   Operation 26 'zext' 'zext_ln123' <Predicate = (!icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.78ns)   --->   "%icmp_ln123 = icmp_eq  i6 %i_2, i6 32" [dense/dense.cpp:123]   --->   Operation 27 'icmp' 'icmp_ln123' <Predicate = (!icmp_ln122)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32"   --->   Operation 28 'speclooptripcount' 'empty' <Predicate = (!icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.78ns)   --->   "%add_ln123 = add i6 %i_2, i6 1" [dense/dense.cpp:123]   --->   Operation 29 'add' 'add_ln123' <Predicate = (!icmp_ln122)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln123 = br i1 %icmp_ln123, void %for.body.split, void %if.end.loopexit" [dense/dense.cpp:123]   --->   Operation 30 'br' 'br_ln123' <Predicate = (!icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%output_buffer_addr = getelementptr i16 %output_buffer, i64 0, i64 %zext_ln123"   --->   Operation 31 'getelementptr' 'output_buffer_addr' <Predicate = (!icmp_ln122 & !icmp_ln123)> <Delay = 0.00>
+ST_2 : Operation 32 [2/2] (1.23ns)   --->   "%output_buffer_load = load i5 %output_buffer_addr"   --->   Operation 32 'load' 'output_buffer_load' <Predicate = (!icmp_ln122 & !icmp_ln123)> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_2 : Operation 33 [1/1] (0.42ns)   --->   "%store_ln123 = store i6 %add_ln123, i6 %i" [dense/dense.cpp:123]   --->   Operation 33 'store' 'store_ln123' <Predicate = (!icmp_ln122 & !icmp_ln123)> <Delay = 0.42>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end"   --->   Operation 34 'br' 'br_ln0' <Predicate = (!icmp_ln122 & icmp_ln123)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%loop_index = alloca i32 1"   --->   Operation 35 'alloca' 'loop_index' <Predicate = (icmp_ln123) | (icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i33 @_ssdm_op_BitConcatenate.i33.i27.i6, i27 %Out_LP_now_read, i6 0" [dense/dense.cpp:129]   --->   Operation 36 'bitconcatenate' 'shl_ln' <Predicate = (icmp_ln123) | (icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%sext_ln129 = sext i33 %shl_ln" [dense/dense.cpp:129]   --->   Operation 37 'sext' 'sext_ln129' <Predicate = (icmp_ln123) | (icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (1.08ns)   --->   "%add_ln129 = add i64 %sext_ln129, i64 %feature_out_read" [dense/dense.cpp:129]   --->   Operation 38 'add' 'add_ln129' <Predicate = (icmp_ln123) | (icmp_ln122)> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %add_ln129, i32 1, i32 63" [dense/dense.cpp:129]   --->   Operation 39 'partselect' 'trunc_ln1' <Predicate = (icmp_ln123) | (icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%sext_ln129_1 = sext i63 %trunc_ln1" [dense/dense.cpp:129]   --->   Operation 40 'sext' 'sext_ln129_1' <Predicate = (icmp_ln123) | (icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%OUT1_addr = getelementptr i16 %OUT1, i64 %sext_ln129_1" [dense/dense.cpp:129]   --->   Operation 41 'getelementptr' 'OUT1_addr' <Predicate = (icmp_ln123) | (icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.42ns)   --->   "%store_ln129 = store i6 0, i6 %loop_index" [dense/dense.cpp:129]   --->   Operation 42 'store' 'store_ln129' <Predicate = (icmp_ln123) | (icmp_ln122)> <Delay = 0.42>
+
+State 3 <SV = 2> <Delay = 2.63>
+ST_3 : Operation 43 [1/2] (1.23ns)   --->   "%output_buffer_load = load i5 %output_buffer_addr"   --->   Operation 43 'load' 'output_buffer_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%trunc_ln1695 = trunc i16 %output_buffer_load"   --->   Operation 44 'trunc' 'trunc_ln1695' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.10ns)   --->   "%icmp_ln1695 = icmp_sgt  i16 %output_buffer_load, i16 0"   --->   Operation 45 'icmp' 'icmp_ln1695' <Predicate = true> <Delay = 1.10> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (0.29ns)   --->   "%select_ln124 = select i1 %icmp_ln1695, i15 %trunc_ln1695, i15 0" [dense/dense.cpp:124]   --->   Operation 46 'select' 'select_ln124' <Predicate = true> <Delay = 0.29> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.29> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 1.23>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln123 = specloopname void @_ssdm_op_SpecLoopName, void @empty_90" [dense/dense.cpp:123]   --->   Operation 47 'specloopname' 'specloopname_ln123' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln124 = zext i15 %select_ln124" [dense/dense.cpp:124]   --->   Operation 48 'zext' 'zext_ln124' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (1.23ns)   --->   "%store_ln124 = store i16 %zext_ln124, i5 %output_buffer_addr" [dense/dense.cpp:124]   --->   Operation 49 'store' 'store_ln124' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln123 = br void %for.body" [dense/dense.cpp:123]   --->   Operation 50 'br' 'br_ln123' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 2.92>
+ST_5 : Operation 51 [1/1] (2.92ns)   --->   "%empty_209 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i16, i16 %OUT1_addr, i32 32" [dense/dense.cpp:129]   --->   Operation 51 'writereq' 'empty_209' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln129 = br void %load-store-loop" [dense/dense.cpp:129]   --->   Operation 52 'br' 'br_ln129' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 3> <Delay = 1.23>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%loop_index_load = load i6 %loop_index"   --->   Operation 53 'load' 'loop_index_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 54 [1/1] (0.00ns)   --->   "%loop_index_cast = zext i6 %loop_index_load"   --->   Operation 54 'zext' 'loop_index_cast' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 55 [1/1] (0.78ns)   --->   "%exitcond82 = icmp_eq  i6 %loop_index_load, i6 32"   --->   Operation 55 'icmp' 'exitcond82' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "%empty_210 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32"   --->   Operation 56 'speclooptripcount' 'empty_210' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 57 [1/1] (0.78ns)   --->   "%empty_211 = add i6 %loop_index_load, i6 1"   --->   Operation 57 'add' 'empty_211' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond82, void %load-store-loop.split, void %zero_o"   --->   Operation 58 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 59 [1/1] (0.00ns)   --->   "%output_buffer_addr_1 = getelementptr i16 %output_buffer, i64 0, i64 %loop_index_cast"   --->   Operation 59 'getelementptr' 'output_buffer_addr_1' <Predicate = (!exitcond82)> <Delay = 0.00>
+ST_6 : Operation 60 [2/2] (1.23ns)   --->   "%output_buffer_load_1 = load i5 %output_buffer_addr_1"   --->   Operation 60 'load' 'output_buffer_load_1' <Predicate = (!exitcond82)> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_6 : Operation 61 [1/1] (0.42ns)   --->   "%store_ln0 = store i6 %empty_211, i6 %loop_index"   --->   Operation 61 'store' 'store_ln0' <Predicate = (!exitcond82)> <Delay = 0.42>
+
+State 7 <SV = 4> <Delay = 1.23>
+ST_7 : Operation 62 [1/2] (1.23ns)   --->   "%output_buffer_load_1 = load i5 %output_buffer_addr_1"   --->   Operation 62 'load' 'output_buffer_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+
+State 8 <SV = 5> <Delay = 2.92>
+ST_8 : Operation 63 [1/1] (2.92ns)   --->   "%write_ln129 = write void @_ssdm_op_Write.m_axi.p1i16, i16 %OUT1_addr, i16 %output_buffer_load_1, i2 3" [dense/dense.cpp:129]   --->   Operation 63 'write' 'write_ln129' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop"   --->   Operation 64 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 4> <Delay = 2.92>
+ST_9 : Operation 65 [1/1] (0.00ns)   --->   "%i_1 = alloca i32 1"   --->   Operation 65 'alloca' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 66 [5/5] (2.92ns)   --->   "%empty_212 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %OUT1_addr" [dense/dense.cpp:131]   --->   Operation 66 'writeresp' 'empty_212' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 67 [1/1] (0.42ns)   --->   "%store_ln131 = store i6 0, i6 %i_1" [dense/dense.cpp:131]   --->   Operation 67 'store' 'store_ln131' <Predicate = true> <Delay = 0.42>
+
+State 10 <SV = 5> <Delay = 2.92>
+ST_10 : Operation 68 [4/5] (2.92ns)   --->   "%empty_212 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %OUT1_addr" [dense/dense.cpp:131]   --->   Operation 68 'writeresp' 'empty_212' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 6> <Delay = 2.92>
+ST_11 : Operation 69 [3/5] (2.92ns)   --->   "%empty_212 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %OUT1_addr" [dense/dense.cpp:131]   --->   Operation 69 'writeresp' 'empty_212' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 7> <Delay = 2.92>
+ST_12 : Operation 70 [2/5] (2.92ns)   --->   "%empty_212 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %OUT1_addr" [dense/dense.cpp:131]   --->   Operation 70 'writeresp' 'empty_212' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 8> <Delay = 2.92>
+ST_13 : Operation 71 [1/5] (2.92ns)   --->   "%empty_212 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %OUT1_addr" [dense/dense.cpp:131]   --->   Operation 71 'writeresp' 'empty_212' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_13 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln131 = br void %for.body12" [dense/dense.cpp:131]   --->   Operation 72 'br' 'br_ln131' <Predicate = true> <Delay = 0.00>
+
+State 14 <SV = 9> <Delay = 2.02>
+ST_14 : Operation 73 [1/1] (0.00ns)   --->   "%i_3 = load i6 %i_1" [dense/dense.cpp:131]   --->   Operation 73 'load' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln131 = zext i6 %i_3" [dense/dense.cpp:131]   --->   Operation 74 'zext' 'zext_ln131' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 75 [1/1] (0.78ns)   --->   "%icmp_ln131 = icmp_eq  i6 %i_3, i6 32" [dense/dense.cpp:131]   --->   Operation 75 'icmp' 'icmp_ln131' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 76 [1/1] (0.00ns)   --->   "%empty_213 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32"   --->   Operation 76 'speclooptripcount' 'empty_213' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 77 [1/1] (0.78ns)   --->   "%add_ln131 = add i6 %i_3, i6 1" [dense/dense.cpp:131]   --->   Operation 77 'add' 'add_ln131' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 78 [1/1] (0.00ns)   --->   "%br_ln131 = br i1 %icmp_ln131, void %for.body12.split, void %for.end18" [dense/dense.cpp:131]   --->   Operation 78 'br' 'br_ln131' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 79 [1/1] (0.00ns)   --->   "%specloopname_ln131 = specloopname void @_ssdm_op_SpecLoopName, void @empty_89" [dense/dense.cpp:131]   --->   Operation 79 'specloopname' 'specloopname_ln131' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_14 : Operation 80 [1/1] (0.00ns)   --->   "%output_buffer_addr_2 = getelementptr i16 %output_buffer, i64 0, i64 %zext_ln131" [dense/dense.cpp:132]   --->   Operation 80 'getelementptr' 'output_buffer_addr_2' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_14 : Operation 81 [1/1] (1.23ns)   --->   "%store_ln132 = store i16 0, i5 %output_buffer_addr_2" [dense/dense.cpp:132]   --->   Operation 81 'store' 'store_ln132' <Predicate = (!icmp_ln131)> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_14 : Operation 82 [1/1] (0.42ns)   --->   "%store_ln131 = store i6 %add_ln131, i6 %i_1" [dense/dense.cpp:131]   --->   Operation 82 'store' 'store_ln131' <Predicate = (!icmp_ln131)> <Delay = 0.42>
+ST_14 : Operation 83 [1/1] (0.00ns)   --->   "%br_ln131 = br void %for.body12" [dense/dense.cpp:131]   --->   Operation 83 'br' 'br_ln131' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_14 : Operation 84 [1/1] (0.00ns)   --->   "%ret_ln135 = ret" [dense/dense.cpp:135]   --->   Operation 84 'ret' 'ret_ln135' <Predicate = (icmp_ln131)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 1.08ns.
+
+ <State 1>: 1.42ns
+The critical path consists of the following:
+	wire read operation ('relu_en_read', dense/dense.cpp:122) on port 'relu_en' (dense/dense.cpp:122) [8]  (0 ns)
+	'icmp' operation ('icmp_ln122', dense/dense.cpp:122) [11]  (0.991 ns)
+	blocking operation 0.427 ns on control path)
+
+ <State 2>: 1.24ns
+The critical path consists of the following:
+	'load' operation ('i', dense/dense.cpp:123) on local variable 'i' [18]  (0 ns)
+	'getelementptr' operation ('output_buffer_addr') [26]  (0 ns)
+	'load' operation ('output_buffer_load') on array 'output_buffer' [27]  (1.24 ns)
+
+ <State 3>: 2.63ns
+The critical path consists of the following:
+	'load' operation ('output_buffer_load') on array 'output_buffer' [27]  (1.24 ns)
+	'icmp' operation ('icmp_ln1695') [29]  (1.1 ns)
+	'select' operation ('select_ln124', dense/dense.cpp:124) [30]  (0.294 ns)
+
+ <State 4>: 1.24ns
+The critical path consists of the following:
+	'store' operation ('store_ln124', dense/dense.cpp:124) of variable 'zext_ln124', dense/dense.cpp:124 on array 'output_buffer' [32]  (1.24 ns)
+
+ <State 5>: 2.92ns
+The critical path consists of the following:
+	bus request operation ('empty_209', dense/dense.cpp:129) on port 'OUT1' (dense/dense.cpp:129) [45]  (2.92 ns)
+
+ <State 6>: 1.24ns
+The critical path consists of the following:
+	'load' operation ('loop_index_load') on local variable 'loop_index' [49]  (0 ns)
+	'getelementptr' operation ('output_buffer_addr_1') [56]  (0 ns)
+	'load' operation ('output_buffer_load_1') on array 'output_buffer' [57]  (1.24 ns)
+
+ <State 7>: 1.24ns
+The critical path consists of the following:
+	'load' operation ('output_buffer_load_1') on array 'output_buffer' [57]  (1.24 ns)
+
+ <State 8>: 2.92ns
+The critical path consists of the following:
+	bus write operation ('write_ln129', dense/dense.cpp:129) on port 'OUT1' (dense/dense.cpp:129) [58]  (2.92 ns)
+
+ <State 9>: 2.92ns
+The critical path consists of the following:
+	bus response operation ('empty_212', dense/dense.cpp:131) on port 'OUT1' (dense/dense.cpp:131) [63]  (2.92 ns)
+
+ <State 10>: 2.92ns
+The critical path consists of the following:
+	bus response operation ('empty_212', dense/dense.cpp:131) on port 'OUT1' (dense/dense.cpp:131) [63]  (2.92 ns)
+
+ <State 11>: 2.92ns
+The critical path consists of the following:
+	bus response operation ('empty_212', dense/dense.cpp:131) on port 'OUT1' (dense/dense.cpp:131) [63]  (2.92 ns)
+
+ <State 12>: 2.92ns
+The critical path consists of the following:
+	bus response operation ('empty_212', dense/dense.cpp:131) on port 'OUT1' (dense/dense.cpp:131) [63]  (2.92 ns)
+
+ <State 13>: 2.92ns
+The critical path consists of the following:
+	bus response operation ('empty_212', dense/dense.cpp:131) on port 'OUT1' (dense/dense.cpp:131) [63]  (2.92 ns)
+
+ <State 14>: 2.02ns
+The critical path consists of the following:
+	'load' operation ('i', dense/dense.cpp:131) on local variable 'i' [67]  (0 ns)
+	'getelementptr' operation ('output_buffer_addr_2', dense/dense.cpp:132) [75]  (0 ns)
+	'store' operation ('store_ln132', dense/dense.cpp:132) of constant 0 on array 'output_buffer' [76]  (1.24 ns)
+	blocking operation 0.785 ns on control path)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

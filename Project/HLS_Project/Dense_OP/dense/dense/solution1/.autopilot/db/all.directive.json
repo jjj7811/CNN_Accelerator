@@ -1,0 +1,95 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "Dense",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/dense\/dense\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "Dense"
+              }]
+          }
+        },
+        {
+          "functionName": "Load_Weight",
+          "label": "zero_w_i",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/dense\/dense\/solution1\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "rewind",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Load_Bias",
+          "label": "zero_bias",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/dense\/dense\/solution1\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "rewind",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Dense",
+          "label": "input_loop",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/dense\/dense\/solution1\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Dense",
+          "label": "output_loop",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/dense\/dense\/solution1\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Dense",
+          "label": "",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/dense\/dense\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "Dense"
+              }]
+          }
+        }
+      ]
+    }]}

@@ -1,0 +1,30 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="Dense" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="Dense"/>
+            </pragma>
+        </directive>
+        <directive functionName="Load_Weight" label="zero_w_i" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="rewind" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="Load_Bias" label="zero_bias" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="rewind" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="Dense" label="input_loop" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="Dense" label="output_loop" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dense.cpp" path="D:\Vivado_program\pynq_lenet5\hls_t1\dense\dense\dense.cpp"/>
+    <originFiles name="dense.h" path="D:\Vivado_program\pynq_lenet5\hls_t1\dense\dense\dense.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="D:\Vivado_program\pynq_lenet5\hls_t1\dense\dense\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

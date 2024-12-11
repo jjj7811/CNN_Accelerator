@@ -1,0 +1,283 @@
+
+
+================================================================
+== Vitis HLS Report for 'Load_Input'
+================================================================
+* Date:           Sat Apr 20 12:09:24 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        dense
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  2.920 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      521|      521|  2.084 us|  2.084 us|  521|  521|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1      |      384|      384|         3|          -|          -|   128|        no|
+        |- input_zero  |      127|      127|         1|          1|          1|   128|       yes|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 12 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 12 
+10 --> 11 
+11 --> 9 
+12 --> 13 12 
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.08>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%loop_index = alloca i32 1"   --->   Operation 14 'alloca' 'loop_index' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%In_LP_now_read = read i25 @_ssdm_op_Read.ap_auto.i25, i25 %In_LP_now"   --->   Operation 15 'read' 'In_LP_now_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%feature_in_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %feature_in"   --->   Operation 16 'read' 'feature_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i33 @_ssdm_op_BitConcatenate.i33.i25.i8, i25 %In_LP_now_read, i8 0" [dense/dense.cpp:23]   --->   Operation 17 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%sext_ln23 = sext i33 %shl_ln" [dense/dense.cpp:23]   --->   Operation 18 'sext' 'sext_ln23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.08ns)   --->   "%add_ln23 = add i64 %sext_ln23, i64 %feature_in_read" [dense/dense.cpp:23]   --->   Operation 19 'add' 'add_ln23' <Predicate = true> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %add_ln23, i32 1, i32 63" [dense/dense.cpp:23]   --->   Operation 20 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%sext_ln23_1 = sext i63 %trunc_ln" [dense/dense.cpp:23]   --->   Operation 21 'sext' 'sext_ln23_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%IN1_addr = getelementptr i16 %IN1, i64 %sext_ln23_1" [dense/dense.cpp:23]   --->   Operation 22 'getelementptr' 'IN1_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.42ns)   --->   "%store_ln23 = store i8 0, i8 %loop_index" [dense/dense.cpp:23]   --->   Operation 23 'store' 'store_ln23' <Predicate = true> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 2.92>
+ST_2 : Operation 24 [7/7] (2.92ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %IN1_addr, i32 128" [dense/dense.cpp:23]   --->   Operation 24 'readreq' 'empty' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 2.92>
+ST_3 : Operation 25 [6/7] (2.92ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %IN1_addr, i32 128" [dense/dense.cpp:23]   --->   Operation 25 'readreq' 'empty' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 2.92>
+ST_4 : Operation 26 [5/7] (2.92ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %IN1_addr, i32 128" [dense/dense.cpp:23]   --->   Operation 26 'readreq' 'empty' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 2.92>
+ST_5 : Operation 27 [4/7] (2.92ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %IN1_addr, i32 128" [dense/dense.cpp:23]   --->   Operation 27 'readreq' 'empty' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 2.92>
+ST_6 : Operation 28 [3/7] (2.92ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %IN1_addr, i32 128" [dense/dense.cpp:23]   --->   Operation 28 'readreq' 'empty' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 2.92>
+ST_7 : Operation 29 [2/7] (2.92ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %IN1_addr, i32 128" [dense/dense.cpp:23]   --->   Operation 29 'readreq' 'empty' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 2.92>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%CHin_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %CHin"   --->   Operation 30 'read' 'CHin_read' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %input_buffer, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 31 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %IN1, void @empty_59, i32 0, i32 0, void @empty_60, i32 0, i32 51200, void @empty_61, void @empty_62, void @empty_60, i32 28, i32 16, i32 16, i32 16, void @empty_60, void @empty_60, i32 4294967295, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%offset = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i25.i7, i25 %In_LP_now_read, i7 0" [dense/dense.cpp:20]   --->   Operation 33 'bitconcatenate' 'offset' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [1/7] (2.92ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %IN1_addr, i32 128" [dense/dense.cpp:23]   --->   Operation 34 'readreq' 'empty' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln23 = br void %load-store-loop" [dense/dense.cpp:23]   --->   Operation 35 'br' 'br_ln23' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 1.27>
+ST_9 : Operation 36 [1/1] (0.00ns)   --->   "%loop_index_load = load i8 %loop_index"   --->   Operation 36 'load' 'loop_index_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 37 [1/1] (0.84ns)   --->   "%exitcond53 = icmp_eq  i8 %loop_index_load, i8 128"   --->   Operation 37 'icmp' 'exitcond53' <Predicate = true> <Delay = 0.84> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 38 [1/1] (0.00ns)   --->   "%empty_222 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 128, i64 128, i64 128"   --->   Operation 38 'speclooptripcount' 'empty_222' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 39 [1/1] (0.76ns)   --->   "%empty_223 = add i8 %loop_index_load, i8 1"   --->   Operation 39 'add' 'empty_223' <Predicate = true> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond53, void %load-store-loop.split, void %input_zero"   --->   Operation 40 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 41 [1/1] (0.00ns)   --->   "%empty_224 = trunc i8 %loop_index_load"   --->   Operation 41 'trunc' 'empty_224' <Predicate = (!exitcond53)> <Delay = 0.00>
+ST_9 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_194 = partselect i5 @_ssdm_op_PartSelect.i5.i8.i32.i32, i8 %loop_index_load, i32 2, i32 6"   --->   Operation 42 'partselect' 'tmp_194' <Predicate = (!exitcond53)> <Delay = 0.00>
+ST_9 : Operation 43 [1/1] (0.42ns)   --->   "%store_ln0 = store i8 %empty_223, i8 %loop_index"   --->   Operation 43 'store' 'store_ln0' <Predicate = (!exitcond53)> <Delay = 0.42>
+ST_9 : Operation 44 [1/1] (1.01ns)   --->   "%In_Min = sub i32 %CHin_read, i32 %offset" [dense/dense.cpp:21]   --->   Operation 44 'sub' 'In_Min' <Predicate = (exitcond53)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 45 [1/1] (0.42ns)   --->   "%br_ln29 = br void %for.body.split" [dense/dense.cpp:29]   --->   Operation 45 'br' 'br_ln29' <Predicate = (exitcond53)> <Delay = 0.42>
+
+State 10 <SV = 9> <Delay = 2.92>
+ST_10 : Operation 46 [1/1] (2.92ns)   --->   "%IN1_addr_read = read i16 @_ssdm_op_Read.m_axi.p1i16, i16 %IN1_addr" [dense/dense.cpp:23]   --->   Operation 46 'read' 'IN1_addr_read' <Predicate = true> <Delay = 2.92> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 2.14>
+ST_11 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i2.i4, i2 %empty_224, i4 0"   --->   Operation 47 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 48 [1/1] (0.00ns)   --->   "%p_cast4 = zext i5 %tmp_194"   --->   Operation 48 'zext' 'p_cast4' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 49 [1/1] (0.00ns)   --->   "%input_buffer_addr = getelementptr i64 %input_buffer, i64 0, i64 %p_cast4"   --->   Operation 49 'getelementptr' 'input_buffer_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 50 [1/1] (0.00ns)   --->   "%empty_225 = zext i6 %tmp_s"   --->   Operation 50 'zext' 'empty_225' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 51 [1/1] (0.00ns)   --->   "%empty_226 = zext i16 %IN1_addr_read" [dense/dense.cpp:23]   --->   Operation 51 'zext' 'empty_226' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 52 [1/1] (0.90ns)   --->   "%empty_227 = shl i64 %empty_226, i64 %empty_225" [dense/dense.cpp:23]   --->   Operation 52 'shl' 'empty_227' <Predicate = true> <Delay = 0.90> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.90> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %input_buffer"   --->   Operation 53 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%udiv = bitconcatenate i3 @_ssdm_op_BitConcatenate.i3.i2.i1, i2 %empty_224, i1 0"   --->   Operation 54 'bitconcatenate' 'udiv' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%udiv_cast_cast = zext i3 %udiv"   --->   Operation 55 'zext' 'udiv_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 56 [1/1] (0.56ns)   --->   "%mask = shl i8 3, i8 %udiv_cast_cast"   --->   Operation 56 'shl' 'mask' <Predicate = true> <Delay = 0.56> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.56> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 57 [1/1] (1.23ns)   --->   "%store_ln23 = store void @_ssdm_op_Write.bram.i64, i5 %input_buffer_addr, i64 %empty_227, i8 %mask" [dense/dense.cpp:23]   --->   Operation 57 'store' 'store_ln23' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 32> <RAM>
+ST_11 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop"   --->   Operation 58 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 12 <SV = 9> <Delay = 2.22>
+ST_12 : Operation 59 [1/1] (0.00ns)   --->   "%i13 = phi i7 0, void %input_zero, i7 %i, void %for.inc"   --->   Operation 59 'phi' 'i13' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 60 [1/1] (0.00ns)   --->   "%empty_228 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 128, i64 128, i64 128"   --->   Operation 60 'speclooptripcount' 'empty_228' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln29 = zext i7 %i13" [dense/dense.cpp:29]   --->   Operation 61 'zext' 'zext_ln29' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 62 [1/1] (0.00ns)   --->   "%specpipeline_ln30 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [dense/dense.cpp:30]   --->   Operation 62 'specpipeline' 'specpipeline_ln30' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 63 [1/1] (0.00ns)   --->   "%specloopname_ln29 = specloopname void @_ssdm_op_SpecLoopName, void @empty_91" [dense/dense.cpp:29]   --->   Operation 63 'specloopname' 'specloopname_ln29' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 64 [1/1] (0.99ns)   --->   "%icmp_ln31 = icmp_sgt  i32 %zext_ln29, i32 %In_Min" [dense/dense.cpp:31]   --->   Operation 64 'icmp' 'icmp_ln31' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 65 [1/1] (0.77ns)   --->   "%i = add i7 %i13, i7 1" [dense/dense.cpp:29]   --->   Operation 65 'add' 'i' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln31 = br i1 %icmp_ln31, void %for.inc, void %_ZN8ap_fixedILi16ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEC2Ei.exit" [dense/dense.cpp:31]   --->   Operation 66 'br' 'br_ln31' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 67 [1/1] (0.00ns)   --->   "%trunc_ln32 = trunc i7 %i13" [dense/dense.cpp:32]   --->   Operation 67 'trunc' 'trunc_ln32' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_12 : Operation 68 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i5 @_ssdm_op_PartSelect.i5.i7.i32.i32, i7 %i13, i32 2, i32 6" [dense/dense.cpp:32]   --->   Operation 68 'partselect' 'lshr_ln' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_12 : Operation 69 [1/1] (0.00ns)   --->   "%zext_ln32 = zext i5 %lshr_ln" [dense/dense.cpp:32]   --->   Operation 69 'zext' 'zext_ln32' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_12 : Operation 70 [1/1] (0.00ns)   --->   "%input_buffer_addr_1 = getelementptr i64 %input_buffer, i64 0, i64 %zext_ln32" [dense/dense.cpp:32]   --->   Operation 70 'getelementptr' 'input_buffer_addr_1' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_12 : Operation 71 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln32 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %input_buffer" [dense/dense.cpp:32]   --->   Operation 71 'specbramwithbyteenable' 'specbramwithbyteenable_ln32' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_12 : Operation 72 [1/1] (0.00ns)   --->   "%udiv1 = bitconcatenate i3 @_ssdm_op_BitConcatenate.i3.i2.i1, i2 %trunc_ln32, i1 0" [dense/dense.cpp:32]   --->   Operation 72 'bitconcatenate' 'udiv1' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_12 : Operation 73 [1/1] (0.00ns)   --->   "%zext_ln32_1 = zext i3 %udiv1" [dense/dense.cpp:32]   --->   Operation 73 'zext' 'zext_ln32_1' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_12 : Operation 74 [1/1] (0.56ns)   --->   "%shl_ln32 = shl i8 3, i8 %zext_ln32_1" [dense/dense.cpp:32]   --->   Operation 74 'shl' 'shl_ln32' <Predicate = (icmp_ln31)> <Delay = 0.56> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.56> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 75 [1/1] (1.23ns)   --->   "%store_ln32 = store void @_ssdm_op_Write.bram.i64, i5 %input_buffer_addr_1, i64 0, i8 %shl_ln32" [dense/dense.cpp:32]   --->   Operation 75 'store' 'store_ln32' <Predicate = (icmp_ln31)> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 32> <RAM>
+ST_12 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln33 = br void %for.inc" [dense/dense.cpp:33]   --->   Operation 76 'br' 'br_ln33' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_12 : Operation 77 [1/1] (0.81ns)   --->   "%icmp_ln29 = icmp_eq  i7 %i13, i7 127" [dense/dense.cpp:29]   --->   Operation 77 'icmp' 'icmp_ln29' <Predicate = true> <Delay = 0.81> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.81> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 78 [1/1] (0.00ns)   --->   "%br_ln29 = br i1 %icmp_ln29, void %for.body.split, void %for.end" [dense/dense.cpp:29]   --->   Operation 78 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 10> <Delay = 0.00>
+ST_13 : Operation 79 [1/1] (0.00ns)   --->   "%ret_ln41 = ret" [dense/dense.cpp:41]   --->   Operation 79 'ret' 'ret_ln41' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 1.08ns.
+
+ <State 1>: 1.08ns
+The critical path consists of the following:
+	wire read operation ('In_LP_now_read') on port 'In_LP_now' [8]  (0 ns)
+	'add' operation ('add_ln23', dense/dense.cpp:23) [15]  (1.08 ns)
+
+ <State 2>: 2.92ns
+The critical path consists of the following:
+	bus request operation ('empty', dense/dense.cpp:23) on port 'IN1' (dense/dense.cpp:23) [19]  (2.92 ns)
+
+ <State 3>: 2.92ns
+The critical path consists of the following:
+	bus request operation ('empty', dense/dense.cpp:23) on port 'IN1' (dense/dense.cpp:23) [19]  (2.92 ns)
+
+ <State 4>: 2.92ns
+The critical path consists of the following:
+	bus request operation ('empty', dense/dense.cpp:23) on port 'IN1' (dense/dense.cpp:23) [19]  (2.92 ns)
+
+ <State 5>: 2.92ns
+The critical path consists of the following:
+	bus request operation ('empty', dense/dense.cpp:23) on port 'IN1' (dense/dense.cpp:23) [19]  (2.92 ns)
+
+ <State 6>: 2.92ns
+The critical path consists of the following:
+	bus request operation ('empty', dense/dense.cpp:23) on port 'IN1' (dense/dense.cpp:23) [19]  (2.92 ns)
+
+ <State 7>: 2.92ns
+The critical path consists of the following:
+	bus request operation ('empty', dense/dense.cpp:23) on port 'IN1' (dense/dense.cpp:23) [19]  (2.92 ns)
+
+ <State 8>: 2.92ns
+The critical path consists of the following:
+	bus request operation ('empty', dense/dense.cpp:23) on port 'IN1' (dense/dense.cpp:23) [19]  (2.92 ns)
+
+ <State 9>: 1.28ns
+The critical path consists of the following:
+	'load' operation ('loop_index_load') on local variable 'loop_index' [23]  (0 ns)
+	'add' operation ('empty_223') [26]  (0.765 ns)
+	'store' operation ('store_ln0') of variable 'empty_223' on local variable 'loop_index' [43]  (0.427 ns)
+	blocking operation 0.084 ns on control path)
+
+ <State 10>: 2.92ns
+The critical path consists of the following:
+	bus read operation ('IN1_addr_read', dense/dense.cpp:23) on port 'IN1' (dense/dense.cpp:23) [29]  (2.92 ns)
+
+ <State 11>: 2.14ns
+The critical path consists of the following:
+	'shl' operation ('empty_227', dense/dense.cpp:23) [37]  (0.904 ns)
+	'store' operation ('store_ln23', dense/dense.cpp:23) of constant <constant:_ssdm_op_Write.bram.i64> on array 'input_buffer' [42]  (1.24 ns)
+
+ <State 12>: 2.23ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', dense/dense.cpp:29) [49]  (0 ns)
+	'shl' operation ('shl_ln32', dense/dense.cpp:32) [65]  (0.57 ns)
+	'store' operation ('store_ln32', dense/dense.cpp:32) of constant <constant:_ssdm_op_Write.bram.i64> on array 'input_buffer' [66]  (1.24 ns)
+	blocking operation 0.421 ns on control path)
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

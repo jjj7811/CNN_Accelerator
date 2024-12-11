@@ -1,0 +1,77 @@
+INFO: [HLS 200-10] Running 'E:/Learning_Software/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Administrator' on host 'win-05s5st9thaa' (Windows NT_amd64 version 6.2) on Thu May 09 17:33:52 +0800 2024
+INFO: [HLS 200-10] In directory 'D:/Vivado_program/pynq_lenet5/hls_t1/Conv_short'
+Sourcing Tcl script 'D:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/export.tcl'
+INFO: [HLS 200-1510] Running: source D:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9/export.tcl
+INFO: [HLS 200-1510] Running: open_project Conv_Tile129 
+INFO: [HLS 200-10] Opening project 'D:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129'.
+INFO: [HLS 200-1510] Running: set_top My_Conv 
+INFO: [HLS 200-1510] Running: add_files Conv_Tile129/Compute.cpp 
+INFO: [HLS 200-10] Adding design file 'Conv_Tile129/Compute.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files Conv_Tile129/Conv_core.cpp 
+INFO: [HLS 200-10] Adding design file 'Conv_Tile129/Conv_core.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files Conv_Tile129/Conv_core.h 
+INFO: [HLS 200-10] Adding design file 'Conv_Tile129/Conv_core.h' to the project
+INFO: [HLS 200-1510] Running: add_files Conv_Tile129/Pool_core.cpp 
+INFO: [HLS 200-10] Adding design file 'Conv_Tile129/Pool_core.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb Conv_Tile129/main.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'Conv_Tile129/main.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution9 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Vivado_program/pynq_lenet5/hls_t1/Conv_short/Conv_Tile129/solution9'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.8ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -description=complete
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=10.120
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 4.8 -name default 
+INFO: [HLS 200-1510] Running: config_export -description complete -format ip_catalog -rtl verilog -version 10.120 
+INFO: [HLS 200-1510] Running: source ./Conv_Tile129/solution9/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name My_Conv My_Conv 
+INFO: [HLS 200-1510] Running: set_directive_inline My_Conv/My_Conv_label1 
+INFO: [HLS 200-1510] Running: set_directive_inline -off My_Conv/Tn_Tile 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -off Load_And_Compute/Tn_Tile 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -off Load_Input_F/Load_F 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -off Load_Weight/Load_W 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -off Load_And_Compute/Load_And_Compute_label0 
+INFO: [HLS 200-1510] Running: set_directive_unroll Compute/CHin 
+INFO: [HLS 200-1510] Running: set_directive_unroll Compute/CHout 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -rewind Load_Weight/Load_Tn 
+INFO: [HLS 200-1510] Running: set_directive_pipeline Compute/B_tm 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -rewind Pool/Wout 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -rewind Load_Input_F_Pool/Load_F_Tn 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -rewind Load_Input_F/zero_Tc 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'My_Conv_fdiv_32ns_32ns_32_16_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'My_Conv_fdiv_32ns_32ns_32_16_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'My_Conv_fdiv_32ns_32ns_32_16_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'My_Conv_fmul_32ns_32ns_32_5_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'My_Conv_fmul_32ns_32ns_32_5_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'My_Conv_fmul_32ns_32ns_32_5_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'My_Conv_sitofp_32ns_32_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'My_Conv_sitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'My_Conv_sitofp_32ns_32_6_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'My_Conv_uitofp_32ns_32_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'My_Conv_uitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'My_Conv_uitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 17:34:46 2024...
+INFO: [HLS 200-802] Generated output file Conv_Tile129/solution9/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 26 seconds. CPU system time: 0 seconds. Elapsed time: 49.467 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 31 seconds. Total CPU system time: 2 seconds. Total elapsed time: 54.251 seconds; peak allocated memory: 1.521 GB.

@@ -1,0 +1,236 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "My_Conv",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "My_Conv"
+              }]
+          }
+        },
+        {
+          "functionName": "My_Conv",
+          "label": "My_Conv_label1",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "My_Conv",
+          "label": "Tn_Tile",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {
+            "name": "INLINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Load_And_Compute",
+          "label": "Tn_Tile",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Load_Input_F",
+          "label": "Load_F",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Load_Weight",
+          "label": "Load_W",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "11",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Load_And_Compute",
+          "label": "Load_And_Compute_label0",
+          "functionLabel": "",
+          "id": "7",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "12",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Compute",
+          "label": "CHin",
+          "functionLabel": "",
+          "id": "8",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "13",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "Compute",
+          "label": "CHout",
+          "functionLabel": "",
+          "id": "9",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "14",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "Load_Weight",
+          "label": "Load_Tn",
+          "functionLabel": "",
+          "id": "10",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "rewind",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Compute",
+          "label": "B_tm",
+          "functionLabel": "",
+          "id": "11",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "16",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "Pool",
+          "label": "Wout",
+          "functionLabel": "",
+          "id": "12",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "17",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "rewind",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Load_Input_F_Pool",
+          "label": "Load_F_Tn",
+          "functionLabel": "",
+          "id": "13",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "18",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "rewind",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "Load_Input_F",
+          "label": "zero_Tc",
+          "functionLabel": "",
+          "id": "14",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/directives.tcl",
+          "sourceLine": "19",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "rewind",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "My_Conv",
+          "label": "",
+          "functionLabel": "",
+          "id": "15",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/csynth.tcl",
+          "sourceLine": "18",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "My_Conv"
+              }]
+          }
+        },
+        {
+          "functionName": "My_Conv",
+          "label": "",
+          "functionLabel": "",
+          "id": "16",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/csynth.tcl",
+          "sourceLine": "18",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "My_Conv"
+              }]
+          }
+        },
+        {
+          "functionName": "My_Conv",
+          "label": "",
+          "functionLabel": "",
+          "id": "17",
+          "sourceFile": "D:\/Vivado_program\/pynq_lenet5\/hls_t1\/Conv_short\/Conv_Tile129\/solution9\/csynth.tcl",
+          "sourceLine": "18",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "My_Conv"
+              }]
+          }
+        }
+      ]
+    }]}

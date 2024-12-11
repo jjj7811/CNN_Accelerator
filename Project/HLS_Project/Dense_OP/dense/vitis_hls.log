@@ -1,0 +1,57 @@
+INFO: [HLS 200-10] Running 'E:/Learning_Software/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Administrator' on host 'win-05s5st9thaa' (Windows NT_amd64 version 6.2) on Sat Apr 20 12:11:22 +0800 2024
+INFO: [HLS 200-10] In directory 'D:/Vivado_program/pynq_lenet5/hls_t1/dense'
+Sourcing Tcl script 'D:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source D:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project dense 
+INFO: [HLS 200-10] Opening project 'D:/Vivado_program/pynq_lenet5/hls_t1/dense/dense'.
+INFO: [HLS 200-1510] Running: set_top Dense 
+INFO: [HLS 200-1510] Running: add_files dense/dense.cpp 
+INFO: [HLS 200-10] Adding design file 'dense/dense.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files dense/dense.h 
+INFO: [HLS 200-10] Adding design file 'dense/dense.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb dense/main.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'dense/main.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Vivado_program/pynq_lenet5/hls_t1/dense/dense/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.35
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 4 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 1.35 
+INFO: [HLS 200-1510] Running: source ./dense/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name Dense Dense 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -rewind Load_Weight/zero_w_i 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -rewind Load_Bias/zero_bias 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -off Dense/input_loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -off Dense/output_loop 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'Dense_fmul_32ns_32ns_32_6_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Dense_fmul_32ns_32ns_32_6_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Dense_fmul_32ns_32ns_32_6_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'Dense_sitofp_32ns_32_7_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Dense_sitofp_32ns_32_7_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Dense_sitofp_32ns_32_7_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Learning_Software/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 20 12:11:55 2024...
+INFO: [HLS 200-802] Generated output file dense/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 28.696 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 33.309 seconds; peak allocated memory: 1.548 GB.

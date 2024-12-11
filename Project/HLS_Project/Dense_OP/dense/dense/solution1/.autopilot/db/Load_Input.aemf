@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1713586205855">
+  <ports id="1" name="IN1" type="PortType" coreId="842347359" bitwidth="16" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="feature_in" type="PortType" coreId="842412597" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="input_buffer" type="PortType" coreName="RAM_2P_BRAM" coreId="1953060399" bitwidth="64" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="4" name="In_LP_now" type="PortType" coreId="842347359" bitwidth="25">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="CHin" type="PortType" coreId="1953060399" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="78" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="81" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="84" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="96" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="104" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="105" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="116" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="119" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="122" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="127" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="128" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="131" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="136" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="141" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="142" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@ports.2"/>
+  <edges id="145" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="146" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="147" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="148" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="149" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="152" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="155" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="158" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="161" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="162" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="163" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="164" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="165" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="166" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="167" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="168" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="169" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="173" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="176" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="203" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="208" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="209" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="276" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="278" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="280" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="281" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="282" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="283" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="284" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="285" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="286" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="287" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.13"/>
+  <blocks id="22" name="entry" type="BlockType">
+    <controlOutputObjs>load-store-loop</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="loop_index" coreId="1852793632" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="CHin_read" coreId="1852793632" bitwidth="32" opcode="read" nodeLabel="7.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <dataInputObjs>CHin</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="In_LP_now_read" coreId="1852793632" bitwidth="25" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>In_LP_now</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="feature_in_read" coreId="1852793632" bitwidth="64" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>feature_in</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="offset" lineNumber="20" originalName="offset" fileName="dense/dense.cpp" fileDirectory=".." rtlName="offset_fu_217_p3" coreId="1852793632" contextFuncName="Load_Input" bitwidth="32" opcode="bitconcatenate" nodeLabel="7.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="20" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="shl_ln" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." rtlName="shl_ln_fu_174_p3" coreId="0" contextFuncName="Load_Input" bitwidth="33" opcode="bitconcatenate" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="sext_ln23" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." rtlName="sext_ln23_fu_182_p1" coreId="1852793632" contextFuncName="Load_Input" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="add_ln23" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." rtlName="add_ln23_fu_186_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="Load_Input" bitwidth="64" opcode="add" m_display="0" m_delay="1.08" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="trunc_ln" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." rtlName="trunc_ln_fu_192_p4" coreId="1852793632" contextFuncName="Load_Input" bitwidth="63" opcode="partselect" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sext_ln23_1" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." rtlName="sext_ln23_1_fu_202_p1" coreId="1852793632" contextFuncName="Load_Input" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="IN1_addr" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." coreId="1852793632" contextFuncName="Load_Input" bitwidth="16" opcode="getelementptr" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>IN1</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="empty" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="Load_Input" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="2.92" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="loop_index_write_ln23" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." coreId="1852793632" contextFuncName="Load_Input" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln23" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." coreId="0" contextFuncName="Load_Input" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <controlInputObjs>load-store-loop</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dense/dense.cpp">
+      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>23</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="28" name="load-store-loop" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>load-store-loop.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>input_zero</controlOutputObjs>
+    <controlOutputObjs>load-store-loop.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="loop_index_load" coreId="1852793632" bitwidth="8" opcode="load" nodeLabel="8.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="exitcond53" rtlName="exitcond53_fu_227_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="0.84" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="empty_223" rtlName="empty_223_fu_233_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="8" opcode="add" nodeLabel="8.0" m_display="0" m_delay="0.76" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln0" coreId="0" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>load-store-loop.split</controlInputObjs>
+      <controlInputObjs>input_zero</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="45" name="load-store-loop.split" type="BlockType">
+    <controlInputObjs>load-store-loop</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>load-store-loop</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="IN1_addr_read" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="Load_Input" bitwidth="16" opcode="read" nodeLabel="9.0" m_display="0" m_delay="2.92" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="empty_224" rtlName="empty_224_fu_239_p1" coreId="1852793632" bitwidth="2" opcode="trunc" nodeLabel="8.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp_s" rtlName="tmp_s_fu_262_p3" coreId="1852793632" bitwidth="6" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp_194" rtlName="tmp_194_reg_402" coreId="1852793632" bitwidth="5" opcode="partselect" nodeLabel="8.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="p_cast4" rtlName="p_cast4_fu_269_p1" coreId="0" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="input_buffer_addr" coreId="3032160986" bitwidth="5" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>input_buffer</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="empty_225" rtlName="empty_225_fu_273_p1" coreId="3032154856" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="empty_226" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." rtlName="empty_226_fu_277_p1" coreId="3032159866" contextFuncName="Load_Input" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="empty_227" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." rtlName="empty_227_fu_280_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="Load_Input" bitwidth="64" opcode="shl" nodeLabel="10.0" m_display="0" m_delay="0.9" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="udiv" rtlName="udiv_fu_287_p3" coreId="3032155386" bitwidth="3" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="udiv_cast_cast" rtlName="udiv_cast_cast_fu_294_p1" coreId="3032155946" bitwidth="8" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="mask" rtlName="mask_fu_298_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" bitwidth="8" opcode="shl" nodeLabel="10.0" m_display="0" m_delay="0.56" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="input_buffer_addr_write_ln23" lineNumber="23" fileName="dense/dense.cpp" fileDirectory=".." coreName="RAM_2P_BRAM" implIndex="bram" control="no" opType="ram_2p" coreId="94" contextFuncName="Load_Input" opcode="store" nodeLabel="10.0" m_display="0" m_delay="1.23" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="23" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataInputObjs>shl</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="loop_index_write_ln0" coreId="1852793632" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.42" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln0" coreId="3032147546" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <controlInputObjs>load-store-loop</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dense/dense.cpp">
+      <validLinenumbers>23</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="48" name="input_zero" type="BlockType">
+    <controlInputObjs>load-store-loop</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>for.body.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="In_Min" lineNumber="21" fileName="dense/dense.cpp" fileDirectory=".." rtlName="In_Min_fu_258_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="Load_Input" bitwidth="32" opcode="sub" nodeLabel="8.0" m_display="0" m_delay="1.01" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="21" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln29" lineNumber="29" fileName="dense/dense.cpp" fileDirectory=".." coreId="3032159306" contextFuncName="Load_Input" opcode="br" nodeLabel="8.0" m_display="0" m_delay="0.42" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="29" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+      <controlInputObjs>for.body.split</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dense/dense.cpp">
+      <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>29</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="73" name="for.end" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln41" lineNumber="41" fileName="dense/dense.cpp" fileDirectory=".." coreId="3146306458" contextFuncName="Load_Input" opcode="ret" nodeLabel="12.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dense/dense.cpp" linenumber="41" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="dense/dense.cpp">
+      <validLinenumbers>41</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="289" pipe_depth="1" RegionName="input_zero">
+    <basic_blocks id="57" name="for.body.split" type="BlockType">
+      <controlInputObjs>input_zero</controlInputObjs>
+      <controlInputObjs>for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>_ZN8ap_fixedILi16ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEC2Ei.exit</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="i13" originalName="i" coreId="1852793632" bitwidth="7" opcode="phi" nodeLabel="11.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>input_zero</controlInputObjs>
+        <controlInputObjs>for.inc</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln29" lineNumber="29" fileName="dense/dense.cpp" fileDirectory=".." rtlName="zext_ln29_fu_305_p1" coreId="3032150346" contextFuncName="Load_Input" bitwidth="32" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="29" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="icmp_ln31" lineNumber="31" fileName="dense/dense.cpp" fileDirectory=".." rtlName="icmp_ln31_fu_309_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="Load_Input" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="0.99" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="31" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="i" lineNumber="29" fileName="dense/dense.cpp" fileDirectory=".." rtlName="i_fu_314_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="Load_Input" bitwidth="7" opcode="add" nodeLabel="11.0" m_display="0" m_delay="0.77" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="29" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="br_ln31" lineNumber="31" fileName="dense/dense.cpp" fileDirectory=".." coreId="3032152026" contextFuncName="Load_Input" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="31" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc</controlInputObjs>
+        <controlInputObjs>_ZN8ap_fixedILi16ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEC2Ei.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dense/dense.cpp">
+        <validLinenumbers>29</validLinenumbers>
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="68" name="_ZN8ap_fixedILi16ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEC2Ei.exit" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="trunc_ln32" lineNumber="32" fileName="dense/dense.cpp" fileDirectory=".." rtlName="trunc_ln32_fu_320_p1" coreId="3032146426" contextFuncName="Load_Input" bitwidth="2" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="32" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="lshr_ln" lineNumber="32" fileName="dense/dense.cpp" fileDirectory=".." rtlName="lshr_ln_fu_324_p4" coreId="1852793632" contextFuncName="Load_Input" bitwidth="5" opcode="partselect" nodeLabel="11.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="32" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="zext_ln32" lineNumber="32" fileName="dense/dense.cpp" fileDirectory=".." rtlName="zext_ln32_fu_334_p1" coreId="3032153176" contextFuncName="Load_Input" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="32" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="input_buffer_addr_1" lineNumber="32" fileName="dense/dense.cpp" fileDirectory=".." coreId="3032149256" contextFuncName="Load_Input" bitwidth="5" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="32" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>input_buffer</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="udiv1" lineNumber="32" fileName="dense/dense.cpp" fileDirectory=".." rtlName="udiv1_fu_339_p3" coreId="3032162106" contextFuncName="Load_Input" bitwidth="3" opcode="bitconcatenate" nodeLabel="11.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="32" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="zext_ln32_1" lineNumber="32" fileName="dense/dense.cpp" fileDirectory=".." rtlName="zext_ln32_1_fu_347_p1" coreId="1852793632" contextFuncName="Load_Input" bitwidth="8" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="32" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>shl</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="shl_ln32" lineNumber="32" fileName="dense/dense.cpp" fileDirectory=".." rtlName="shl_ln32_fu_351_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="Load_Input" bitwidth="8" opcode="shl" nodeLabel="11.0" m_display="0" m_delay="0.56" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="32" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="input_buffer_addr_1_write_ln32" lineNumber="32" fileName="dense/dense.cpp" fileDirectory=".." coreName="RAM_2P_BRAM" implIndex="bram" control="no" opType="ram_2p" coreId="94" contextFuncName="Load_Input" opcode="store" nodeLabel="11.0" m_display="0" m_delay="1.23" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="32" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>shl</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="br_ln33" lineNumber="33" fileName="dense/dense.cpp" fileDirectory=".." coreId="3032158186" contextFuncName="Load_Input" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="33" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <controlInputObjs>for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dense/dense.cpp">
+        <validLinenumbers>32</validLinenumbers>
+        <validLinenumbers>33</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="71" name="for.inc" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlInputObjs>_ZN8ap_fixedILi16ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEC2Ei.exit</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end</controlOutputObjs>
+      <controlOutputObjs>for.body.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="icmp_ln29" lineNumber="29" fileName="dense/dense.cpp" fileDirectory=".." rtlName="icmp_ln29_fu_358_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="Load_Input" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="0.81" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="29" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln29" lineNumber="29" fileName="dense/dense.cpp" fileDirectory=".." coreId="3032157626" contextFuncName="Load_Input" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense/dense.cpp" linenumber="29" fileDirectory="D:\Vivado_program\pynq_lenet5\hls_t1\dense" functionName="Load_Input"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.body.split</controlInputObjs>
+        <controlInputObjs>for.end</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dense/dense.cpp">
+        <validLinenumbers>29</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <regnodes realName="empty_224_reg_396">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="IN1_addr_read_reg_412">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="loop_index_reg_364">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="In_Min_reg_407">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="IN1_addr_reg_376">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="In_LP_now_read_reg_371">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_194_reg_402">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_420">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond53_reg_392">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="i13_reg_163">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="CHin_read_reg_382">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="offset_reg_387">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <expressionNodes realName="input_buffer_addr_1_gep_fu_156">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_223_fu_233">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="offset_fu_217">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast4_fu_269">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_224_fu_239">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="udiv_fu_287">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_314">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_174">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_227_fu_280">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="input_buffer_addr_gep_fu_140">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_262">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="udiv1_fu_339">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln32_fu_320">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="In_Min_fu_258">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="IN1_addr_fu_206">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln29_fu_305">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln29_fu_358">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_1_fu_347">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln_fu_324">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln23_fu_186">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loop_index_fu_106">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond53_fu_227">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="udiv_cast_cast_fu_294">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln32_fu_351">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_192">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_fu_334">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln23_1_fu_202">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln31_fu_309">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i13_phi_fu_167">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_226_fu_277">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_225_fu_273">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mask_fu_298">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln23_fu_182">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_194_fu_243">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln0_store_fu_253">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_122">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="feature_in_read_read_fu_116">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="In_LP_now_read_read_fu_110">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="loop_index_load_load_fu_224">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="IN1_addr_read_read_fu_135">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="CHin_read_read_fu_129">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln23_store_fu_212">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="input_buffer" portID="1">
+    <nodeIds>42</nodeIds>
+    <nodeIds>66</nodeIds>
+  </memoryPorts>
+  <ioPorts name="CHin">
+    <contents name="read">
+      <nodeIds>7</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="IN1">
+    <contents name="read">
+      <nodeIds>29</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="In_LP_now">
+    <contents name="read">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="feature_in">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_buffer(p1)">
+    <contents name="store">
+      <nodeIds>42</nodeIds>
+      <nodeIds>66</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="19" stage="7" latency="7"/>
+    </states>
+    <states id="3">
+      <operations id="19" stage="6" latency="7"/>
+    </states>
+    <states id="4">
+      <operations id="19" stage="5" latency="7"/>
+    </states>
+    <states id="5">
+      <operations id="19" stage="4" latency="7"/>
+    </states>
+    <states id="6">
+      <operations id="19" stage="3" latency="7"/>
+    </states>
+    <states id="7">
+      <operations id="19" stage="2" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="7"/>
+      <operations id="21" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="29" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="72" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="12">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="Load_Input" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="521" mMaxLatency="521">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="7" mMaxLatency="7">
+      <basicBlocks>22</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Loop_1" mII="-1" mDepth="-1" mMinTripCount="128" mMaxTripCount="128" mMinLatency="384" mMaxLatency="384" mType="1">
+      <basicBlocks>28</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>48</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="input_zero" mII="1" mDepth="1" mMinTripCount="128" mMaxTripCount="128" mMinLatency="127" mMaxLatency="127" mType="1">
+      <basicBlocks>57</basicBlocks>
+      <basicBlocks>68</basicBlocks>
+      <basicBlocks>71</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>73</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

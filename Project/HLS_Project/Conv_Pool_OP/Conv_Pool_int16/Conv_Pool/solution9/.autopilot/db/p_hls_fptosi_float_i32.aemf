@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1715246424255">
+  <ports id="1" name="x" type="PortType" originalName="x" coreId="1953060399" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="29" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="30" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="33" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="43" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="48" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="63" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="64" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="68" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="73" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="94" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges source_obj="//@blocks.0/@node_objs.23" sink_obj="//@ports.1"/>
+  <blocks id="26" name="__hls_fptosi_float_i32" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="2" name="x_read" lineNumber="51" originalName="x" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" coreId="1852793632" contextFuncName="p_hls_fptosi_float_i32" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp" linenumber="51" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="__hls_fptosi_float_i32"/>
+      <dataInputObjs>x</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="data_V" lineNumber="317" originalName="data.V" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls\utils/x_hls_utils.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="data_V_fu_44_p1" coreId="1852793632" contextFuncName="fp_struct" bitwidth="32" opcode="bitcast" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls\utils/x_hls_utils.h" linenumber="317" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="fp_struct"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="p_Result_s" lineNumber="779" originalName="__Result__" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_int_ref.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="p_Result_s_reg_181" coreId="1852793632" contextFuncName="operator_bool" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_int_ref.h" linenumber="779" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator bool"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="xs_exp_V" lineNumber="628" originalName="xs.exp.V" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_int_ref.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="xs_exp_V_fu_56_p4" coreId="1852793632" contextFuncName="get" bitwidth="8" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_int_ref.h" linenumber="628" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="get"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="p_Result_4" lineNumber="628" originalName="__Result__" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_int_ref.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="p_Result_4_fu_66_p1" coreId="1852793632" contextFuncName="get" bitwidth="23" opcode="trunc" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_int_ref.h" linenumber="628" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="get"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="mantissa" lineNumber="15" originalName="mantissa" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="mantissa_fu_70_p4" coreId="1852793632" contextFuncName="generic_cast_IEEE754_int_AP_TRN_ZERO_float_s" bitwidth="25" opcode="bitconcatenate" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="15" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, float&amp;gt;"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="zext_ln15" lineNumber="15" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="zext_ln15_fu_80_p1" coreId="1852793632" contextFuncName="generic_cast_IEEE754_int_AP_TRN_ZERO_float_s" bitwidth="79" opcode="zext" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="15" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, float&amp;gt;"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="zext_ln346" lineNumber="346" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls\utils/x_hls_utils.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="zext_ln346_fu_84_p1" coreId="1852793632" contextFuncName="expv" bitwidth="9" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls\utils/x_hls_utils.h" linenumber="346" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="expv"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="add_ln346" lineNumber="346" originalName="sh" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls\utils/x_hls_utils.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="add_ln346_fu_88_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="expv" bitwidth="9" opcode="add" m_display="0" m_delay="0.76" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls\utils/x_hls_utils.h" linenumber="346" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="expv"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="isNeg" lineNumber="1511" originalName="isNeg" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="isNeg_fu_94_p3" coreId="1852793632" contextFuncName="operator_ls" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1511" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;lt;&amp;lt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="sub_ln1512" lineNumber="1512" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="sub_ln1512_fu_102_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="operator_ls" bitwidth="8" opcode="sub" m_display="0" m_delay="0.76" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1512" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;lt;&amp;lt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="sext_ln1512" lineNumber="1512" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="sext_ln1512_fu_108_p1" coreId="0" contextFuncName="operator_ls" bitwidth="9" opcode="sext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1512" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;lt;&amp;lt;"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="ush" lineNumber="1512" originalName="ush" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="ush_fu_112_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_ls" bitwidth="9" opcode="select" m_display="0" m_delay="0.39" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1512" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;lt;&amp;lt;"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="sext_ln1488" lineNumber="1488" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="sext_ln1488_fu_120_p1" coreId="3314891088" contextFuncName="operator_rs" bitwidth="32" opcode="sext" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1488" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;gt;&amp;gt;"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="zext_ln1488" lineNumber="1488" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="zext_ln1488_fu_124_p1" coreId="3314303408" contextFuncName="operator_rs" bitwidth="79" opcode="zext" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1488" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;gt;&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="r_V" lineNumber="1488" originalName="r.V" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="r_V_fu_128_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="lshr" coreId="75" contextFuncName="operator_rs" bitwidth="79" opcode="lshr" m_display="0" m_topoIndex="16" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1488" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;gt;&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="r_V_1" lineNumber="1454" originalName="r.V" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="r_V_1_fu_134_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="operator_ls" bitwidth="79" opcode="shl" m_display="0" m_topoIndex="17" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1454" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;lt;&amp;lt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp" lineNumber="818" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="tmp_fu_140_p3" coreId="0" contextFuncName="operator_assign_79_55_false_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="18" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="818" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator=&amp;lt;79, 55, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <dataInputObjs>lshr</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="zext_ln818" lineNumber="818" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="zext_ln818_fu_148_p1" coreId="3314173616" contextFuncName="operator_assign_79_55_false_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="19" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="818" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator=&amp;lt;79, 55, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="tmp_1" lineNumber="818" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="tmp_1_fu_152_p4" coreId="3314814544" contextFuncName="operator_assign_79_55_false_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="partselect" m_display="0" m_topoIndex="20" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="818" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator=&amp;lt;79, 55, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="val" lineNumber="1513" originalName="val" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="val_fu_162_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_ls" bitwidth="32" opcode="select" m_display="0" m_delay="1.38" m_topoIndex="21" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="1513" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator&amp;lt;&amp;lt;"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="result_V_2" lineNumber="813" originalName="result.V" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="result_V_2_fu_170_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="operator_assign_33_33_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.01" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h" linenumber="813" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="operator=&amp;lt;33, 33, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="result_V" lineNumber="59" originalName="result.V" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="ap_return" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="generic_cast_IEEE754_int_AP_TRN_ZERO_float_s" bitwidth="32" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.44" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="59" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, float&amp;gt;"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>ret</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln51" lineNumber="51" fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp" fileDirectory="R:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" coreId="3313889776" contextFuncName="p_hls_fptosi_float_i32" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp" linenumber="51" fileDirectory="R:\ci\prod\2022.1\rdi_builds\continuous\2022_04_18_3526262\src\shared" functionName="__hls_fptosi_float_i32"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h">
+      <validLinenumbers>15</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_fixed_base.h">
+      <validLinenumbers>1511</validLinenumbers>
+      <validLinenumbers>1512</validLinenumbers>
+      <validLinenumbers>1488</validLinenumbers>
+      <validLinenumbers>1454</validLinenumbers>
+      <validLinenumbers>818</validLinenumbers>
+      <validLinenumbers>1513</validLinenumbers>
+      <validLinenumbers>813</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files\ap_int_ref.h">
+      <validLinenumbers>779</validLinenumbers>
+      <validLinenumbers>628</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls\utils/x_hls_utils.h">
+      <validLinenumbers>317</validLinenumbers>
+      <validLinenumbers>346</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="r:/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp">
+      <validLinenumbers>51</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="p_Result_s_reg_181">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="val_reg_186">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <expressionNodes realName="result_V_fu_175">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1488_fu_120">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_48">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1488_fu_124">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_fu_128">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mantissa_fu_70">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln346_fu_84">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln818_fu_148">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_V_fu_44">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_140">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xs_exp_V_fu_56">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln346_fu_88">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_152">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ush_fu_112">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln15_fu_80">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1512_fu_102">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="result_V_2_fu_170">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_1_fu_134">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="val_fu_162">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_4_fu_66">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1512_fu_108">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="isNeg_fu_94">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="x_read_read_fu_38">
+    <nodeIds>2</nodeIds>
+  </ioNodes>
+  <ioPorts name="x">
+    <contents name="read">
+      <nodeIds>2</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="2" stage="1" latency="1"/>
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="p_hls_fptosi_float_i32" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
