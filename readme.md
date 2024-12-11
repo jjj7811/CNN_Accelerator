@@ -93,7 +93,7 @@ KV260开发版，其片上BRAM有144块BRAM36Kb，共144*36Kb/1024/8 = 0.632MB�
 
 采用输出特征图复用，对于卷积神经网络，其最大特点就是利用权值共享，减少了参数量，因此其访存量主要集中在输入输出特征图。我们采用输出特征图复用，来减少与DDR的访存，从而提升吞吐量并降低功耗。
 
-![image-20240409161010025](.\CNN_Acceleator.assets\image-20240409161010025.png)
+![image-20240409161010025](./CNN_Acceleator.assets\image-20240409161010025.png)
 
 ### 2.2 输入输出特征图读取模块
 
@@ -142,9 +142,9 @@ memcpy(line_buf4, &feature_in4[F_In_Off4], In_Tc * 2);
 
 以[Tm,Tn,Ky,Kx]的格式一维排列。由于采用4个HP接口，可同时并行读取4个Kernel，每次读取Tn\*K\*K个数据，即4\*3\*3\*16bit = 576bit。
 
-<img src=".\CNN_Acceleator.assets\image-20240408212114371.png" alt="image-20240408212114371" style="zoom: 33%;" />
+<img src="./CNN_Acceleator.assets\image-20240408212114371.png" alt="image-20240408212114371" style="zoom: 33%;" />
 
-![image-20240408220339515](.\CNN_Acceleator.assets\image-20240408220339515.png)
+![image-20240408220339515](./CNN_Acceleator.assets\image-20240408220339515.png)
 
 #### 2.3.2 权重分发模块实现
 
@@ -164,13 +164,13 @@ memcpy(line_buf4, &Weight4[W_off4], 2 * K * K);
 
 在当前的设计中，选择Tn=4，与HP接口数相同，因此在读取权重的时候，使用一次突发传输即可读取Tn\*K\*K的权重数据，因此仅需Tm次传输，就可把部分卷积核读入片内Bram。
 
-![image-20240408204429731](.\CNN_Acceleator.assets\image-20240408204429731.png)
+![image-20240408204429731](./CNN_Acceleator.assets\image-20240408204429731.png)
 
 #### 2.3.3 双缓冲设计
 
 同样，采用双Buf设计，用计算时间Cover权重读取时间，增大吞吐量。
 
-![image-20240408220715268](.\CNN_Acceleator.assets\image-20240408220715268.png)
+![image-20240408220715268](./CNN_Acceleator.assets\image-20240408220715268.png)
 
 ### 2.4 卷积计算模块
 
@@ -265,7 +265,7 @@ for(row=0; row<R; row+=Tr){
 
 ##### 卷积计算流程图
 
-![image-20240409161024777](.\CNN_Acceleator.assets\image-20240409161024777.png)
+![image-20240409161024777](./CNN_Acceleator.assets\image-20240409161024777.png)
 
 #### 2.4.2 硬件实现
 
@@ -273,13 +273,13 @@ for(row=0; row<R; row+=Tr){
 
 在我们的设计中，将Loop_Tm,Loop_Tn完全展开，将TC共例化了2*32 = 64个PE，而每个PE中包含一个四输入乘加树，在FP16的格式下，共使用256个DSP，每一个时钟周期可完成256次乘加运算。
 
-<img src=".\CNN_Acceleator.assets\image-20240409011635334.png" alt="image-20240409011635334" style="zoom: 33%;" />
+<img src="./CNN_Acceleator.assets\image-20240409011635334.png" alt="image-20240409011635334" style="zoom: 33%;" />
 
 ##### PE结构
 
 PE由一个四输入乘加树组成，由于片上内存空间受限，将更多地Bram用于输出特征图以提高数据复用，减少访存。因此只对Input_Buf提供了4个Channel大小。因此使用四输入乘加树，来同时对4个Input_Channel进行并行计算。
 
-<img src=".\CNN_Acceleator.assets\image-20240409231054893.png" alt="image-20240409231054893" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409231054893.png" alt="image-20240409231054893" style="zoom:50%;" />
 
 ### 2.5 片上Buf存储格式
 
@@ -299,19 +299,19 @@ Partition指令会将一个数组拆分成多个Ram实现，以提高吞吐量�
 
 假设有这样一段数据
 
-<img src=".\CNN_Acceleator.assets\image-20240409175050480.png" alt="image-20240409175050480" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409175050480.png" alt="image-20240409175050480" style="zoom:50%;" />
 
 ###### Complete指令
 
-<img src=".\CNN_Acceleator.assets\image-20240409175116715.png" alt="image-20240409175116715" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409175116715.png" alt="image-20240409175116715" style="zoom:50%;" />
 
 ###### Cyclic指令
 
-<img src=".\CNN_Acceleator.assets\image-20240409175132648.png" alt="image-20240409175132648" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409175132648.png" alt="image-20240409175132648" style="zoom:50%;" />
 
 ###### Block指令
 
-<img src=".\CNN_Acceleator.assets\image-20240409175139870.png" alt="image-20240409175139870" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409175139870.png" alt="image-20240409175139870" style="zoom:50%;" />
 
 ##### Array_Reshape
 
@@ -319,15 +319,15 @@ Partition指令会将一个数组拆分成多个Ram实现，以提高吞吐量�
 
 Reshape指令可看做Partition和Map指令的组合体，可以在不显著增大资源的情况下，提高吞吐量。其本质是将n个x比特数据，进行位拼接，合并成1个n\*x比特数据，如下所示。
 
-<img src=".\CNN_Acceleator.assets\image-20240409175024105.png" alt="image-20240409175024105" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409175024105.png" alt="image-20240409175024105" style="zoom:50%;" />
 
 ###### Cyclic指令
 
-<img src=".\CNN_Acceleator.assets\image-20240409175018687.png" alt="image-20240409175018687" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409175018687.png" alt="image-20240409175018687" style="zoom:50%;" />
 
 #### 2.5.2 Input_Buf
 
-<img src=".\CNN_Acceleator.assets\image-20240409180335277.png" alt="image-20240409180335277" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409180335277.png" alt="image-20240409180335277" style="zoom:50%;" />
 
 ```
 static data_t input_buffer0[Tn][In_Tr][In_Tc] = {0};
@@ -361,7 +361,7 @@ static data_t weight_buffer1[Tm][Tn][K][K] = {0};
 
 #### 2.5.4 Output_Buf
 
-![image-20240409182736818](.\CNN_Acceleator.assets\image-20240409182736818.png)
+![image-20240409182736818](./CNN_Acceleator.assets\image-20240409182736818.png)
 
 由于Tm=32，片上Bram主要用于output_buf中，共计32*2 = 64个，此时若对Tc维度进行Factor的展开，其Bram占用就达到了128个，且无法充分利用Bram中的空间，造成了资源浪费，因此使用Reshape编译指令，对Tc维度进行位拼接，增加位宽从而提高吞吐量，并保证对Bram空间的充分利用。
 
@@ -391,7 +391,7 @@ static data_t output_buffer1[Tm][Tr][Tc] = {0};
 
 对于全连接层的Input数据，可看做为一个向量，其在DDR上的排序为一维数据。
 
-![image-20240409193657739](.\CNN_Acceleator.assets\image-20240409193657739.png)
+![image-20240409193657739](./CNN_Acceleator.assets\image-20240409193657739.png)
 
 ##### 双缓冲设计
 
@@ -399,7 +399,7 @@ static data_t output_buffer1[Tm][Tr][Tc] = {0};
 
 同样，采用双缓冲设计，使用数据读取时间Cover计算时间，增大吞吐量。
 
-<img src=".\CNN_Acceleator.assets\image-20240409191157527.png" alt="image-20240409191157527" style="zoom: 50%;" /><img src=".\CNN_Acceleator.assets\image-20240408201702652.png" alt="image-20240408201702652" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\image-20240409191157527.png" alt="image-20240409191157527" style="zoom: 50%;" /><img src="./CNN_Acceleator.assets\image-20240408201702652.png" alt="image-20240408201702652" style="zoom:50%;" />
 
 #### 2.6.2 权重Buf
 
@@ -407,25 +407,25 @@ static data_t output_buffer1[Tm][Tr][Tc] = {0};
 
 对于全连接的权重数据，其在DDR上的排列如下图所示。
 
-<img src=".\CNN_Acceleator.assets\image-20240409195420213.png" alt="image-20240409195420213" style="zoom:33%;" />
+<img src="./CNN_Acceleator.assets\image-20240409195420213.png" alt="image-20240409195420213" style="zoom:33%;" />
 
 ##### 读取模块
 
 每回合的计算过程，从DDR读取Tm\*Tn的权重块，利用4个AXI总线，并行读取4行的数据进入片内Bram。
 
-<img src=".\CNN_Acceleator.assets\image-20240409195328476.png" alt="image-20240409195328476" style="zoom:33%;" />
+<img src="./CNN_Acceleator.assets\image-20240409195328476.png" alt="image-20240409195328476" style="zoom:33%;" />
 
 ##### 双缓冲设计
 
 同样采用双缓冲设计
 
-![image-20240408220715268](.\CNN_Acceleator.assets\image-20240408220715268.png)
+![image-20240408220715268](./CNN_Acceleator.assets\image-20240408220715268.png)
 
 #### 2.6.3 全连接计算模块
 
 由于是向量矩阵乘法，其实际上仅有两层循环嵌套，因此在全连接层的计算模块中，沿In_Tile方向展开成128输入乘加树，因此可在II=1的情况下，在一个时钟周期计算出一个输出部分和数据，最终全连接模块需要128个DSP48。
 
-<img src=".\CNN_Acceleator.assets\image-20240409195942821.png" alt="image-20240409195942821" style="zoom:33%;" />
+<img src="./CNN_Acceleator.assets\image-20240409195942821.png" alt="image-20240409195942821" style="zoom:33%;" />
 
 ## 三、模型部分
 
@@ -437,7 +437,7 @@ static data_t output_buffer1[Tm][Tr][Tc] = {0};
 
 ### 3.2 模型选择
 
-<img src=".\CNN_Acceleator.assets\e3ecfc2bd645400faa5af5e39f8b8337.png" alt="img" style="zoom:50%;" />
+<img src="./CNN_Acceleator.assets\e3ecfc2bd645400faa5af5e39f8b8337.png" alt="img" style="zoom:50%;" />
 
 #### 3.2.1 Pytorch模型结构描述
 
@@ -924,11 +924,11 @@ VGG结构虽然简单，但所含的参数量巨大，包含1.39亿个参数，�
 
 ## 六、VIVADO实现
 
-![image-20240407162856424](.\CNN_Acceleator.assets\image-20240407162856424.png)
+![image-20240407162856424](./CNN_Acceleator.assets\image-20240407162856424.png)
 
-![image-20240407162913299](.\CNN_Acceleator.assets\image-20240407162913299.png)
+![image-20240407162913299](./CNN_Acceleator.assets\image-20240407162913299.png)
 
-![image-20240407164333890](.\CNN_Acceleator.assets\image-20240407164333890.png)
+![image-20240407164333890](./CNN_Acceleator.assets\image-20240407164333890.png)
 
 
 
