@@ -2,7 +2,28 @@
 
 仓库目录
 
+|
 
+|-Project	包含所有的工程源代码文件
+
+  |-HLS_Project	包含HLS工程
+
+  |-PYNQ_Project	包含PYNQ侧源码，使用KV260开发板安装PYNQ镜像，进行模型加速的部署
+
+  |-Vivado_Project	Vivado工程，生成FPGA硬件比特流
+
+|-Direct_run	包含PYNQ侧部署工程文件，将运行环境配置完成后，可使用该目录下文件部署模型，其中采用				我提供的模型文件、硬件工程与软件工程，你可以替换为自己的工程，仅作为DEMO展示
+
+
+
+*其中模型文件由于过大，我将其上传到百度网盘*
+
+通过网盘分享的文件：vgg16Net.pth
+链接: https://pan.baidu.com/s/16-idHYBi-6AsT9trXPjnGg?pwd=qm66 提取码: qm66
+
+
+
+你需要将其复制到KV260工作目录中，可在线使用PYNQ提取权重偏置信息，这里我使用Numpy格式进行存储。
 
 
 
